@@ -66,17 +66,17 @@ const translations = {
     'experience.badge.current':  'current',
     'experience.badge.ongoing':  'ongoing',
 
-    'exp.wevy.period': '2024 – Present',
-    'exp.wevy.role':   'CX & Data Operations Analyst',
+    'exp.wevy.period': 'Oct 2024 – Present',
+    'exp.wevy.role':   'CX & Data Analyst',
     'exp.wevy.org':    'Wevy · Cloud IaaS/SaaS/PaaS',
-    'exp.wevy.desc':   'Migrated manual Excel controls to ETL/ELT pipelines in Power Query. Monitored SLA KPIs (FCR, reopening rate, backlog) in Power BI and performed root-cause analysis on recurring incidents. Automated Zoho CRM ↔ SharePoint sync via Power Automate. Built self-service dashboards with advanced DAX — partners now query data in real time without manual exports. Delivered QBRs in English to international executive accounts.',
+    'exp.wevy.desc':   'Started as CX intern (Oct 2024), promoted to Analyst (Jul 2025). Migrated manual Excel controls to ETL/ELT pipelines in Power Query. Monitored SLA KPIs (FCR, reopening rate, backlog) in Power BI and performed root-cause analysis on recurring incidents. Automated Zoho CRM ↔ SharePoint sync via Power Automate. Built self-service dashboards with advanced DAX. Delivered QBRs in English to international executive accounts.',
 
     'exp.us.period': '2019 – 2023',
     'exp.us.role':   'Operations Specialist',
     'exp.us.org':    'Boston, MA / San Diego, CA — USA',
     'exp.us.desc':   'Service and logistics operations in 100% English-speaking multicultural environments. Foundation of C2 bilingual fluency and the operational lens I now apply to data work.',
 
-    'exp.ads.period': '2024 – 2026',
+    'exp.ads.period': '2024 – 2027',
     'exp.ads.role':   'B.S. Systems Analysis & Development',
     'exp.ads.org':    'Uninter University',
     'exp.ads.desc':   'Coursework covering algorithms, databases, software engineering, and web development. Complementing hands-on BI and automation experience with formal CS fundamentals.',
@@ -157,17 +157,17 @@ const translations = {
     'experience.badge.current':  'atual',
     'experience.badge.ongoing':  'em andamento',
 
-    'exp.wevy.period': '2024 – Presente',
-    'exp.wevy.role':   'Analista de Operações CX & Dados',
+    'exp.wevy.period': 'out 2024 – Presente',
+    'exp.wevy.role':   'Analista de CX & Dados',
     'exp.wevy.org':    'Wevy · Cloud IaaS/SaaS/PaaS',
-    'exp.wevy.desc':   'Migrei controles manuais do Excel para pipelines ETL/ELT no Power Query. Monitorei KPIs de SLA (FCR, taxa de reabertura, backlog) no Power BI e fiz análise de causa raiz em incidentes recorrentes. Automatizei sincronização Zoho CRM ↔ SharePoint via Power Automate. Dashboards self-service com DAX avançado — parceiros passaram a consultar dados em tempo real. Entrega de QBRs em inglês para lideranças executivas de contas internacionais.',
+    'exp.wevy.desc':   'Iniciou como Estagiário CX (out 2024), promovido a Analista (jul 2025). Migrei controles manuais do Excel para pipelines ETL/ELT no Power Query. Monitorei KPIs de SLA (FCR, taxa de reabertura, backlog) no Power BI e fiz análise de causa raiz em incidentes recorrentes. Automatizei sincronização Zoho CRM ↔ SharePoint via Power Automate. Dashboards self-service com DAX avançado. QBRs em inglês para lideranças de contas internacionais.',
 
     'exp.us.period': '2019 – 2023',
     'exp.us.role':   'Operações',
     'exp.us.org':    'Boston, MA / San Diego, CA — EUA',
     'exp.us.desc':   'Operações de atendimento e logística em ambiente 100% em inglês com equipes multiculturais. Base da fluência bilíngue C2 e da visão operacional que aplico hoje na análise de dados.',
 
-    'exp.ads.period': '2024 – 2026',
+    'exp.ads.period': '2024 – 2027',
     'exp.ads.role':   'Bacharelado em Análise e Desenvolvimento de Sistemas',
     'exp.ads.org':    'Uninter University',
     'exp.ads.desc':   'Disciplinas de algoritmos, bancos de dados, engenharia de software e desenvolvimento web. Complementando experiência prática em BI e automação com fundamentos formais de computação.',
