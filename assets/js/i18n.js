@@ -23,7 +23,7 @@ const translations = {
     'about.label':      'About',
     'about.title':      'Operations background. Data mindset.',
     'about.p1':         'Seven years in operations — four running service and logistics in Boston and San Diego, then back to Brazil joining Wevy as a CX & Data Analyst. At Wevy, I migrated manual Excel controls to ETL/ELT pipelines in Power Query, built self-service Power BI dashboards for industrial clients (SKF-tier), and automated workflows between Zoho CRM and SharePoint via Power Automate.',
-    'about.p2':         'The edge I bring: I understand the business before I open Power BI. Bilingual C2 English — built through 4 years of multicultural operations in the US. Currently completing a B.S. in Systems Analysis & Development at Uninter (2024–2026).',
+    'about.p2':         'The edge I bring: I understand the business before I open Power BI. Bilingual C2 English — built through 4 years of multicultural operations in the US. Currently completing a B.S. in Systems Analysis & Development at Uninter (2024–2027).',
     'about.card.title': 'Currently focusing on',
 
     /* STACK */
@@ -114,7 +114,7 @@ const translations = {
     'about.label':      'Sobre',
     'about.title':      'Base em operações. Mentalidade de dados.',
     'about.p1':         'Sete anos em operações — quatro deles em Boston e San Diego nos EUA, depois de volta ao Brasil na Wevy como Analista de Operações CX & Dados. Na Wevy, migrei controles manuais do Excel para pipelines ETL/ELT no Power Query, construí dashboards self-service no Power BI para clientes industriais de grande porte e automatizei fluxos entre Zoho CRM e SharePoint via Power Automate.',
-    'about.p2':         'O diferencial que trago: entendo o negócio antes de abrir o Power BI. Inglês C2 bilíngue — desenvolvido em 4 anos de operações multiculturais nos EUA. Atualmente cursando Análise e Desenvolvimento de Sistemas na Uninter (2024–2026).',
+    'about.p2':         'O diferencial que trago: entendo o negócio antes de abrir o Power BI. Inglês C2 bilíngue — desenvolvido em 4 anos de operações multiculturais nos EUA. Atualmente cursando Análise e Desenvolvimento de Sistemas na Uninter (2024–2027).',
     'about.card.title': 'Focando agora em',
 
     /* STACK */
