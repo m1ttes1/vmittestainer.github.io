@@ -9,21 +9,21 @@ const translations = {
     'nav.lang':       'PT',
 
     /* HERO */
-    'hero.eyebrow':   'Data Analyst',
-    'hero.h1':        'Turning support noise\ninto data clarity.',
-    'hero.sub':       '5+ years in CX Operations gave me the domain knowledge. Now I build the dashboards I always needed.',
-    'hero.stat1.value': '5+',
-    'hero.stat1.label': 'Years in CX Ops',
+    'hero.eyebrow':     'Data Analyst',
+    'hero.h1':          'Turning support noise\ninto data clarity.',
+    'hero.sub':         '7 years in operations — 4 of them in the US. Now I build the dashboards that make decisions defensible.',
+    'hero.stat1.value': '7+',
+    'hero.stat1.label': 'Years in Operations',
     'hero.stat2.value': '4',
     'hero.stat2.label': 'BI Projects',
     'hero.stat3.value': '40%',
     'hero.stat3.label': 'SLA breach reduction',
 
     /* ABOUT */
-    'about.label':  'About',
-    'about.title':  'CX roots. Data mindset.',
-    'about.p1':     'For 5+ years at Wevy, I supported large industrial clients — including SKF — managing service operations and tracking SLA compliance across high-volume environments. At some point, the spreadsheets and manual reports stopped being enough. The dashboards I needed to make real-time decisions didn't exist, so I started building them myself.',
-    'about.p2':     'That's the edge I bring: I understand the business before I open Power BI. I know what a breach looks like at 2am and what the stakeholder actually needs on Monday morning. Currently pursuing a degree in Systems Analysis and Development at Uninter.',
+    'about.label':      'About',
+    'about.title':      'Operations background. Data mindset.',
+    'about.p1':         'Seven years in operations — four running service and logistics in Boston and San Diego, then back to Brazil joining Wevy as a CX & Data Analyst. At Wevy, I migrated manual Excel controls to ETL/ELT pipelines in Power Query, built self-service Power BI dashboards for industrial clients (SKF-tier), and automated workflows between Zoho CRM and SharePoint via Power Automate.',
+    'about.p2':         'The edge I bring: I understand the business before I open Power BI. Bilingual C2 English — built through 4 years of multicultural operations in the US. Currently completing a B.S. in Systems Analysis & Development at Uninter (2024–2026).',
     'about.card.title': 'Currently focusing on',
 
     /* STACK */
@@ -61,30 +61,25 @@ const translations = {
     'project.backup.result':  'Proactive alerts with 0 undetected incidents in 6 months.',
 
     /* EXPERIENCE */
-    'experience.label': 'Experience',
-    'experience.title': 'Where I've worked.',
-    'experience.badge.current': 'current',
-    'experience.badge.ongoing': 'ongoing',
+    'experience.label':          'Experience',
+    'experience.title':          'Where I\'ve worked.',
+    'experience.badge.current':  'current',
+    'experience.badge.ongoing':  'ongoing',
 
-    'exp.wevy2.period': '2022 – Present',
-    'exp.wevy2.role':   'Sr. CX Analyst',
-    'exp.wevy2.org':    'Wevy',
-    'exp.wevy2.desc':   'Led SLA monitoring for large industrial accounts. Built BI reports in Power BI using Zabbix data to track backup health, uptime, and incident trends. Reduced manual reporting time by automating weekly digests via Power Automate.',
+    'exp.wevy.period': '2024 – Present',
+    'exp.wevy.role':   'CX & Data Operations Analyst',
+    'exp.wevy.org':    'Wevy · Cloud IaaS/SaaS/PaaS',
+    'exp.wevy.desc':   'Migrated manual Excel controls to ETL/ELT pipelines in Power Query. Monitored SLA KPIs (FCR, reopening rate, backlog) in Power BI and performed root-cause analysis on recurring incidents. Automated Zoho CRM ↔ SharePoint sync via Power Automate. Built self-service dashboards with advanced DAX — partners now query data in real time without manual exports. Delivered QBRs in English to international executive accounts.',
 
-    'exp.wevy1.period': '2020 – 2022',
-    'exp.wevy1.role':   'CX Analyst',
-    'exp.wevy1.org':    'Wevy',
-    'exp.wevy1.desc':   'Managed service desk operations for B2B clients in the industrial sector. Owned ticket lifecycle, SLA compliance tracking, and client relationship management across high-complexity accounts.',
+    'exp.us.period': '2019 – 2023',
+    'exp.us.role':   'Operations Specialist',
+    'exp.us.org':    'Boston, MA / San Diego, CA — USA',
+    'exp.us.desc':   'Service and logistics operations in 100% English-speaking multicultural environments. Foundation of C2 bilingual fluency and the operational lens I now apply to data work.',
 
-    'exp.prev.period': '2018 – 2020',
-    'exp.prev.role':   'Technical Support Analyst',
-    'exp.prev.org':    'Previous Experience',
-    'exp.prev.desc':   'Infrastructure and systems support in corporate environments. First exposure to monitoring tools and operational metrics.',
-
-    'exp.ads.period': '2023 – Present',
-    'exp.ads.role':   'B.Sc. Systems Analysis & Development',
-    'exp.ads.org':    'Uninter',
-    'exp.ads.desc':   'Coursework covering algorithms, databases, software engineering, and web development. Complementing practical BI experience with formal CS fundamentals.',
+    'exp.ads.period': '2024 – 2026',
+    'exp.ads.role':   'B.S. Systems Analysis & Development',
+    'exp.ads.org':    'Uninter University',
+    'exp.ads.desc':   'Coursework covering algorithms, databases, software engineering, and web development. Complementing hands-on BI and automation experience with formal CS fundamentals.',
 
     /* CONTACT */
     'contact.label':    'Contact',
@@ -105,21 +100,21 @@ const translations = {
     'nav.lang':       'EN',
 
     /* HERO */
-    'hero.eyebrow':   'Data Analyst',
-    'hero.h1':        'Transformando ruído de suporte\nem clareza de dados.',
-    'hero.sub':       '5+ anos em CX Operations me deram o contexto de negócio. Agora construo os dashboards que sempre precisei.',
-    'hero.stat1.value': '5+',
-    'hero.stat1.label': 'Anos em CX Ops',
+    'hero.eyebrow':     'Data Analyst',
+    'hero.h1':          'Transformando ruído operacional\nem clareza de dados.',
+    'hero.sub':         '7 anos em operações — 4 deles nos EUA. Agora construo os dashboards que tornam decisões defensáveis.',
+    'hero.stat1.value': '7+',
+    'hero.stat1.label': 'Anos em Operações',
     'hero.stat2.value': '4',
     'hero.stat2.label': 'Projetos de BI',
     'hero.stat3.value': '40%',
     'hero.stat3.label': 'Redução em breach de SLA',
 
     /* ABOUT */
-    'about.label':  'Sobre',
-    'about.title':  'Raízes em CX. Mentalidade de dados.',
-    'about.p1':     'Por mais de 5 anos na Wevy, apoiei grandes clientes industriais — incluindo a SKF — gerenciando operações de serviço e monitorando conformidade de SLA em ambientes de alto volume. Em algum momento, as planilhas e relatórios manuais deixaram de ser suficientes. Os dashboards que eu precisava para tomar decisões em tempo real não existiam, então comecei a construí-los eu mesmo.',
-    'about.p2':     'Esse é o diferencial que trago: entendo o negócio antes de abrir o Power BI. Sei como uma violação parece às 2h da manhã e o que o stakeholder realmente precisa na segunda de manhã. Atualmente cursando Análise e Desenvolvimento de Sistemas na Uninter.',
+    'about.label':      'Sobre',
+    'about.title':      'Base em operações. Mentalidade de dados.',
+    'about.p1':         'Sete anos em operações — quatro deles em Boston e San Diego nos EUA, depois de volta ao Brasil na Wevy como Analista de Operações CX & Dados. Na Wevy, migrei controles manuais do Excel para pipelines ETL/ELT no Power Query, construí dashboards self-service no Power BI para clientes industriais de grande porte e automatizei fluxos entre Zoho CRM e SharePoint via Power Automate.',
+    'about.p2':         'O diferencial que trago: entendo o negócio antes de abrir o Power BI. Inglês C2 bilíngue — desenvolvido em 4 anos de operações multiculturais nos EUA. Atualmente cursando Análise e Desenvolvimento de Sistemas na Uninter (2024–2026).',
     'about.card.title': 'Focando agora em',
 
     /* STACK */
@@ -157,30 +152,25 @@ const translations = {
     'project.backup.result':  'Alertas proativos com 0 incidentes não detectados em 6 meses.',
 
     /* EXPERIENCE */
-    'experience.label': 'Experiência',
-    'experience.title': 'Onde trabalhei.',
-    'experience.badge.current': 'atual',
-    'experience.badge.ongoing': 'em andamento',
+    'experience.label':          'Experiência',
+    'experience.title':          'Onde trabalhei.',
+    'experience.badge.current':  'atual',
+    'experience.badge.ongoing':  'em andamento',
 
-    'exp.wevy2.period': '2022 – Presente',
-    'exp.wevy2.role':   'Analista Sr. de CX',
-    'exp.wevy2.org':    'Wevy',
-    'exp.wevy2.desc':   'Liderei o monitoramento de SLA para grandes contas industriais. Construí relatórios de BI no Power BI usando dados do Zabbix para rastrear saúde de backups, uptime e tendências de incidentes. Reduzi o tempo de relatórios manuais automatizando resumos semanais via Power Automate.',
+    'exp.wevy.period': '2024 – Presente',
+    'exp.wevy.role':   'Analista de Operações CX & Dados',
+    'exp.wevy.org':    'Wevy · Cloud IaaS/SaaS/PaaS',
+    'exp.wevy.desc':   'Migrei controles manuais do Excel para pipelines ETL/ELT no Power Query. Monitorei KPIs de SLA (FCR, taxa de reabertura, backlog) no Power BI e fiz análise de causa raiz em incidentes recorrentes. Automatizei sincronização Zoho CRM ↔ SharePoint via Power Automate. Dashboards self-service com DAX avançado — parceiros passaram a consultar dados em tempo real. Entrega de QBRs em inglês para lideranças executivas de contas internacionais.',
 
-    'exp.wevy1.period': '2020 – 2022',
-    'exp.wevy1.role':   'Analista de CX',
-    'exp.wevy1.org':    'Wevy',
-    'exp.wevy1.desc':   'Gerenciei operações de service desk para clientes B2B no setor industrial. Responsável pelo ciclo de vida dos tickets, conformidade de SLA e gestão de relacionamento com clientes em contas de alta complexidade.',
+    'exp.us.period': '2019 – 2023',
+    'exp.us.role':   'Operações',
+    'exp.us.org':    'Boston, MA / San Diego, CA — EUA',
+    'exp.us.desc':   'Operações de atendimento e logística em ambiente 100% em inglês com equipes multiculturais. Base da fluência bilíngue C2 e da visão operacional que aplico hoje na análise de dados.',
 
-    'exp.prev.period': '2018 – 2020',
-    'exp.prev.role':   'Analista de Suporte Técnico',
-    'exp.prev.org':    'Experiência Anterior',
-    'exp.prev.desc':   'Suporte de infraestrutura e sistemas em ambientes corporativos. Primeiro contato com ferramentas de monitoramento e métricas operacionais.',
-
-    'exp.ads.period': '2023 – Presente',
-    'exp.ads.role':   'Bacharelado em ADS',
-    'exp.ads.org':    'Uninter',
-    'exp.ads.desc':   'Disciplinas cobrindo algoritmos, bancos de dados, engenharia de software e desenvolvimento web. Complementando experiência prática em BI com fundamentos formais de computação.',
+    'exp.ads.period': '2024 – 2026',
+    'exp.ads.role':   'Bacharelado em Análise e Desenvolvimento de Sistemas',
+    'exp.ads.org':    'Uninter University',
+    'exp.ads.desc':   'Disciplinas de algoritmos, bancos de dados, engenharia de software e desenvolvimento web. Complementando experiência prática em BI e automação com fundamentos formais de computação.',
 
     /* CONTACT */
     'contact.label':    'Contato',
