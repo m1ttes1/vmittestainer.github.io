@@ -240,6 +240,7 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.1;
   letter-spacing: -0.02em;
   margin-bottom: 1.25rem;
+  white-space: pre-line;
 }
 
 .hero__sub {
@@ -714,4 +715,6 @@ footer {
 
   .nav__links { display: none; }
   .nav__hamburger { display: flex; }
+
+  .contact__links { flex-direction: column; align-items: center; }
 }
