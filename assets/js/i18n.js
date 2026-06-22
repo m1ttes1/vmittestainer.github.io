@@ -38,7 +38,6 @@ const translations = {
     'projects.title':   'Work that shipped.',
     'project.problem':  'Problem',
     'project.result':   'Result',
-    'project.link':     'View on GitHub →',
 
     'project.sla.title':    'SLA Compliance Dashboard',
     'project.sla.tech':     'Power BI · DAX',
@@ -134,7 +133,6 @@ const translations = {
     'projects.title':   'Trabalhos entregues.',
     'project.problem':  'Problema',
     'project.result':   'Resultado',
-    'project.link':     'Ver no GitHub →',
 
     'project.sla.title':    'Dashboard de Conformidade de SLA',
     'project.sla.tech':     'Power BI · DAX',
