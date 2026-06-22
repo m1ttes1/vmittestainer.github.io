@@ -5,7 +5,7 @@
 - [x] i18n.js atualizado com todas as keys (nav, hero, about, stack, projects, experience, contact)
 - [x] Seção About preenchida (EN + PT)
 - [x] Seção Stack preenchida (EN + PT) — Advanced / Intermediate / Learning
-- [x] 4 cards de projeto preenchidos (EN + PT) — SLA, CNPJ, School, Backup
+- [x] 4 cards de projeto preenchidos (EN + PT) — SLA, CNPJ, CO₂ Globe, Backup
 - [x] Timeline de experiência preenchida — Wevy Sr., Wevy Jr., Suporte Técnico, ADS Uninter
 - [x] Seção Contact preenchida — LinkedIn, GitHub, Email
 
@@ -24,7 +24,7 @@
 - `assets/images/projects/*.png` — screenshots dos projetos (fallbacks com emoji ativos)
 - School Analytics result sem número concreto — "Dashboard entregue à gestão pedagógica" é qualitativo; considerar adicionar métrica em S2 (ex: X indicadores monitorados, N usuários)
 
-## Revisão Agente 2
+## Revisão Agente 2 (pós-737cd8c)
 
 ### Checklist
 
@@ -33,18 +33,18 @@
 | Hero: valor em <10 palavras | ✅ OK | "Turning support noise into data clarity." — 7 palavras |
 | About: contexto industrial | ✅ OK | SKF mencionado; Power Query, Zoho CRM, SharePoint específicos |
 | Stack: níveis Advanced/Intermediate/Learning | ✅ OK | 3 grupos presentes com itens corretos |
-| Projects: problema + resultado com número | ⚠️ 3/4 | SLA 40%, CNPJ 8min, Backup 0 incidentes OK; School sem número |
+| Projects: problema + resultado com número | ✅ OK | SLA 40%, CNPJ 8min, CO₂ Globe 195 países/1990-2022, Backup 0 incidentes |
 | Experience: cronologia coerente | ✅ OK | 2019–2023 US → out 2024–Presente Wevy; ADS 2024–2027 paralelo |
 | Contact: LinkedIn + GitHub + email | ✅ OK | Todos presentes com URLs corretos |
 | I18N: keys para todas as seções | ✅ OK | nav, hero, about, stack, projects, experience, contact completos |
 | I18N: PT-BR natural | ✅ OK | Sem traços de tradução automática |
 | I18N: paridade EN ↔ PT | ✅ OK | Mesma estrutura de keys em ambos os idiomas |
 | SPRINT1_STATUS.md existe | ✅ OK | |
-| git log tem commit feat(s1) | ✅ OK | a4b5ba0 feat(s1): content, copy and i18n complete |
-| assets/images/projects/ com imagem | ⚠️ PENDENTE | Pasta vazia — fallbacks ativos, aceitável para S1 |
+| git log tem commit feat(s1) | ✅ OK | 737cd8c feat(s1): replace school analytics with CO2 globe project |
+| assets/images/projects/ com imagem | ✅ OK | project-sla.png, project-backup.svg, project-cnpj.svg, project-globe.svg |
 
-### Bug corrigido
+### Correção aplicada
 
-`about.p2` dizia "(2024–2026)" enquanto `exp.ads.period` diz "2024–2027". Corrigido em `i18n.js` (EN + PT) e `index.html` para manter consistência com o commit `fix(content): correct ADS dates (2027)`.
+`SPRINT1_STATUS.md` linha 8 referenciava "School" (projeto substituído). Atualizado para "CO₂ Globe" alinhado com commit `737cd8c`.
 
 ## Revisão Agente 2: SPRINT 1 APROVADA
