@@ -52,8 +52,8 @@ const translations = {
 
     'project.school.title':   'School Analytics Dashboard',
     'project.school.tech':    'SQL · Power BI',
-    'project.school.problem': 'Educational data scattered with no visibility on SDG 4/10 indicators.',
-    'project.school.result':  'Dashboard delivered to pedagogical management of a public school.',
+    'project.school.problem': 'No centralized view of attendance, grades, and behavioral KPIs for teaching staff.',
+    'project.school.result':  '6 KPIs mapped, conceptual proposal validated with faculty at EMEF/EJA Campinas-SP.',
 
     'project.backup.title':   'Backup Monitoring Report',
     'project.backup.tech':    'Power BI · Zabbix',
@@ -143,8 +143,8 @@ const translations = {
 
     'project.school.title':   'Dashboard de Análise Escolar',
     'project.school.tech':    'SQL · Power BI',
-    'project.school.problem': 'Dados educacionais dispersos sem visibilidade sobre indicadores ODS 4/10.',
-    'project.school.result':  'Dashboard entregue à gestão pedagógica de escola pública.',
+    'project.school.problem': 'Sem visão centralizada de frequência, notas e KPIs comportamentais para o corpo docente.',
+    'project.school.result':  '6 KPIs mapeados, proposta conceitual validada com docentes da EMEF/EJA Campinas-SP.',
 
     'project.backup.title':   'Relatório de Monitoramento de Backup',
     'project.backup.tech':    'Power BI · Zabbix',
