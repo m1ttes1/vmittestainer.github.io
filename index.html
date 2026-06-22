@@ -15,9 +15,9 @@
 <body>
 
   <!-- NAV -->
-  <nav class="nav">
+  <nav class="nav" id="main-nav">
     <div class="container nav__inner">
-      <span class="nav__logo mono">vm.dev</span>
+      <span class="nav__logo mono">vm<span class="dot">.</span></span>
       <ul class="nav__links">
         <li><a href="#about"      data-i18n="nav.about">About</a></li>
         <li><a href="#stack"      data-i18n="nav.stack">Stack</a></li>
@@ -25,9 +25,23 @@
         <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
         <li><a href="#contact"    data-i18n="nav.contact">Contact</a></li>
       </ul>
-      <button class="nav__lang" id="lang-toggle" data-i18n="nav.lang">PT</button>
+      <div style="display:flex;align-items:center;gap:1rem;">
+        <button class="nav__lang" id="lang-toggle" data-i18n="nav.lang">PT</button>
+        <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="nav__mobile-menu" id="mobile-menu">
+    <a href="#about"      data-i18n="nav.about"      onclick="closeMobileMenu()">About</a>
+    <a href="#stack"      data-i18n="nav.stack"      onclick="closeMobileMenu()">Stack</a>
+    <a href="#projects"   data-i18n="nav.projects"   onclick="closeMobileMenu()">Projects</a>
+    <a href="#experience" data-i18n="nav.experience" onclick="closeMobileMenu()">Experience</a>
+    <a href="#contact"    data-i18n="nav.contact"    onclick="closeMobileMenu()">Contact</a>
+  </div>
 
   <!-- HERO -->
   <section class="hero" id="home">
@@ -76,17 +90,14 @@
           <p class="about__highlight" data-i18n="about.p2">The edge I bring: I understand the business before I open Power BI. Bilingual C2 English — built through 4 years of multicultural operations in the US. Currently completing a B.S. in Systems Analysis & Development at Uninter (2024–2027).</p>
         </div>
 
-        <div class="about__card">
-          <p class="about__card-title mono" data-i18n="about.card.title">Currently focusing on</p>
-          <div class="about__tags">
-            <span class="tag mono">Power BI</span>
-            <span class="tag mono">DAX</span>
-            <span class="tag mono">SQL</span>
-            <span class="tag mono">Python</span>
-            <span class="tag mono">pandas</span>
-            <span class="tag mono">Git</span>
-            <span class="tag mono">ADS @ Uninter</span>
-          </div>
+        <div class="about__visual">
+          <img
+            src="assets/images/profile/victor-profile.jpg"
+            alt="Victor Mittestainer"
+            class="about__photo"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          />
+          <div class="about__photo-placeholder">VM</div>
         </div>
       </div>
     </div>
@@ -196,15 +207,7 @@
 
         <!-- CO2 Globe -->
         <article class="project-card">
-          <img
-            src="assets/images/projects/project-globe.svg"
-            alt="CO2 Emissions Globe"
-            class="project-card__img"
-            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-          />
-          <div class="project-card__img-placeholder" style="display:none;">
-            <span class="placeholder-icon">🌍</span>
-          </div>
+          <div class="project-card__globe-preview" id="globe-preview"></div>
           <div class="project-card__body">
             <p class="project-card__tech mono" data-i18n="project.globe.tech">JavaScript · Globe.gl</p>
             <h3 class="project-card__title" data-i18n="project.globe.title">CO₂ Emissions Globe</h3>
@@ -349,5 +352,8 @@
   </footer>
 
   <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="https://unpkg.com/globe.gl"></script>
+  <script src="assets/js/globe.js"></script>
 </body>
 </html>
