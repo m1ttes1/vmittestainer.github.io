@@ -50,10 +50,10 @@ const translations = {
     'project.cnpj.problem': 'Reconciling CNPJs across multiple Excel files — error-prone and manual.',
     'project.cnpj.result':  '3-hour process reduced to 8 minutes.',
 
-    'project.school.title':   'School Analytics Dashboard',
-    'project.school.tech':    'SQL · Power BI',
-    'project.school.problem': 'No centralized view of attendance, grades, and behavioral KPIs for teaching staff.',
-    'project.school.result':  '6 KPIs mapped, conceptual proposal validated with faculty at EMEF/EJA Campinas-SP.',
+    'project.globe.title':   'CO₂ Emissions Globe',
+    'project.globe.tech':    'JavaScript · Globe.gl',
+    'project.globe.problem': 'Public CO₂ data exists but lacks an intuitive geographic interface for exploration.',
+    'project.globe.result':  'Interactive 3D heatmap globe — 195 countries, 1990–2022, drag to explore.',
 
     'project.backup.title':   'Backup Monitoring Report',
     'project.backup.tech':    'Power BI · Zabbix',
@@ -141,10 +141,10 @@ const translations = {
     'project.cnpj.problem': 'Reconciliar CNPJs entre múltiplos arquivos Excel — processo manual e sujeito a erro.',
     'project.cnpj.result':  'Processo de 3 horas reduzido para 8 minutos.',
 
-    'project.school.title':   'Dashboard de Análise Escolar',
-    'project.school.tech':    'SQL · Power BI',
-    'project.school.problem': 'Sem visão centralizada de frequência, notas e KPIs comportamentais para o corpo docente.',
-    'project.school.result':  '6 KPIs mapeados, proposta conceitual validada com docentes da EMEF/EJA Campinas-SP.',
+    'project.globe.title':   'Globo de Emissões de CO₂',
+    'project.globe.tech':    'JavaScript · Globe.gl',
+    'project.globe.problem': 'Dados públicos de CO₂ existem mas carecem de interface geográfica intuitiva para exploração.',
+    'project.globe.result':  'Globo 3D interativo com heatmap — 195 países, 1990–2022, arraste para explorar.',
 
     'project.backup.title':   'Relatório de Monitoramento de Backup',
     'project.backup.tech':    'Power BI · Zabbix',

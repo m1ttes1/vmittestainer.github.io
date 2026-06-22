@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="480" viewBox="0 0 800 480">
+  <defs>
+    <style>text { font-family: 'JetBrains Mono', 'Courier New', monospace; }</style>
+    <radialGradient id="globe-bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a3a4a"/>
+      <stop offset="100%" stop-color="#0a1520"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00D4AA" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#00D4AA" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="480" fill="#0F1117"/>
+
+  <!-- Top bar -->
+  <rect width="800" height="48" fill="#161B27"/>
+  <text x="20" y="30" fill="#00D4AA" font-size="13" font-weight="700">CO₂ EMISSIONS GLOBE</text>
+  <text x="20" y="43" fill="#4A5568" font-size="10">JavaScript · Globe.gl · Our World in Data · 1990–2022</text>
+  <rect x="660" y="14" width="120" height="20" rx="3" fill="#00D4AA" opacity="0.1" stroke="#00D4AA" stroke-width="0.5"/>
+  <text x="676" y="28" fill="#00D4AA" font-size="10">INTERACTIVE 3D</text>
+
+  <!-- Globe circle -->
+  <circle cx="300" cy="272" r="185" fill="url(#globe-bg)" stroke="#1E3A4A" stroke-width="1"/>
+  <circle cx="300" cy="272" r="185" fill="url(#glow)"/>
+
+  <!-- Latitude lines -->
+  <ellipse cx="300" cy="272" rx="185" ry="30" fill="none" stroke="#1E3A4A" stroke-width="0.5" opacity="0.6"/>
+  <ellipse cx="300" cy="230" rx="170" ry="27" fill="none" stroke="#1E3A4A" stroke-width="0.5" opacity="0.5"/>
+  <ellipse cx="300" cy="314" rx="170" ry="27" fill="none" stroke="#1E3A4A" stroke-width="0.5" opacity="0.5"/>
+  <ellipse cx="300" cy="188" rx="130" ry="20" fill="none" stroke="#1E3A4A" stroke-width="0.5" opacity="0.4"/>
+  <ellipse cx="300" cy="356" rx="130" ry="20" fill="none" stroke="#1E3A4A" stroke-width="0.5" opacity="0.4"/>
+  <!-- Longitude lines -->
+  <line x1="300" y1="87" x2="300" y2="457" stroke="#1E3A4A" stroke-width="0.5" opacity="0.6"/>
+  <line x1="207" y1="97" x2="393" y2="447" stroke="#1E3A4A" stroke-width="0.5" opacity="0.4"/>
+  <line x1="135" y1="127" x2="465" y2="417" stroke="#1E3A4A" stroke-width="0.5" opacity="0.4"/>
+  <line x1="393" y1="97" x2="207" y2="447" stroke="#1E3A4A" stroke-width="0.5" opacity="0.4"/>
+  <line x1="465" y1="127" x2="135" y2="417" stroke="#1E3A4A" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Heatmap dots — HIGH emissions (red/orange) -->
+  <!-- China region -->
+  <circle cx="390" cy="210" r="22" fill="#EF4444" opacity="0.75"/>
+  <circle cx="375" cy="225" r="16" fill="#F97316" opacity="0.6"/>
+  <!-- USA region -->
+  <circle cx="178" cy="215" r="18" fill="#EF4444" opacity="0.7"/>
+  <circle cx="195" cy="230" r="12" fill="#F97316" opacity="0.55"/>
+  <!-- Europe cluster -->
+  <circle cx="305" cy="195" r="10" fill="#F97316" opacity="0.65"/>
+  <circle cx="320" cy="188" r="8" fill="#EF4444" opacity="0.6"/>
+  <circle cx="295" cy="200" r="7" fill="#F97316" opacity="0.5"/>
+  <!-- India -->
+  <circle cx="368" cy="248" r="14" fill="#F97316" opacity="0.65"/>
+  <!-- Russia -->
+  <circle cx="355" cy="178" r="13" fill="#F97316" opacity="0.6"/>
+  <!-- Middle East -->
+  <circle cx="340" cy="230" r="9" fill="#FBBF24" opacity="0.65"/>
+
+  <!-- MEDIUM emissions (yellow/amber) -->
+  <!-- Brazil -->
+  <circle cx="228" cy="300" r="10" fill="#FBBF24" opacity="0.6"/>
+  <!-- South Africa -->
+  <circle cx="318" cy="330" r="8" fill="#FBBF24" opacity="0.55"/>
+  <!-- Canada -->
+  <circle cx="180" cy="185" r="10" fill="#FBBF24" opacity="0.55"/>
+  <!-- Australia -->
+  <circle cx="430" cy="330" r="9" fill="#FBBF24" opacity="0.55"/>
+  <!-- Japan/Korea -->
+  <circle cx="420" cy="210" r="8" fill="#F97316" opacity="0.6"/>
+
+  <!-- LOW emissions (teal/green) -->
+  <circle cx="265" cy="320" r="6" fill="#00D4AA" opacity="0.5"/>
+  <circle cx="245" cy="280" r="5" fill="#00D4AA" opacity="0.45"/>
+  <circle cx="282" cy="340" r="5" fill="#00D4AA" opacity="0.45"/>
+  <circle cx="350" cy="340" r="6" fill="#00D4AA" opacity="0.4"/>
+  <circle cx="370" cy="310" r="5" fill="#00D4AA" opacity="0.4"/>
+  <circle cx="220" cy="340" r="5" fill="#00D4AA" opacity="0.4"/>
+  <circle cx="200" cy="260" r="5" fill="#00D4AA" opacity="0.45"/>
+
+  <!-- Globe edge glow -->
+  <circle cx="300" cy="272" r="185" fill="none" stroke="#00D4AA" stroke-width="1.5" opacity="0.25"/>
+
+  <!-- Tooltip hovering over China -->
+  <rect x="400" y="160" width="130" height="52" rx="4" fill="#1E2535" stroke="#00D4AA" stroke-width="0.5"/>
+  <text x="415" y="178" fill="#8892A4" font-size="9">CHINA</text>
+  <text x="415" y="194" fill="#F8F8F8" font-size="13" font-weight="700">11.47 Gt</text>
+  <text x="415" y="206" fill="#EF4444" font-size="9">▲ +127% since 1990</text>
+  <!-- Connector line -->
+  <line x1="400" y1="186" x2="390" y2="210" stroke="#00D4AA" stroke-width="0.5" stroke-dasharray="3,2" opacity="0.6"/>
+
+  <!-- RIGHT PANEL — controls + legend -->
+  <rect x="510" y="68" width="270" height="390" rx="6" fill="#161B27" stroke="#1E2535" stroke-width="1"/>
+
+  <!-- Year slider -->
+  <text x="526" y="92" fill="#8892A4" font-size="11" font-weight="600">YEAR</text>
+  <text x="742" y="92" fill="#00D4AA" font-size="13" font-weight="700" text-anchor="end">2022</text>
+  <rect x="526" y="100" width="238" height="4" rx="2" fill="#1E2535"/>
+  <rect x="526" y="100" width="238" height="4" rx="2" fill="#00D4AA" opacity="0.8"/>
+  <circle cx="764" cy="102" r="7" fill="#00D4AA"/>
+  <circle cx="764" cy="102" r="4" fill="#161B27"/>
+  <text x="526" y="120" fill="#4A5568" font-size="9">1990</text>
+  <text x="764" y="120" fill="#4A5568" font-size="9" text-anchor="end">2022</text>
+
+  <!-- Legend -->
+  <text x="526" y="148" fill="#8892A4" font-size="11" font-weight="600">EMISSIONS SCALE</text>
+  <!-- Gradient bar -->
+  <defs>
+    <linearGradient id="scale-grad" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#00D4AA"/>
+      <stop offset="40%" stop-color="#FBBF24"/>
+      <stop offset="70%" stop-color="#F97316"/>
+      <stop offset="100%" stop-color="#EF4444"/>
+    </linearGradient>
+  </defs>
+  <rect x="526" y="156" width="238" height="12" rx="3" fill="url(#scale-grad)" opacity="0.8"/>
+  <text x="526" y="182" fill="#4A5568" font-size="9">Low</text>
+  <text x="764" y="182" fill="#4A5568" font-size="9" text-anchor="end">High (&gt;10 Gt)</text>
+
+  <!-- Top emitters -->
+  <text x="526" y="210" fill="#8892A4" font-size="11" font-weight="600">TOP EMITTERS — 2022</text>
+  <line x1="526" y1="218" x2="764" y2="218" stroke="#1E2535" stroke-width="0.5"/>
+
+  <circle cx="538" cy="232" r="5" fill="#EF4444" opacity="0.8"/>
+  <text x="550" y="236" fill="#C8D0DC" font-size="11">China</text>
+  <text x="764" y="236" fill="#EF4444" font-size="11" text-anchor="end">11.47 Gt</text>
+
+  <circle cx="538" cy="252" r="5" fill="#EF4444" opacity="0.7"/>
+  <text x="550" y="256" fill="#C8D0DC" font-size="11">USA</text>
+  <text x="764" y="256" fill="#EF4444" font-size="11" text-anchor="end">4.96 Gt</text>
+
+  <circle cx="538" cy="272" r="5" fill="#F97316" opacity="0.8"/>
+  <text x="550" y="276" fill="#C8D0DC" font-size="11">India</text>
+  <text x="764" y="276" fill="#F97316" font-size="11" text-anchor="end">2.71 Gt</text>
+
+  <circle cx="538" cy="292" r="5" fill="#F97316" opacity="0.7"/>
+  <text x="550" y="296" fill="#C8D0DC" font-size="11">Russia</text>
+  <text x="764" y="296" fill="#F97316" font-size="11" text-anchor="end">1.79 Gt</text>
+
+  <circle cx="538" cy="312" r="5" fill="#F97316" opacity="0.6"/>
+  <text x="550" y="316" fill="#C8D0DC" font-size="11">Japan</text>
+  <text x="764" y="316" fill="#F97316" font-size="11" text-anchor="end">1.06 Gt</text>
+
+  <circle cx="538" cy="332" r="4" fill="#FBBF24" opacity="0.7"/>
+  <text x="550" y="336" fill="#C8D0DC" font-size="11">Germany</text>
+  <text x="764" y="336" fill="#FBBF24" font-size="11" text-anchor="end">0.65 Gt</text>
+
+  <circle cx="538" cy="352" r="4" fill="#FBBF24" opacity="0.65"/>
+  <text x="550" y="356" fill="#C8D0DC" font-size="11">Brazil</text>
+  <text x="764" y="356" fill="#FBBF24" font-size="11" text-anchor="end">0.49 Gt</text>
+
+  <text x="526" y="392" fill="#4A5568" font-size="9">195 countries · drag to rotate · scroll to zoom</text>
+  <text x="526" y="406" fill="#2D3748" font-size="9">Source: Our World in Data (CC BY)</text>
+  <text x="526" y="420" fill="#2D3748" font-size="9">Built with Globe.gl + vanilla JS</text>
+
+  <!-- Footer -->
+  <rect x="0" y="462" width="800" height="18" fill="#0A0D14"/>
+  <text x="20" y="474" fill="#2D3748" font-size="9">Data: ourworldindata.org/co2-emissions · CC BY license · vmittestainer.dev</text>
+</svg>
