@@ -82,14 +82,8 @@
       </div>
 
       <div class="hero__visual">
-        <img
-          src="assets/images/profile/victor-profile.jpg"
-          alt="Victor Mittestainer"
-          class="hero__avatar"
-          width="200" height="200"
-          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-        />
-        <div class="hero__avatar-placeholder" style="display:none;">VM</div>
+        <div id="hero-globe" class="hero__globe" aria-label="Interactive CO₂ emissions globe" role="img"></div>
+        <div class="hero__globe-label mono" aria-hidden="true">CO₂ emissions · 2022 · hover a country</div>
       </div>
     </div>
   </section>
@@ -422,6 +416,7 @@
   <script src="assets/js/main.js"></script>
   <script src="https://unpkg.com/globe.gl"></script>
   <script src="assets/js/globe.js"></script>
+  <script src="assets/js/globe-hero.js"></script>
   <script src="assets/js/charts.js"></script>
   <script src="assets/js/animations.js"></script>
 
