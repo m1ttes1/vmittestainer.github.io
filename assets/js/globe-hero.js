@@ -1,7 +1,6 @@
-(function initHeroGlobe() {
+(function () {
   'use strict';
 
-  /* ── CO₂ data: 2022 estimates (Mt CO₂) ── */
   const CO2_2022 = [
     { country: 'China',          lat:  35.0, lng: 105.0, co2: 11472 },
     { country: 'United States',  lat:  37.1, lng: -95.7, co2:  5007 },
@@ -77,68 +76,73 @@
     { country: 'Ghana',          lat:   7.9, lng:  -1.0, co2:    18 },
   ];
 
-  const container = document.getElementById('hero-globe');
-  if (!container) return;
+  function initHeroGlobe() {
+    const container = document.getElementById('hero-globe');
+    if (!container) return;
+    if (typeof Globe === 'undefined') return;
 
-  /* Fallback: show avatar if Globe.gl unavailable */
-  if (typeof Globe === 'undefined') {
-    _showAvatarFallback();
-    return;
-  }
+    const SIZE = 420;
+    const w = container.offsetWidth  || SIZE;
+    const h = container.offsetHeight || SIZE;
 
-  const maxCo2 = Math.max(...CO2_2022.map(d => d.co2)); /* 11472 */
+    const maxCo2 = Math.max(...CO2_2022.map(d => d.co2));
 
-  /* Color scale: low → teal (#00D4AA) · mid → amber (#F59E0B) · high → red-orange */
-  function emissionsColor(co2) {
-    const t = Math.pow(co2 / maxCo2, 0.35);
-    if (t < 0.5) {
-      const s = t * 2;
-      return `rgb(${Math.round(s * 245)},${Math.round(212 + s * (158 - 212))},${Math.round(170 + s * (11 - 170))})`;
+    function emissionsColor(co2) {
+      const t = Math.pow(co2 / maxCo2, 0.35);
+      if (t < 0.5) {
+        const s = t * 2;
+        return `rgb(${Math.round(s * 245)},${Math.round(212 + s * (158 - 212))},${Math.round(170 + s * (11 - 170))})`;
+      }
+      const s = (t - 0.5) * 2;
+      return `rgb(${Math.round(245 + s * 10)},${Math.round(158 - s * 108)},11)`;
     }
-    const s = (t - 0.5) * 2;
-    return `rgb(${Math.round(245 + s * 10)},${Math.round(158 - s * 108)},${Math.round(11)})`;
+
+    try {
+      const globe = Globe({ animateIn: true })(container);
+
+      globe
+        .backgroundColor('rgba(0,0,0,0)')
+        .showAtmosphere(true)
+        .atmosphereColor('#00D4AA')
+        .atmosphereAltitude(0.12)
+        .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-dark.jpg')
+        .pointsData(CO2_2022)
+        .pointLat('lat')
+        .pointLng('lng')
+        .pointAltitude(d => (d.co2 / maxCo2) * 0.45)
+        .pointRadius(d => 0.22 + (d.co2 / maxCo2) * 0.55)
+        .pointColor(d => emissionsColor(d.co2))
+        .pointLabel(d =>
+          `<div style="font-family:'JetBrains Mono',monospace;font-size:11px;padding:6px 10px;` +
+          `background:#13131A;border:1px solid #00D4AA;border-radius:6px;color:#E8E8F0;white-space:nowrap">` +
+          `<span style="color:#00D4AA;font-weight:700">${d.country}</span><br>` +
+          `${d.co2.toLocaleString()} Mt CO₂ · 2022` +
+          `</div>`
+        )
+        .width(w)
+        .height(h);
+
+      const ctrl = globe.controls();
+      ctrl.autoRotate      = true;
+      ctrl.autoRotateSpeed = 0.5;
+      ctrl.enableZoom      = false;
+      ctrl.addEventListener('start', () => { ctrl.autoRotate = false; });
+
+      new ResizeObserver(() => {
+        const nw = container.offsetWidth  || SIZE;
+        const nh = container.offsetHeight || SIZE;
+        globe.width(nw).height(nh);
+      }).observe(container);
+
+    } catch (e) {
+      console.warn('Hero globe init failed:', e);
+    }
   }
 
-  const globe = Globe({ animateIn: true })(container);
-
-  globe
-    .backgroundColor('rgba(0,0,0,0)')
-    .showAtmosphere(true)
-    .atmosphereColor('#00D4AA')
-    .atmosphereAltitude(0.12)
-    .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-dark.jpg')
-    .pointsData(CO2_2022)
-    .pointLat('lat')
-    .pointLng('lng')
-    .pointAltitude(d => (d.co2 / maxCo2) * 0.45)
-    .pointRadius(d => 0.22 + (d.co2 / maxCo2) * 0.55)
-    .pointColor(d => emissionsColor(d.co2))
-    .pointLabel(d =>
-      `<div style="font-family:'JetBrains Mono',monospace;font-size:11px;padding:6px 10px;` +
-      `background:#13131A;border:1px solid #00D4AA;border-radius:6px;color:#E8E8F0;white-space:nowrap">` +
-      `<span style="color:#00D4AA;font-weight:700">${d.country}</span><br>` +
-      `${d.co2.toLocaleString()} Mt CO₂ · 2022` +
-      `</div>`
-    )
-    .width(container.offsetWidth)
-    .height(container.offsetHeight);
-
-  /* Auto-rotate; pause on user drag */
-  const ctrl = globe.controls();
-  ctrl.autoRotate      = true;
-  ctrl.autoRotateSpeed = 0.5;
-  ctrl.enableZoom      = false;
-  ctrl.addEventListener('start', () => { ctrl.autoRotate = false; });
-
-  /* Responsive resize */
-  const ro = new ResizeObserver(() => {
-    globe.width(container.offsetWidth).height(container.offsetHeight);
-  });
-  ro.observe(container);
-
-  function _showAvatarFallback() {
-    const img = container.closest('.hero__visual')
-      && container.closest('.hero__visual').querySelector('.hero__avatar');
-    if (img) { container.style.display = 'none'; img.style.display = 'block'; }
+  /* Defer until after paint so layout is settled */
+  if (document.readyState === 'complete') {
+    initHeroGlobe();
+  } else {
+    window.addEventListener('load', initHeroGlobe);
   }
 })();

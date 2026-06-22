@@ -304,6 +304,8 @@ a { color: inherit; text-decoration: none; }
   height: 420px;
   position: relative;
   cursor: grab;
+  /* Globe.gl canvas needs to overflow clip boundary for tooltips */
+  overflow: visible;
 }
 
 .hero__globe:active {
