@@ -224,6 +224,34 @@
           </div>
         </article>
 
+        <!-- IronForge -->
+        <article class="project-card">
+          <img
+            src="assets/images/projects/project-ironforge.svg"
+            alt="IronForge — Live DB Operations"
+            class="project-card__img"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          />
+          <div class="project-card__img-placeholder" style="display:none;">
+            <span class="placeholder-icon">⚙️</span>
+          </div>
+          <div class="project-card__body">
+            <p class="project-card__tech mono" data-i18n="project.ironforge.tech">Python · Flask · SQLite</p>
+            <h3 class="project-card__title" data-i18n="project.ironforge.title">IronForge</h3>
+            <div class="project-card__meta">
+              <div class="project-card__row">
+                <span class="project-card__row-label mono" data-i18n="project.problem">Problem</span>
+                <span class="project-card__row-value" data-i18n="project.ironforge.problem">Live database needed concurrent read/write without locking the primary process — direct file edits caused corruption.</span>
+              </div>
+              <div class="project-card__row">
+                <span class="project-card__row-label mono" data-i18n="project.result">Result</span>
+                <span class="project-card__row-value project-card__result" data-i18n="project.ironforge.result">15-endpoint REST API with snapshot isolation + 4 web dashboards; zero data loss incidents.</span>
+              </div>
+            </div>
+            <a href="#" class="project-card__link mono" data-i18n="project.link">View on GitHub →</a>
+          </div>
+        </article>
+
         <!-- Backup Monitoring -->
         <article class="project-card">
           <img
