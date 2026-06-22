@@ -78,7 +78,8 @@
           backgroundColor: 'rgba(0,212,170,0.08)',
           borderWidth: 2,
           pointBackgroundColor: ACCENT,
-          pointRadius: 4,
+          pointRadius: 0,
+          pointHoverRadius: 5,
           tension: 0.35,
           fill: true,
         }],
@@ -137,6 +138,11 @@
         cutout: '68%',
         plugins: {
           ...CHART_DEFAULTS.plugins,
+          legend: {
+            ...CHART_DEFAULTS.plugins.legend,
+            position: 'bottom',
+            labels: { color: MUTED, font: { family: 'JetBrains Mono' } },
+          },
           title: {
             display: true,
             text: 'Ticket Categories',
