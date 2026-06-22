@@ -41,8 +41,8 @@ const translations = {
 
     'project.sla.title':    'SLA Compliance Dashboard',
     'project.sla.tech':     'Power BI · DAX',
-    'project.sla.problem':  'No real-time visibility into SLA breaches across client environments.',
-    'project.sla.result':   '40% reduction in response time to violations.',
+    'project.sla.problem':  'CX team tracked ticket recurrence manually via Excel exports — no per-client view, name inconsistencies broke analysis.',
+    'project.sla.result':   'Full self-service BI in daily use: recurrence auto-calculated via DAX with name normalization, 40% faster violation response.',
 
     'project.cnpj.title':   'CNPJ Matching Pipeline',
     'project.cnpj.tech':    'Python · pandas',
@@ -136,8 +136,8 @@ const translations = {
 
     'project.sla.title':    'Dashboard de Conformidade de SLA',
     'project.sla.tech':     'Power BI · DAX',
-    'project.sla.problem':  'Sem visibilidade em tempo real de breaches de SLA nos ambientes dos clientes.',
-    'project.sla.result':   '40% de redução no tempo de resposta a violações.',
+    'project.sla.problem':  'Time CX rastreava recorrência de tickets manualmente via Excel — sem visão por cliente, inconsistências de nome quebravam a análise.',
+    'project.sla.result':   'BI self-service em uso diário: recorrência calculada via DAX com normalização de nomes, 40% mais rápido na resposta a violações.',
 
     'project.cnpj.title':   'Pipeline de Matching de CNPJ',
     'project.cnpj.tech':    'Python · pandas',
