@@ -23,7 +23,7 @@ const translations = {
     'about.label':      'About',
     'about.title':      'Operations background. Data mindset.',
     'about.p1':         'Seven years in operations — four running service and logistics in Boston and San Diego, then back to Brazil joining Wevy as a CX & Data Analyst. At Wevy, I migrated manual Excel controls to ETL/ELT pipelines in Power Query, built self-service Power BI dashboards for industrial clients (SKF-tier), and automated workflows between Zoho CRM and SharePoint via Power Automate.',
-    'about.p2':         'The edge I bring: I understand the business before I open Power BI. Bilingual C2 English — built through 5 years of multicultural operations in the US. Currently completing a B.S. in Systems Analysis & Development at Uninter (2024–2027).',
+    'about.p2':         'I understand the business before I open Power BI. English C2 — five years in Boston and San Diego. Currently completing a B.S. in Systems Analysis & Development at Uninter (2024–2027).',
     'about.card.title': 'Currently focusing on',
 
     /* STACK */
@@ -51,7 +51,7 @@ const translations = {
 
     'project.globe.title':   'CO₂ Emissions Globe',
     'project.globe.tech':    'JavaScript · Globe.gl',
-    'project.globe.problem': 'Public CO₂ data exists but lacks an intuitive geographic interface for exploration.',
+    'project.globe.problem': 'The Our World in Data CO₂ dataset covers 195 countries and 30 years — but it\'s just a CSV.',
     'project.globe.result':  'Interactive 3D heatmap globe — 195 countries, 1990–2022, drag to explore.',
 
     'project.ironforge.title':   'IronForge',
@@ -78,12 +78,12 @@ const translations = {
     'exp.us.period': '2019 – 2023',
     'exp.us.role':   'Operations Specialist',
     'exp.us.org':    'Boston, MA / San Diego, CA — USA',
-    'exp.us.desc':   'Service and logistics operations in 100% English-speaking multicultural environments. Foundation of C2 bilingual fluency and the operational lens I now apply to data work.',
+    'exp.us.desc':   'Service and logistics in Boston and San Diego, fully in English. That\'s where the C2 came from.',
 
     'exp.ads.period': '2024 – 2027',
     'exp.ads.role':   'B.S. Systems Analysis & Development',
     'exp.ads.org':    'Uninter University',
-    'exp.ads.desc':   'Coursework covering algorithms, databases, software engineering, and web development. Complementing hands-on BI and automation experience with formal CS fundamentals.',
+    'exp.ads.desc':   'Algorithms, databases, software engineering, web. The formal side of what I\'ve been doing hands-on at Wevy.',
 
     /* CONTACT */
     'contact.label':    'Contact',
@@ -118,7 +118,7 @@ const translations = {
     'about.label':      'Sobre',
     'about.title':      'Base em operações. Mentalidade de dados.',
     'about.p1':         'Sete anos em operações — quatro deles em Boston e San Diego nos EUA, depois de volta ao Brasil na Wevy como Analista de Operações CX & Dados. Na Wevy, migrei controles manuais do Excel para pipelines ETL/ELT no Power Query, construí dashboards self-service no Power BI para clientes industriais de grande porte e automatizei fluxos entre Zoho CRM e SharePoint via Power Automate.',
-    'about.p2':         'O diferencial que trago: entendo o negócio antes de abrir o Power BI. Inglês C2 bilíngue — desenvolvido em 5 anos de operações multiculturais nos EUA. Atualmente cursando Análise e Desenvolvimento de Sistemas na Uninter (2024–2027).',
+    'about.p2':         'Entendo o negócio antes de abrir o Power BI. Inglês C2 — cinco anos em Boston e San Diego. Cursando ADS na Uninter (2024–2027).',
     'about.card.title': 'Focando agora em',
 
     /* STACK */
@@ -146,7 +146,7 @@ const translations = {
 
     'project.globe.title':   'Globo de Emissões de CO₂',
     'project.globe.tech':    'JavaScript · Globe.gl',
-    'project.globe.problem': 'Dados públicos de CO₂ existem mas carecem de interface geográfica intuitiva para exploração.',
+    'project.globe.problem': 'O dataset da Our World in Data tem 195 países e 30 anos de histórico — mas é um CSV.',
     'project.globe.result':  'Globo 3D interativo com heatmap — 195 países, 1990–2022, arraste para explorar.',
 
     'project.ironforge.title':   'IronForge',
@@ -173,12 +173,12 @@ const translations = {
     'exp.us.period': '2019 – 2023',
     'exp.us.role':   'Operações',
     'exp.us.org':    'Boston, MA / San Diego, CA — EUA',
-    'exp.us.desc':   'Operações de atendimento e logística em ambiente 100% em inglês com equipes multiculturais. Base da fluência bilíngue C2 e da visão operacional que aplico hoje na análise de dados.',
+    'exp.us.desc':   'Atendimento e logística em Boston e San Diego, em inglês o tempo todo. É de lá que vem o C2.',
 
     'exp.ads.period': '2024 – 2027',
     'exp.ads.role':   'Bacharelado em Análise e Desenvolvimento de Sistemas',
     'exp.ads.org':    'Uninter University',
-    'exp.ads.desc':   'Disciplinas de algoritmos, bancos de dados, engenharia de software e desenvolvimento web. Complementando experiência prática em BI e automação com fundamentos formais de computação.',
+    'exp.ads.desc':   'Algoritmos, bancos de dados, engenharia de software, web. O lado formal do que já faço na prática na Wevy.',
 
     /* CONTACT */
     'contact.label':    'Contato',
