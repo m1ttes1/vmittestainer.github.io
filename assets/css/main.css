@@ -725,6 +725,96 @@ section { padding-block: 6rem; }
   color: var(--clr-accent);
 }
 
+/* ===== DEMO DASHBOARD ===== */
+.demo {
+  padding-block: 5rem;
+  background: var(--clr-surface);
+}
+
+.demo__note {
+  font-size: var(--text-xs);
+  color: var(--clr-text-muted);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.04em;
+}
+
+.demo__controls {
+  margin-bottom: 2rem;
+}
+
+.demo__filter {
+  background: var(--clr-surface-2);
+  border: 1px solid var(--clr-border);
+  color: var(--clr-text);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%239B9BAF' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  padding-right: 2.25rem;
+  transition: border-color var(--transition);
+}
+
+.demo__filter:focus {
+  outline: none;
+  border-color: var(--clr-accent);
+}
+
+.demo__kpis {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.demo__kpi {
+  background: var(--clr-surface-2);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.demo__kpi-value {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--clr-accent);
+  line-height: 1.1;
+}
+
+.demo__kpi-label {
+  font-size: var(--text-xs);
+  color: var(--clr-text-muted);
+  letter-spacing: 0.04em;
+}
+
+.demo__charts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.demo__chart-wrap,
+.demo__chart-full {
+  background: var(--clr-surface-2);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .demo__kpis { grid-template-columns: 1fr; }
+  .demo__charts-grid { grid-template-columns: 1fr; }
+}
+
 /* ===== FOOTER ===== */
 footer {
   padding-block: 2rem;
