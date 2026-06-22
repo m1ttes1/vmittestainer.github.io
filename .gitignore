@@ -1,0 +1,5 @@
+*.docx
+*.bak
+.agents/
+skills-lock.json
+.claude/
