@@ -1,5 +1,21 @@
-*.docx
+# --- build / tooling ---
 *.bak
+*.py
+~$*
+
+# --- sprint / planning docs ---
+*.docx
+SPRINT*.md
+LAUNCH_POST.md
+LAUNCH_REPORT.md
+CANDIDATURA_CHECKLIST.md
+docs/
+
+# --- real client data (not for public repo) ---
+assets/images/projetos/
+assets/images/og-cover.html
+
+# --- claude/agent internals ---
 .agents/
-skills-lock.json
 .claude/
+skills-lock.json
