@@ -1,3 +1,6 @@
+# --- gitignore ele mesmo ---
+.gitignore
+
 # --- build / tooling ---
 *.bak
 *.py
