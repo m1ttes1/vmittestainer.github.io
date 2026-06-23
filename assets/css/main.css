@@ -894,3 +894,163 @@ footer p + p {
 
   .contact__links { flex-direction: column; align-items: center; }
 }
+
+/* ── DEMO v2 ─────────────────────────────────────── */
+.demo__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.demo__filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.demo__filter-label {
+  font-size: var(--text-xs);
+  color: var(--clr-muted);
+  white-space: nowrap;
+}
+
+.demo__pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+}
+
+.demo__pill {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  padding: 0.25rem 0.625rem;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--clr-muted);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.demo__pill:hover {
+  border-color: var(--clr-accent);
+  color: var(--clr-accent);
+}
+
+.demo__pill.active {
+  background: var(--clr-accent-dim);
+  border-color: var(--clr-accent);
+  color: var(--clr-accent);
+}
+
+/* KPIs — 5 columns */
+.demo__kpis {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .demo__kpis { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .demo__kpis { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Drill breadcrumb */
+.demo__drill-breadcrumb {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--clr-muted);
+  min-height: 1.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.demo__drill-breadcrumb button {
+  background: none;
+  border: none;
+  color: var(--clr-accent);
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.demo__drill-breadcrumb .bc-sep {
+  color: var(--clr-muted);
+}
+
+.demo__chart-wrap--drillable { cursor: pointer; }
+
+/* Decomposition tree section */
+.demo__tree-section {
+  margin-top: 2.5rem;
+}
+
+.demo__tree-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.demo__tree {
+  width: 100%;
+  overflow-x: auto;
+  min-height: 220px;
+}
+
+.demo__tree svg {
+  display: block;
+  font-family: var(--font-mono);
+}
+
+/* D3 tree nodes */
+.tree-node rect {
+  fill: #1A1A2E;
+  stroke: var(--clr-accent);
+  stroke-width: 1;
+  rx: 6;
+}
+
+.tree-node text {
+  fill: #E8E8F0;
+  font-size: 11px;
+}
+
+.tree-node .node-value {
+  fill: var(--clr-accent);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.tree-node .node-pct {
+  fill: var(--clr-muted);
+  font-size: 10px;
+}
+
+.tree-link {
+  fill: none;
+  stroke: rgba(0, 212, 170, 0.25);
+  stroke-width: 1.5;
+}
+
+.tree-node.root rect {
+  stroke: var(--clr-warm);
+  stroke-width: 2;
+}
+
+.tree-node.root .node-value {
+  fill: var(--clr-warm);
+}
