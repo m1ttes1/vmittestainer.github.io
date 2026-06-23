@@ -22,8 +22,8 @@ const translations = {
     /* ABOUT */
     'about.label':      'About',
     'about.title':      'Operations background. Data mindset.',
-    'about.p1':         'Seven years in operations — four running service and logistics in Boston and San Diego, then back to Brazil joining Wevy as a CX & Data Analyst. At Wevy, I migrated manual Excel controls to ETL/ELT pipelines in Power Query, built self-service Power BI dashboards for industrial clients (SKF-tier), and automated workflows between Zoho CRM and SharePoint via Power Automate.',
-    'about.p2':         'I understand the business before I open Power BI. English C2 — five years in Boston and San Diego. Currently completing a B.S. in Systems Analysis & Development at Uninter (2024–2027).',
+    'about.p1':         'Seven years in operations — five running service and logistics in Boston and San Diego, then back to Brazil joining Wevy as a CX & Data Analyst. At Wevy, I migrated manual Excel controls to ETL/ELT pipelines in Power Query, built self-service Power BI dashboards for industrial clients (SKF-tier), and automated workflows between Zoho CRM and SharePoint via Power Automate.',
+    'about.p2':         'I understand the business before I open Power BI. English C2 — five years in Boston and San Diego. Currently completing a B.S. in Systems Analysis & Development at Uninter (2024–2026).',
     'about.card.title': 'Currently focusing on',
 
     /* STACK */
@@ -80,7 +80,7 @@ const translations = {
     'exp.us.org':    'Boston, MA / San Diego, CA — USA',
     'exp.us.desc':   'Service and logistics in Boston and San Diego, fully in English. That\'s where the C2 came from.',
 
-    'exp.ads.period': '2024 – 2027',
+    'exp.ads.period': '2024 – 2026',
     'exp.ads.role':   'B.S. Systems Analysis & Development',
     'exp.ads.org':    'Uninter University',
     'exp.ads.desc':   'Algorithms, databases, software engineering, web. The formal side of what I\'ve been doing hands-on at Wevy.',
@@ -106,7 +106,7 @@ const translations = {
     /* HERO */
     'hero.eyebrow':     'Data Analyst',
     'hero.h1':          'Transformando ruído operacional\nem clareza de dados.',
-    'hero.sub':         '7 anos em operações — 4 deles nos EUA. Agora construo os dashboards que tornam decisões defensáveis.',
+    'hero.sub':         '7 anos em operações — 5 deles nos EUA. Agora construo os dashboards que tornam decisões defensáveis.',
     'hero.stat1.value': '7+',
     'hero.stat1.label': 'Anos em Operações',
     'hero.stat2.value': '4',
@@ -117,8 +117,8 @@ const translations = {
     /* ABOUT */
     'about.label':      'Sobre',
     'about.title':      'Base em operações. Mentalidade de dados.',
-    'about.p1':         'Sete anos em operações — quatro deles em Boston e San Diego nos EUA, depois de volta ao Brasil na Wevy como Analista de Operações CX & Dados. Na Wevy, migrei controles manuais do Excel para pipelines ETL/ELT no Power Query, construí dashboards self-service no Power BI para clientes industriais de grande porte e automatizei fluxos entre Zoho CRM e SharePoint via Power Automate.',
-    'about.p2':         'Entendo o negócio antes de abrir o Power BI. Inglês C2 — cinco anos em Boston e San Diego. Cursando ADS na Uninter (2024–2027).',
+    'about.p1':         'Sete anos em operações — cinco deles em Boston e San Diego nos EUA, depois de volta ao Brasil na Wevy como Analista de Operações CX & Dados. Na Wevy, migrei controles manuais do Excel para pipelines ETL/ELT no Power Query, construí dashboards self-service no Power BI para clientes industriais de grande porte e automatizei fluxos entre Zoho CRM e SharePoint via Power Automate.',
+    'about.p2':         'Entendo o negócio antes de abrir o Power BI. Inglês C2 — cinco anos em Boston e San Diego. Cursando ADS na Uninter (2024–2026).',
     'about.card.title': 'Focando agora em',
 
     /* STACK */
@@ -175,7 +175,7 @@ const translations = {
     'exp.us.org':    'Boston, MA / San Diego, CA — EUA',
     'exp.us.desc':   'Atendimento e logística em Boston e San Diego, em inglês o tempo todo. É de lá que vem o C2.',
 
-    'exp.ads.period': '2024 – 2027',
+    'exp.ads.period': '2024 – 2026',
     'exp.ads.role':   'Bacharelado em Análise e Desenvolvimento de Sistemas',
     'exp.ads.org':    'Uninter University',
     'exp.ads.desc':   'Algoritmos, bancos de dados, engenharia de software, web. O lado formal do que já faço na prática na Wevy.',
