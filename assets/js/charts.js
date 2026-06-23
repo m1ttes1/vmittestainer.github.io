@@ -7,10 +7,18 @@
   const GRID    = 'rgba(255,255,255,0.06)';
   const TIP_BG  = '#1E1E2E';
 
+  const CAT_COLORS = [
+    ACCENT,
+    WARM,
+    'rgba(0,212,170,0.55)',
+    'rgba(245,158,11,0.55)',
+    '#3A3A5A',
+  ];
+
   const CHART_DEFAULTS = {
-    animation: { duration: 800, easing: 'easeOutQuart' },
+    animation: { duration: 600, easing: 'easeOutQuart' },
     plugins: {
-      legend: { labels: { color: MUTED, font: { family: 'JetBrains Mono' } } },
+      legend: { labels: { color: MUTED, font: { family: 'JetBrains Mono', size: 11 } } },
       tooltip: {
         backgroundColor: TIP_BG,
         borderColor: ACCENT,
@@ -21,59 +29,87 @@
     },
   };
 
-  const SCALE_DEFAULTS = {
+  const SCALE = {
     grid: { color: GRID },
     ticks: { color: MUTED, font: { family: 'JetBrains Mono', size: 11 } },
   };
 
-  let chartSla    = null;
-  let chartDonut  = null;
-  let chartVolume = null;
-  let rawData     = null;
+  let rawRows = [];
+  let charts  = { sla: null, donut: null, volume: null };
 
-  function avg(arr) {
-    return arr.reduce((a, b) => a + b, 0) / arr.length;
+  const state = {
+    period: '24m',
+    client: 'all',
+    drillCategory: null,
+  };
+
+  /* ── Helpers ────────────────────────────────── */
+  function avg(arr) { return arr.length ? arr.reduce((a, b) => a + b, 0) / arr.length : 0; }
+  function sum(arr) { return arr.reduce((a, b) => a + b, 0); }
+  function pct(n, d) { return d === 0 ? 0 : (n / d) * 100; }
+  function fmt(n) { return n.toLocaleString('en-US'); }
+  function fmtPct(n) { return n.toFixed(1) + '%'; }
+
+  function monthsBack(n) {
+    const end = new Date('2024-12-01');
+    const months = [];
+    for (let i = n - 1; i >= 0; i--) {
+      const d = new Date(end);
+      d.setMonth(d.getMonth() - i);
+      months.push(d.toISOString().slice(0, 7));
+    }
+    return months;
   }
 
-  function sum(arr) {
-    return arr.reduce((a, b) => a + b, 0);
+  function filteredRows() {
+    const months = monthsBack(state.period === '24m' ? 24 : state.period === '12m' ? 12 : 6);
+    return rawRows.filter(r =>
+      months.includes(r.month) &&
+      (state.client === 'all' || r.client === state.client)
+    );
   }
 
-  function fmt(n) {
-    return n.toLocaleString('en-US');
+  /* ── KPIs ───────────────────────────────────── */
+  function updateKpis(rows) {
+    const total    = sum(rows.map(r => r.tickets));
+    const met      = sum(rows.map(r => r.sla_met));
+    const fcr      = sum(rows.map(r => r.fcr));
+    const reopened = sum(rows.map(r => r.reopened));
+    const csats    = rows.flatMap(r => Array(r.tickets).fill(r.csat));
+
+    document.getElementById('kpi-sla').textContent    = total ? fmtPct(pct(met, total)) : '—';
+    document.getElementById('kpi-volume').textContent = fmt(total);
+    document.getElementById('kpi-fcr').textContent    = total ? fmtPct(pct(fcr, total)) : '—';
+    document.getElementById('kpi-reopen').textContent = total ? fmtPct(pct(reopened, total)) : '—';
+    document.getElementById('kpi-csat').textContent   = csats.length ? avg(csats).toFixed(2) + '/5' : '—';
   }
 
-  function slice(filter) {
-    if (!rawData) return null;
-    const ranges = { all: [0, 12], q1: [0, 3], q2: [3, 6] };
-    const [s, e] = ranges[filter] || ranges.all;
-    return {
-      months:     rawData.months.slice(s, e),
-      sla:        rawData.sla.slice(s, e),
-      volume:     rawData.volume.slice(s, e),
-      csat:       rawData.csat.slice(s, e),
-      categories: rawData.categories,
-    };
-  }
-
-  function updateKpis(d) {
-    document.getElementById('kpi-sla').textContent    = avg(d.sla).toFixed(1) + '%';
-    document.getElementById('kpi-volume').textContent = fmt(sum(d.volume));
-    document.getElementById('kpi-csat').textContent   = avg(d.csat).toFixed(2) + '/5';
-  }
-
-  function buildSlaChart(d) {
+  /* ── SLA line chart ─────────────────────────── */
+  function buildSlaChart(rows) {
     const ctx = document.getElementById('chart-sla');
     if (!ctx) return;
-    if (chartSla) { chartSla.destroy(); chartSla = null; }
+    if (charts.sla) { charts.sla.destroy(); charts.sla = null; }
 
-    chartSla = new Chart(ctx, {
+    const months = monthsBack(state.period === '24m' ? 24 : state.period === '12m' ? 12 : 6);
+    const labels = months.map(m => {
+      const [y, mo] = m.split('-');
+      return new Date(+y, +mo - 1).toLocaleString('en', { month: 'short', year: '2-digit' });
+    });
+
+    const data = months.map(m => {
+      const mrs = rows.filter(r => r.month === m);
+      const t = sum(mrs.map(r => r.tickets));
+      const s = sum(mrs.map(r => r.sla_met));
+      return t ? +(pct(s, t).toFixed(1)) : null;
+    });
+
+    charts.sla = new Chart(ctx, {
       type: 'line',
       data: {
-        labels: d.months,
+        labels,
         datasets: [{
           label: 'SLA %',
-          data: d.sla,
+          data,
           borderColor: ACCENT,
           backgroundColor: 'rgba(0,212,170,0.08)',
           borderWidth: 2,
@@ -82,94 +118,98 @@
           pointHoverRadius: 5,
           tension: 0.35,
           fill: true,
+          spanGaps: true,
         }],
       },
       options: {
         ...CHART_DEFAULTS,
-        backgroundColor: 'transparent',
         scales: {
-          x: { ...SCALE_DEFAULTS },
-          y: {
-            ...SCALE_DEFAULTS,
-            min: 88,
-            max: 100,
-            ticks: { ...SCALE_DEFAULTS.ticks, callback: v => v + '%' },
-          },
+          x: { ...SCALE },
+          y: { ...SCALE, min: 85, max: 100, ticks: { ...SCALE.ticks, callback: v => v + '%' } },
         },
         plugins: {
           ...CHART_DEFAULTS.plugins,
           legend: { display: false },
-          title: {
-            display: true,
-            text: 'SLA Over Time',
-            color: '#E8E8F0',
-            font: { family: 'JetBrains Mono', size: 13 },
-            padding: { bottom: 12 },
-          },
+          title: { display: true, text: 'SLA % Over Time', color: '#E8E8F0', font: { family: 'JetBrains Mono', size: 13 }, padding: { bottom: 12 } },
         },
       },
     });
   }
 
-  function buildDonutChart(d) {
+  /* ── Donut with drill-down ──────────────────── */
+  function buildDonutChart(rows) {
     const ctx = document.getElementById('chart-donut');
     if (!ctx) return;
-    if (chartDonut) { chartDonut.destroy(); chartDonut = null; }
+    if (charts.donut) { charts.donut.destroy(); charts.donut = null; }
 
-    chartDonut = new Chart(ctx, {
+    let labels, data, title;
+
+    if (state.drillCategory) {
+      const sub = {};
+      rows.filter(r => r.category === state.drillCategory).forEach(r => {
+        sub[r.sub] = (sub[r.sub] || 0) + r.tickets;
+      });
+      labels = Object.keys(sub);
+      data   = Object.values(sub);
+      title  = state.drillCategory + ' — Subcategories';
+    } else {
+      const cats = {};
+      rows.forEach(r => { cats[r.category] = (cats[r.category] || 0) + r.tickets; });
+      labels = Object.keys(cats);
+      data   = Object.values(cats);
+      title  = 'Tickets by Category';
+    }
+
+    charts.donut = new Chart(ctx, {
       type: 'doughnut',
       data: {
-        labels: d.categories.labels,
-        datasets: [{
-          data: d.categories.data,
-          backgroundColor: [
-            ACCENT,
-            WARM,
-            'rgba(0,212,170,0.45)',
-            'rgba(245,158,11,0.45)',
-            '#3A3A5A',
-          ],
-          borderColor: '#13131A',
-          borderWidth: 2,
-        }],
+        labels,
+        datasets: [{ data, backgroundColor: CAT_COLORS, borderColor: '#13131A', borderWidth: 2 }],
       },
       options: {
         ...CHART_DEFAULTS,
-        cutout: '68%',
+        cutout: '65%',
         plugins: {
           ...CHART_DEFAULTS.plugins,
-          legend: {
-            ...CHART_DEFAULTS.plugins.legend,
-            position: 'bottom',
-            labels: { color: MUTED, font: { family: 'JetBrains Mono' } },
-          },
-          title: {
-            display: true,
-            text: 'Ticket Categories',
-            color: '#E8E8F0',
-            font: { family: 'JetBrains Mono', size: 13 },
-            padding: { bottom: 12 },
-          },
+          legend: { ...CHART_DEFAULTS.plugins.legend, position: 'bottom' },
+          title: { display: true, text: title, color: '#E8E8F0', font: { family: 'JetBrains Mono', size: 13 }, padding: { bottom: 12 } },
+        },
+        onClick(_e, els) {
+          if (!els.length) return;
+          if (!state.drillCategory) {
+            state.drillCategory = labels[els[0].index];
+            renderAll();
+            updateBreadcrumb();
+          }
         },
       },
     });
+
+    const wrap = ctx.closest('.demo__chart-wrap--drillable');
+    if (wrap) wrap.title = state.drillCategory ? 'Click donut to drill further' : 'Click a slice to drill into subcategories';
   }
 
-  function buildVolumeChart(d) {
+  /* ── Volume bar ─────────────────────────────── */
+  function buildVolumeChart(rows) {
     const ctx = document.getElementById('chart-volume');
     if (!ctx) return;
-    if (chartVolume) { chartVolume.destroy(); chartVolume = null; }
+    if (charts.volume) { charts.volume.destroy(); charts.volume = null; }
 
-    chartVolume = new Chart(ctx, {
+    const months = monthsBack(state.period === '24m' ? 24 : state.period === '12m' ? 12 : 6);
+    const labels = months.map(m => {
+      const [y, mo] = m.split('-');
+      return new Date(+y, +mo - 1).toLocaleString('en', { month: 'short', year: '2-digit' });
+    });
+    const data = months.map(m => sum(rows.filter(r => r.month === m).map(r => r.tickets)));
+
+    charts.volume = new Chart(ctx, {
       type: 'bar',
       data: {
-        labels: d.months,
+        labels,
         datasets: [{
           label: 'Ticket Volume',
-          data: d.volume,
-          backgroundColor: d.volume.map((_, i) =>
-            i % 2 === 0 ? 'rgba(0,212,170,0.7)' : 'rgba(0,212,170,0.45)'
-          ),
+          data,
+          backgroundColor: data.map((_, i) => i % 2 === 0 ? 'rgba(0,212,170,0.7)' : 'rgba(0,212,170,0.4)'),
           borderColor: ACCENT,
           borderWidth: 1,
           borderRadius: 4,
@@ -177,56 +217,79 @@
       },
       options: {
         ...CHART_DEFAULTS,
-        backgroundColor: 'transparent',
-        scales: {
-          x: { ...SCALE_DEFAULTS },
-          y: { ...SCALE_DEFAULTS, beginAtZero: true },
-        },
+        scales: { x: { ...SCALE }, y: { ...SCALE, beginAtZero: true } },
         plugins: {
           ...CHART_DEFAULTS.plugins,
           legend: { display: false },
-          title: {
-            display: true,
-            text: 'Volume by Month',
-            color: '#E8E8F0',
-            font: { family: 'JetBrains Mono', size: 13 },
-            padding: { bottom: 12 },
-          },
+          title: { display: true, text: 'Volume by Month', color: '#E8E8F0', font: { family: 'JetBrains Mono', size: 13 }, padding: { bottom: 12 } },
         },
       },
     });
   }
 
-  function renderCharts(filter) {
-    const d = slice(filter);
-    if (!d) return;
-    updateKpis(d);
-    buildSlaChart(d);
-    buildDonutChart(d);
-    buildVolumeChart(d);
+  /* ── Breadcrumb ─────────────────────────────── */
+  function updateBreadcrumb() {
+    const el = document.getElementById('drill-breadcrumb');
+    if (!el) return;
+    if (!state.drillCategory) {
+      el.innerHTML = '';
+      return;
+    }
+    el.innerHTML = `
+      <button onclick="window.__demoReset()">All Categories</button>
+      <span class="bc-sep">›</span>
+      <span>${state.drillCategory}</span>
+    `;
   }
 
-  function initDemoFilter() {
-    const select = document.getElementById('demo-filter');
-    if (!select) return;
-    select.addEventListener('change', () => renderCharts(select.value));
+  window.__demoReset = function () {
+    state.drillCategory = null;
+    renderAll();
+    updateBreadcrumb();
+  };
+
+  /* ── Render all ─────────────────────────────── */
+  function renderAll() {
+    const rows = filteredRows();
+    updateKpis(rows);
+    buildSlaChart(rows);
+    buildDonutChart(rows);
+    buildVolumeChart(rows);
+    if (window.__demoTree) window.__demoTree(rows);
   }
 
-  function initCharts() {
+  /* ── Pill filter wiring ─────────────────────── */
+  function wirePills(groupId, stateKey, resetDrill) {
+    const group = document.getElementById(groupId);
+    if (!group) return;
+    group.addEventListener('click', e => {
+      const pill = e.target.closest('.demo__pill');
+      if (!pill) return;
+      group.querySelectorAll('.demo__pill').forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      state[stateKey] = pill.dataset.value;
+      if (resetDrill) { state.drillCategory = null; updateBreadcrumb(); }
+      renderAll();
+    });
+  }
+
+  /* ── Init ───────────────────────────────────── */
+  function init() {
     if (typeof Chart === 'undefined') return;
-
     fetch('data/demo-data.json')
       .then(r => r.json())
       .then(data => {
-        rawData = data;
-        renderCharts('all');
-        initDemoFilter();
+        rawRows = data.rows;
+        wirePills('filter-period', 'period', true);
+        wirePills('filter-client', 'client', true);
+        wirePills('filter-tree-dim', 'treeDim', false);
+        renderAll();
       })
       .catch(() => {
-        const section = document.getElementById('demo');
-        if (section) section.style.display = 'none';
+        const s = document.getElementById('demo');
+        if (s) s.style.display = 'none';
       });
   }
 
-  document.addEventListener('DOMContentLoaded', initCharts);
+  document.addEventListener('DOMContentLoaded', init);
 })();
