@@ -912,7 +912,7 @@ footer p + p {
 
 .demo__filter-label {
   font-size: var(--text-xs);
-  color: var(--clr-muted);
+  color: var(--clr-text-muted);
   white-space: nowrap;
 }
 
@@ -929,7 +929,7 @@ footer p + p {
   border: 1px solid rgba(255,255,255,0.12);
   border-radius: 4px;
   background: transparent;
-  color: var(--clr-muted);
+  color: var(--clr-text-muted);
   cursor: pointer;
   transition: all 0.15s ease;
 }
@@ -965,7 +965,7 @@ footer p + p {
 .demo__drill-breadcrumb {
   font-family: var(--font-mono);
   font-size: var(--text-xs);
-  color: var(--clr-muted);
+  color: var(--clr-text-muted);
   min-height: 1.5rem;
   margin-bottom: 0.5rem;
   display: flex;
@@ -986,7 +986,7 @@ footer p + p {
 }
 
 .demo__drill-breadcrumb .bc-sep {
-  color: var(--clr-muted);
+  color: var(--clr-text-muted);
 }
 
 .demo__chart-wrap--drillable { cursor: pointer; }
@@ -1036,7 +1036,7 @@ footer p + p {
 }
 
 .tree-node .node-pct {
-  fill: var(--clr-muted);
+  fill: var(--clr-text-muted);
   font-size: 10px;
 }
 
