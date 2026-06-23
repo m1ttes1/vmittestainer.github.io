@@ -4,11 +4,13 @@
   const ACCENT = '#00D4AA';
   const WARM   = '#F59E0B';
   const MUTED  = '#9B9BAF';
-  const NODE_W = 120;
-  const NODE_H = 56;
-  const GAP_X  = 60;
+  const NODE_W = 130;
+  const NODE_H = 64;
+  const PAD    = { top: 30, right: 80, bottom: 30, left: 80 };
+  const COL_W  = 200;
 
   let currentDim = 'category';
+  let lastRows   = [];
 
   function aggregate(rows, dim) {
     const map = {};
@@ -58,25 +60,31 @@
   function render(rows) {
     const container = document.getElementById('demo-tree');
     if (!container || typeof d3 === 'undefined') return;
+    if (rows && rows.length) lastRows = rows;
 
-    const root   = d3.hierarchy(buildHierarchy(rows, currentDim));
-    const depth  = 3;
-    const width  = depth * (NODE_W + GAP_X) + 40;
-    const height = Math.max(300, root.leaves().length * (NODE_H + 16));
+    const root = d3.hierarchy(buildHierarchy(lastRows, currentDim));
+    root.sort((a, b) => b.data.value - a.data.value);
+
+    const leaves    = root.leaves().length;
+    const rowH      = Math.max(NODE_H + 24, 88);
+    const innerH    = Math.max(leaves * rowH, 320);
+    const innerW    = 3 * COL_W;
+    const svgW      = innerW + PAD.left + PAD.right;
+    const svgH      = innerH + PAD.top  + PAD.bottom;
 
     container.innerHTML = '';
 
     const svg = d3.select(container)
       .append('svg')
       .attr('width', '100%')
-      .attr('viewBox', `0 0 ${width} ${height}`)
+      .attr('viewBox', `0 0 ${svgW} ${svgH}`)
       .attr('preserveAspectRatio', 'xMinYMid meet');
 
-    const g = svg.append('g').attr('transform', 'translate(20,20)');
+    const g = svg.append('g').attr('transform', `translate(${PAD.left},${PAD.top})`);
 
     const tree = d3.tree()
-      .size([height - 40, width - NODE_W - 40])
-      .separation((a, b) => a.parent === b.parent ? 1.2 : 1.6);
+      .size([innerH, innerW])
+      .separation((a, b) => a.parent === b.parent ? 1 : 1.4);
 
     tree(root);
 
@@ -85,9 +93,7 @@
       .data(root.links())
       .join('path')
       .attr('class', 'tree-link')
-      .attr('d', d3.linkHorizontal()
-        .x(d => d.y)
-        .y(d => d.x));
+      .attr('d', d3.linkHorizontal().x(d => d.y).y(d => d.x));
 
     // Nodes
     const node = g.selectAll('.tree-node')
@@ -101,38 +107,49 @@
       .attr('y', -NODE_H / 2)
       .attr('width', NODE_W)
       .attr('height', NODE_H)
-      .attr('rx', 6);
+      .attr('rx', 8);
 
+    // Ticket count
     node.append('text')
       .attr('class', 'node-value')
       .attr('text-anchor', 'middle')
-      .attr('y', -8)
+      .attr('dominant-baseline', 'middle')
+      .attr('y', -10)
       .text(d => d.data.value.toLocaleString());
 
+    // Name
     node.append('text')
       .attr('text-anchor', 'middle')
-      .attr('y', 8)
-      .attr('fill', MUTED)
+      .attr('dominant-baseline', 'middle')
+      .attr('y', 7)
+      .attr('fill', '#E8E8F0')
       .attr('font-size', 11)
-      .text(d => d.data.name.length > 12 ? d.data.name.slice(0, 11) + '…' : d.data.name);
+      .attr('font-family', 'JetBrains Mono, monospace')
+      .text(d => d.data.name.length > 13 ? d.data.name.slice(0, 12) + '…' : d.data.name);
 
+    // Pct + SLA
     node.append('text')
       .attr('class', 'node-pct')
       .attr('text-anchor', 'middle')
+      .attr('dominant-baseline', 'middle')
       .attr('y', 22)
-      .text(d => d.data.isRoot ? `SLA ${d.data.sla}%` : `${d.data.pct}% · SLA ${d.data.sla}%`);
+      .text(d => d.data.isRoot
+        ? `SLA ${d.data.sla}%`
+        : `${d.data.pct}% · SLA ${d.data.sla}%`);
   }
 
-  // Wire dim toggle
+  // Wire dim toggle — re-renders on change
   document.addEventListener('DOMContentLoaded', () => {
     const group = document.getElementById('filter-tree-dim');
-    if (group) {
-      group.addEventListener('click', e => {
-        const pill = e.target.closest('.demo__pill');
-        if (!pill) return;
-        currentDim = pill.dataset.value;
-      });
-    }
+    if (!group) return;
+    group.addEventListener('click', e => {
+      const pill = e.target.closest('.demo__pill');
+      if (!pill) return;
+      group.querySelectorAll('.demo__pill').forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      currentDim = pill.dataset.value;
+      render(null);
+    });
   });
 
   window.__demoTree = render;
