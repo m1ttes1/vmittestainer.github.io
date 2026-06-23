@@ -92,6 +92,24 @@ const translations = {
     'contact.linkedin': 'LinkedIn',
     'contact.github':   'GitHub',
     'contact.email':    'Send Email',
+
+    /* DEMO v2 */
+    'demo.title':           'Analytics Preview',
+    'demo.note':            'Synthetic data — real methodology',
+    'demo.filter.period':   'Period',
+    'demo.filter.client':   'Client',
+    'demo.period.24m':      '24 months',
+    'demo.period.12m':      '12 months',
+    'demo.period.6m':       '6 months',
+    'demo.client.all':      'All',
+    'demo.kpi.sla':         'SLA Avg',
+    'demo.kpi.volume':      'Tickets',
+    'demo.kpi.fcr':         'FCR %',
+    'demo.kpi.reopen':      'Reopening Rate',
+    'demo.kpi.csat':        'CSAT',
+    'demo.tree.title':      'Decomposition — Total Tickets',
+    'demo.tree.by.category':'By Category',
+    'demo.tree.by.client':  'By Client',
   },
 
   pt: {
@@ -187,6 +205,24 @@ const translations = {
     'contact.linkedin': 'LinkedIn',
     'contact.github':   'GitHub',
     'contact.email':    'Enviar Email',
+
+    /* DEMO v2 */
+    'demo.title':           'Prévia Analítica',
+    'demo.note':            'Dados sintéticos — metodologia real',
+    'demo.filter.period':   'Período',
+    'demo.filter.client':   'Cliente',
+    'demo.period.24m':      '24 meses',
+    'demo.period.12m':      '12 meses',
+    'demo.period.6m':       '6 meses',
+    'demo.client.all':      'Todos',
+    'demo.kpi.sla':         'SLA Médio',
+    'demo.kpi.volume':      'Tickets',
+    'demo.kpi.fcr':         'FCR %',
+    'demo.kpi.reopen':      'Taxa de Reabertura',
+    'demo.kpi.csat':        'CSAT',
+    'demo.tree.title':      'Decomposição — Total de Tickets',
+    'demo.tree.by.category':'Por Categoria',
+    'demo.tree.by.client':  'Por Cliente',
   }
 };
 

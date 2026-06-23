@@ -19,6 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="assets/css/main.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
@@ -150,6 +151,91 @@
             <li class="stack__item">Azure</li>
           </ul>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider" aria-hidden="true"></div>
+
+  <!-- DEMO DASHBOARD v2 -->
+  <section class="demo" id="demo" data-reveal>
+    <div class="container">
+      <p class="section-label mono">Demo</p>
+      <h2 class="section-title" data-i18n="demo.title">Analytics Preview</h2>
+      <p class="demo__note mono">&#9432; <span data-i18n="demo.note">Synthetic data — real methodology</span></p>
+
+      <!-- Active filters -->
+      <div class="demo__filters">
+        <div class="demo__filter-group">
+          <span class="demo__filter-label mono" data-i18n="demo.filter.period">Period</span>
+          <div class="demo__pills" id="filter-period">
+            <button class="demo__pill active" data-value="24m" data-i18n="demo.period.24m">24 months</button>
+            <button class="demo__pill" data-value="12m" data-i18n="demo.period.12m">12 months</button>
+            <button class="demo__pill" data-value="6m"  data-i18n="demo.period.6m">6 months</button>
+          </div>
+        </div>
+        <div class="demo__filter-group">
+          <span class="demo__filter-label mono" data-i18n="demo.filter.client">Client</span>
+          <div class="demo__pills" id="filter-client">
+            <button class="demo__pill active" data-value="all" data-i18n="demo.client.all">All</button>
+            <button class="demo__pill" data-value="SKF">SKF</button>
+            <button class="demo__pill" data-value="Bosch">Bosch</button>
+            <button class="demo__pill" data-value="Emerson">Emerson</button>
+            <button class="demo__pill" data-value="Honeywell">Honeywell</button>
+            <button class="demo__pill" data-value="Siemens">Siemens</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPI row -->
+      <div class="demo__kpis">
+        <div class="demo__kpi">
+          <span class="demo__kpi-value mono" id="kpi-sla">—</span>
+          <span class="demo__kpi-label" data-i18n="demo.kpi.sla">SLA Avg</span>
+        </div>
+        <div class="demo__kpi">
+          <span class="demo__kpi-value mono" id="kpi-volume">—</span>
+          <span class="demo__kpi-label" data-i18n="demo.kpi.volume">Tickets</span>
+        </div>
+        <div class="demo__kpi">
+          <span class="demo__kpi-value mono" id="kpi-fcr">—</span>
+          <span class="demo__kpi-label" data-i18n="demo.kpi.fcr">FCR %</span>
+        </div>
+        <div class="demo__kpi">
+          <span class="demo__kpi-value mono" id="kpi-reopen">—</span>
+          <span class="demo__kpi-label" data-i18n="demo.kpi.reopen">Reopening Rate</span>
+        </div>
+        <div class="demo__kpi">
+          <span class="demo__kpi-value mono" id="kpi-csat">—</span>
+          <span class="demo__kpi-label" data-i18n="demo.kpi.csat">CSAT</span>
+        </div>
+      </div>
+
+      <!-- Charts row -->
+      <div class="demo__charts-grid">
+        <div class="demo__chart-wrap">
+          <canvas id="chart-sla" height="220"></canvas>
+        </div>
+        <div class="demo__chart-wrap demo__chart-wrap--drillable">
+          <div class="demo__drill-breadcrumb" id="drill-breadcrumb" aria-live="polite"></div>
+          <canvas id="chart-donut" height="220"></canvas>
+        </div>
+      </div>
+
+      <div class="demo__chart-full">
+        <canvas id="chart-volume" height="180"></canvas>
+      </div>
+
+      <!-- Decomposition tree -->
+      <div class="demo__tree-section">
+        <div class="demo__tree-header">
+          <span class="demo__filter-label mono" data-i18n="demo.tree.title">Decomposition — Total Tickets</span>
+          <div class="demo__pills" id="filter-tree-dim">
+            <button class="demo__pill active" data-value="category" data-i18n="demo.tree.by.category">By Category</button>
+            <button class="demo__pill" data-value="client" data-i18n="demo.tree.by.client">By Client</button>
+          </div>
+        </div>
+        <div id="demo-tree" class="demo__tree" role="img" aria-label="Decomposition tree"></div>
       </div>
     </div>
   </section>
@@ -297,53 +383,6 @@
     </div>
   </section>
 
-  <div class="section-divider" aria-hidden="true"></div>
-
-  <!-- DEMO DASHBOARD -->
-  <section class="demo" id="demo" data-reveal>
-    <div class="container">
-      <p class="section-label mono">Demo</p>
-      <h2 class="section-title">Dashboard Preview</h2>
-      <p class="demo__note mono">&#9432; Synthetic data for demonstration purposes</p>
-
-      <div class="demo__controls">
-        <select id="demo-filter" class="demo__filter" aria-label="Filter by quarter">
-          <option value="all">All Months</option>
-          <option value="q1">Q1 (Jan–Mar)</option>
-          <option value="q2">Q2 (Apr–Jun)</option>
-        </select>
-      </div>
-
-      <div class="demo__kpis">
-        <div class="demo__kpi">
-          <span class="demo__kpi-value mono" id="kpi-sla">94.2%</span>
-          <span class="demo__kpi-label">SLA Avg</span>
-        </div>
-        <div class="demo__kpi">
-          <span class="demo__kpi-value mono" id="kpi-volume">1,873</span>
-          <span class="demo__kpi-label">Ticket Volume</span>
-        </div>
-        <div class="demo__kpi">
-          <span class="demo__kpi-value mono" id="kpi-csat">4.25/5</span>
-          <span class="demo__kpi-label">CSAT</span>
-        </div>
-      </div>
-
-      <div class="demo__charts-grid">
-        <div class="demo__chart-wrap">
-          <canvas id="chart-sla" height="220"></canvas>
-        </div>
-        <div class="demo__chart-wrap">
-          <canvas id="chart-donut" height="220"></canvas>
-        </div>
-      </div>
-
-      <div class="demo__chart-full">
-        <canvas id="chart-volume" height="180"></canvas>
-      </div>
-    </div>
-  </section>
-
   <!-- EXPERIENCE -->
   <section class="experience" id="experience" data-reveal>
     <div class="container">
@@ -418,6 +457,7 @@
   <script src="assets/js/globe.js"></script>
   <script src="assets/js/globe-hero.js"></script>
   <script src="assets/js/charts.js"></script>
+  <script src="assets/js/demo-tree.js"></script>
   <script src="assets/js/animations.js"></script>
 
   <script type="application/ld+json">
