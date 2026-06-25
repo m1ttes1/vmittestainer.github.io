@@ -66,6 +66,8 @@ const translations = {
     'project.backup.problem': 'Backup failures only detected after impact had already occurred.',
     'project.backup.result':  'Proactive alerts with 0 undetected incidents in 6 months.',
 
+    'project.link.code':  'View Code',
+
     /* EXPERIENCE */
     'experience.label':          'Experience',
     'experience.title':          'Where I\'ve worked.',
@@ -180,6 +182,8 @@ const translations = {
     'project.backup.tech':    'Power BI · Zabbix',
     'project.backup.problem': 'Falhas de backup detectadas apenas após o impacto já ter ocorrido.',
     'project.backup.result':  'Alertas proativos com 0 incidentes não detectados em 6 meses.',
+
+    'project.link.code':  'Ver Código',
 
     /* EXPERIENCE */
     'experience.label':          'Experiência',
