@@ -57,9 +57,9 @@ const translations = {
     'project.globe.result':  'Interactive 3D heatmap globe — 195 countries, 1990–2022, drag to explore.',
 
     'project.ironforge.title':   'IronForge',
-    'project.ironforge.tech':    'Python · Flask · SQLite',
-    'project.ironforge.problem': 'Live database needed concurrent read/write without locking the primary process — direct file edits caused corruption.',
-    'project.ironforge.result':  '15-endpoint REST API with snapshot isolation + 4 web dashboards; zero data loss incidents.',
+    'project.ironforge.tech':    'Python · SQLite · 4 Dashboards',
+    'project.ironforge.problem': 'Ops data lived in a live SQLite database — no safe way to query it without risking corruption.',
+    'project.ironforge.result':  'Built REST API + 4 analytical dashboards on live data; zero data loss. SQL queries against real operational data.',
 
     'project.backup.title':   'Backup Monitoring Report',
     'project.backup.tech':    'Power BI · Zabbix',
@@ -174,9 +174,9 @@ const translations = {
     'project.globe.result':  'Globo 3D interativo com heatmap — 195 países, 1990–2022, arraste para explorar.',
 
     'project.ironforge.title':   'IronForge',
-    'project.ironforge.tech':    'Python · Flask · SQLite',
-    'project.ironforge.problem': 'Banco de dados live precisava de leitura/escrita simultânea sem bloquear o processo principal — edições diretas no arquivo causavam corrupção.',
-    'project.ironforge.result':  'REST API com 15 endpoints, isolamento via snapshot + 4 dashboards web; zero incidentes de perda de dados.',
+    'project.ironforge.tech':    'Python · SQLite · 4 Dashboards',
+    'project.ironforge.problem': 'Dados operacionais em SQLite ao vivo — sem forma segura de consultar sem risco de corrupção.',
+    'project.ironforge.result':  'API REST + 4 dashboards analíticos em dados reais; zero perda de dados. Queries SQL em dados operacionais reais.',
 
     'project.backup.title':   'Relatório de Monitoramento de Backup',
     'project.backup.tech':    'Power BI · Zabbix',
