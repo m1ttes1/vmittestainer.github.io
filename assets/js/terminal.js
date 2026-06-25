@@ -44,7 +44,7 @@
       { text: '' },
       { text: '  email:    vmittestainer.dev@gmail.com' },
       { text: '  linkedin: linkedin.com/in/vmittestainer' },
-      { text: '  github:   github.com/vmittestainer' },
+      { text: '  github:   github.com/m1ttes1' },
       { text: '' },
       { text: 'Response time: usually same day.', cls: 'muted' },
     ]; },
