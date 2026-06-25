@@ -126,20 +126,20 @@ const translations = {
     /* HERO */
     'hero.eyebrow':     'Data Analyst',
     'hero.h1':          'Transformando ruído operacional\nem clareza de dados.',
-    'hero.sub':         '7 anos em operações — 4 deles nos EUA. Agora construo os dashboards que tornam decisões defensáveis.',
+    'hero.sub':         '7 anos em operações — 4 deles nos EUA. Hoje construo os dashboards que tornam as decisões defensáveis.',
     'hero.stat1.value': '2+',
     'hero.stat1.label': 'Anos em BI & Dados',
     'hero.stat2.value': '5',
-    'hero.stat2.label': 'Projetos Entregues',
+    'hero.stat2.label': 'Projetos entregues',
     'hero.stat3.value': '40%',
     'hero.stat3.label': 'Redução em breach de SLA',
-    'hero.cta.projects': 'Ver Projetos',
+    'hero.cta.projects': 'Ver projetos',
     'hero.cta.contact':  'Entrar em contato',
 
     /* ABOUT */
     'about.label':      'Sobre',
     'about.title':      'Base em operações. Mentalidade de dados.',
-    'about.p1':         'Sete anos em operações — quatro deles em Boston e San Diego nos EUA, depois de volta ao Brasil na Wevy como Analista de Operações CX & Dados. Na Wevy, migrei controles manuais do Excel para pipelines ETL/ELT no Power Query, construí dashboards self-service no Power BI para clientes industriais de grande porte e automatizei fluxos entre Zoho CRM e SharePoint via Power Automate.',
+    'about.p1':         'Sete anos em operações — quatro deles em Boston e San Diego nos EUA, depois de volta ao Brasil na Wevy como Analista de CX & Dados. Na Wevy, migrei controles manuais do Excel para pipelines ETL/ELT no Power Query, construí dashboards self-service no Power BI para clientes industriais como SKF e automatizei a sincronização entre Zoho CRM e SharePoint via Power Automate.',
     'about.p2':         'Entendo o negócio antes de abrir o Power BI. Inglês C2 — cinco anos em Boston e San Diego. Cursando ADS na Uninter (2024–2026).',
     'about.card.title': 'Focando agora em',
 
@@ -168,7 +168,7 @@ const translations = {
 
     'project.globe.title':   'Globo de Emissões de CO₂',
     'project.globe.tech':    'JavaScript · Globe.gl',
-    'project.globe.problem': 'O dataset da Our World in Data tem 195 países e 30 anos de histórico — mas é um CSV.',
+    'project.globe.problem': 'O dataset da Our World in Data tem 195 países e 30 anos de histórico — mas é só um CSV.',
     'project.globe.result':  'Globo 3D interativo com heatmap — 195 países, 1990–2022, arraste para explorar.',
 
     'project.ironforge.title':   'IronForge',
@@ -187,10 +187,10 @@ const translations = {
     'experience.badge.current':  'atual',
     'experience.badge.ongoing':  'em andamento',
 
-    'exp.wevy.period': 'out 2024 – Presente',
+    'exp.wevy.period': 'out 2024 – presente',
     'exp.wevy.role':   'Analista de CX & Dados',
     'exp.wevy.org':    'Wevy · Cloud IaaS/SaaS/PaaS',
-    'exp.wevy.desc':   'Iniciou como Estagiário CX (out 2024), promovido a Analista (jul 2025). Migrei controles manuais do Excel para pipelines ETL/ELT no Power Query. Monitorei KPIs de SLA (FCR, taxa de reabertura, backlog) no Power BI e fiz análise de causa raiz em incidentes recorrentes. Automatizei sincronização Zoho CRM ↔ SharePoint via Power Automate. Dashboards self-service com DAX avançado. QBRs em inglês para lideranças de contas internacionais.',
+    'exp.wevy.desc':   'Comecei como Estagiário CX (out 2024), promovido a Analista (jul 2025). Migrei controles manuais do Excel para pipelines ETL/ELT no Power Query. Monitorei KPIs de SLA (FCR, taxa de reabertura, backlog) no Power BI e investiguei causas raiz de incidentes recorrentes. Automatizei a sincronização Zoho CRM ↔ SharePoint via Power Automate. Dashboards self-service com DAX avançado. QBRs em inglês para clientes internacionais.',
 
     'exp.us.period': '2019 – 2023',
     'exp.us.role':   'Operações',
@@ -208,10 +208,10 @@ const translations = {
     'contact.sub':      'Aberto a oportunidades como Data Analyst e BI Developer.',
     'contact.linkedin': 'LinkedIn',
     'contact.github':   'GitHub',
-    'contact.email':    'Enviar Email',
+    'contact.email':    'Enviar email',
 
     /* DEMO v2 */
-    'demo.title':           'Prévia Analítica',
+    'demo.title':           'Prévia analítica',
     'demo.note':            'Dados sintéticos — metodologia real',
     'demo.filter.period':   'Período',
     'demo.filter.client':   'Cliente',
@@ -222,11 +222,11 @@ const translations = {
     'demo.kpi.sla':         'SLA Médio',
     'demo.kpi.volume':      'Tickets',
     'demo.kpi.fcr':         'FCR %',
-    'demo.kpi.reopen':      'Taxa de Reabertura',
+    'demo.kpi.reopen':      'Taxa de reabertura',
     'demo.kpi.csat':        'CSAT',
-    'demo.tree.title':      'Decomposição — Total de Tickets',
-    'demo.tree.by.category':'Por Categoria',
-    'demo.tree.by.client':  'Por Cliente',
+    'demo.tree.title':      'Decomposição — total de tickets',
+    'demo.tree.by.category':'Por categoria',
+    'demo.tree.by.client':  'Por cliente',
   }
 };
 
