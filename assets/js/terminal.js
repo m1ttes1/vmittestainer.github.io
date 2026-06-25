@@ -34,6 +34,7 @@
       { text: '  [3] CO₂ Emissions Globe         Globe.gl — 195 countries, drag to explore' },
       { text: '  [4] IronForge                   Flask + SQLite REST API + 4 dashboards' },
       { text: '  [5] Backup Monitoring           Power BI + Zabbix — 0 undetected incidents' },
+      { text: '  [6] Workforce Attrition Analysis SQL + pandas — 3 attrition predictors from IBM HR data' },
       { text: '' },
       { text: "type 'hire' to start a conversation.", cls: 'muted' },
     ]; },
