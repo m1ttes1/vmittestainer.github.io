@@ -11,18 +11,18 @@ const translations = {
     /* HERO */
     'hero.eyebrow':     'Data Analyst',
     'hero.h1':          'Turning support noise\ninto data clarity.',
-    'hero.sub':         '7 years in operations — 5 of them in the US. Now I build the dashboards that make decisions defensible.',
-    'hero.stat1.value': '7+',
-    'hero.stat1.label': 'Years in Operations',
-    'hero.stat2.value': '4',
-    'hero.stat2.label': 'BI Projects',
+    'hero.sub':         '7 years in operations — 4 of them in the US. Now I build the dashboards that make decisions defensible.',
+    'hero.stat1.value': '2+',
+    'hero.stat1.label': 'Years in BI & Data',
+    'hero.stat2.value': '5',
+    'hero.stat2.label': 'Projects Shipped',
     'hero.stat3.value': '40%',
     'hero.stat3.label': 'SLA breach reduction',
 
     /* ABOUT */
     'about.label':      'About',
     'about.title':      'Operations background. Data mindset.',
-    'about.p1':         'Seven years in operations — five running service and logistics in Boston and San Diego, then back to Brazil joining Wevy as a CX & Data Analyst. At Wevy, I migrated manual Excel controls to ETL/ELT pipelines in Power Query, built self-service Power BI dashboards for industrial clients (SKF-tier), and automated workflows between Zoho CRM and SharePoint via Power Automate.',
+    'about.p1':         'Seven years in operations — four running service and logistics in Boston and San Diego, then back to Brazil joining Wevy as a CX & Data Analyst. At Wevy, I migrated manual Excel controls to ETL/ELT pipelines in Power Query, built self-service Power BI dashboards for industrial clients (SKF-tier), and automated workflows between Zoho CRM and SharePoint via Power Automate.',
     'about.p2':         'I understand the business before I open Power BI. English C2 — five years in Boston and San Diego. Currently completing a B.S. in Systems Analysis & Development at Uninter (2024–2026).',
     'about.card.title': 'Currently focusing on',
 
@@ -124,18 +124,18 @@ const translations = {
     /* HERO */
     'hero.eyebrow':     'Data Analyst',
     'hero.h1':          'Transformando ruído operacional\nem clareza de dados.',
-    'hero.sub':         '7 anos em operações — 5 deles nos EUA. Agora construo os dashboards que tornam decisões defensáveis.',
-    'hero.stat1.value': '7+',
-    'hero.stat1.label': 'Anos em Operações',
-    'hero.stat2.value': '4',
-    'hero.stat2.label': 'Projetos de BI',
+    'hero.sub':         '7 anos em operações — 4 deles nos EUA. Agora construo os dashboards que tornam decisões defensáveis.',
+    'hero.stat1.value': '2+',
+    'hero.stat1.label': 'Anos em BI & Dados',
+    'hero.stat2.value': '5',
+    'hero.stat2.label': 'Projetos Entregues',
     'hero.stat3.value': '40%',
     'hero.stat3.label': 'Redução em breach de SLA',
 
     /* ABOUT */
     'about.label':      'Sobre',
     'about.title':      'Base em operações. Mentalidade de dados.',
-    'about.p1':         'Sete anos em operações — cinco deles em Boston e San Diego nos EUA, depois de volta ao Brasil na Wevy como Analista de Operações CX & Dados. Na Wevy, migrei controles manuais do Excel para pipelines ETL/ELT no Power Query, construí dashboards self-service no Power BI para clientes industriais de grande porte e automatizei fluxos entre Zoho CRM e SharePoint via Power Automate.',
+    'about.p1':         'Sete anos em operações — quatro deles em Boston e San Diego nos EUA, depois de volta ao Brasil na Wevy como Analista de Operações CX & Dados. Na Wevy, migrei controles manuais do Excel para pipelines ETL/ELT no Power Query, construí dashboards self-service no Power BI para clientes industriais de grande porte e automatizei fluxos entre Zoho CRM e SharePoint via Power Automate.',
     'about.p2':         'Entendo o negócio antes de abrir o Power BI. Inglês C2 — cinco anos em Boston e San Diego. Cursando ADS na Uninter (2024–2026).',
     'about.card.title': 'Focando agora em',
 
