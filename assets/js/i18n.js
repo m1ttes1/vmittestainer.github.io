@@ -14,7 +14,7 @@ const translations = {
     'hero.sub':         '7 years in operations — 4 of them in the US.',
     'hero.stat1.value': '2+',
     'hero.stat1.label': 'Years in BI & Data',
-    'hero.stat2.value': '5',
+    'hero.stat2.value': '6',
     'hero.stat2.label': 'Projects Shipped',
     'hero.stat3.value': '40%',
     'hero.stat3.label': 'SLA breach reduction',
@@ -67,6 +67,11 @@ const translations = {
     'project.backup.result':  'Proactive alerts with 0 undetected incidents in 6 months.',
 
     'project.link.code':  'View Code',
+
+    'project.sql.title':   'Workforce Attrition Analysis',
+    'project.sql.tech':    'SQL · Python · pandas',
+    'project.sql.problem': "HR team couldn't explain a rising attrition spike — needed structured SQL analysis across 8 variables.",
+    'project.sql.result':  'Found 3 leading predictors (Sales ~24% churn, early tenure, low salary band) — risk scores ready for dashboard.',
 
     /* EXPERIENCE */
     'experience.label':          'Experience',
@@ -131,7 +136,7 @@ const translations = {
     'hero.sub':         '7 anos em operações — 4 deles nos EUA. Hoje construo os dashboards que tornam as decisões defensáveis.',
     'hero.stat1.value': '2+',
     'hero.stat1.label': 'Anos em BI & Dados',
-    'hero.stat2.value': '5',
+    'hero.stat2.value': '6',
     'hero.stat2.label': 'Projetos entregues',
     'hero.stat3.value': '40%',
     'hero.stat3.label': 'Redução em breach de SLA',
@@ -184,6 +189,11 @@ const translations = {
     'project.backup.result':  'Alertas proativos com 0 incidentes não detectados em 6 meses.',
 
     'project.link.code':  'Ver Código',
+
+    'project.sql.title':   'Análise de Rotatividade de Colaboradores',
+    'project.sql.tech':    'SQL · Python · pandas',
+    'project.sql.problem': 'Time de RH não conseguia explicar um pico crescente de attrition — precisava de análise SQL estruturada em múltiplas variáveis.',
+    'project.sql.result':  '3 preditores identificados (Vendas ~24% de churn, turnover precoce, faixa salarial baixa) — scores de risco prontos para dashboard.',
 
     /* EXPERIENCE */
     'experience.label':          'Experiência',
