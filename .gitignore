@@ -1,0 +1,35 @@
+# --- gitignore ele mesmo ---
+.gitignore
+
+# --- build / tooling ---
+*.bak
+*.py
+~$*
+
+# --- sprint / planning docs ---
+*.docx
+SPRINT*.md
+LAUNCH_POST.md
+LAUNCH_REPORT.md
+CANDIDATURA_CHECKLIST.md
+docs/
+
+# --- project source files (bastidores — não expor no repo público) ---
+projects/
+
+# --- github profile readme (vai para repo separado: m1ttes1/m1ttes1) ---
+github-profile/
+
+# --- screenshots / rascunhos soltos ---
+*.png
+!assets/images/**/*.png
+!assets/images/og-cover.png
+
+# --- real client data (not for public repo) ---
+assets/images/projetos/
+assets/images/og-cover.html
+
+# --- claude/agent internals ---
+.agents/
+.claude/
+skills-lock.json
