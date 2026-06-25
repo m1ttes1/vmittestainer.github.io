@@ -25,7 +25,7 @@ const translations = {
     'about.label':      'About',
     'about.title':      'Operations background. Data mindset.',
     'about.p1':         'Seven years in operations — four running service and logistics in Boston and San Diego, then back to Brazil joining Wevy as a CX & Data Analyst. At Wevy, I migrated manual Excel controls to ETL/ELT pipelines in Power Query, built self-service Power BI dashboards for industrial clients (SKF-tier), and automated workflows between Zoho CRM and SharePoint via Power Automate.',
-    'about.p2':         'I understand the business before I open Power BI. English C2 — five years in Boston and San Diego. Currently completing a B.S. in Systems Analysis & Development at Uninter (2024–2026).',
+    'about.p2':         'I understand the business before I open Power BI. English C2 — four years in Boston and San Diego. Currently completing a B.S. in Systems Analysis & Development at Uninter (2024–2026).',
     'about.card.title': 'Currently focusing on',
 
     /* STACK */
@@ -147,7 +147,7 @@ const translations = {
     'about.label':      'Sobre',
     'about.title':      'Base em operações. Mentalidade de dados.',
     'about.p1':         'Sete anos em operações — quatro deles em Boston e San Diego nos EUA, depois de volta ao Brasil na Wevy como Analista de CX & Dados. Na Wevy, migrei controles manuais do Excel para pipelines ETL/ELT no Power Query, construí dashboards self-service no Power BI para clientes industriais como SKF e automatizei a sincronização entre Zoho CRM e SharePoint via Power Automate.',
-    'about.p2':         'Entendo o negócio antes de abrir o Power BI. Inglês C2 — cinco anos em Boston e San Diego. Cursando ADS na Uninter (2024–2026).',
+    'about.p2':         'Entendo o negócio antes de abrir o Power BI. Inglês C2 — quatro anos em Boston e San Diego. Cursando ADS na Uninter (2024–2026).',
     'about.card.title': 'Focando agora em',
 
     /* STACK */
