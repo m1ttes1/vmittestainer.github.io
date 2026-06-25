@@ -39,7 +39,7 @@
         <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
         <li><a href="#contact"    data-i18n="nav.contact">Contact</a></li>
       </ul>
-      <div style="display:flex;align-items:center;gap:1rem;">
+      <div class="nav__actions">
         <button class="nav__lang" id="lang-toggle" data-i18n="nav.lang">PT</button>
         <button class="nav__hamburger" id="hamburger" aria-label="Menu">
           <span></span><span></span><span></span>
@@ -247,7 +247,7 @@
   </section>
 
   <!-- PROJECTS -->
-  <section class="projects" id="projects">
+  <section class="projects" id="projects" data-reveal>
     <div class="container">
       <p class="section-label mono" data-i18n="projects.label">Projects</p>
       <h2 class="section-title" data-i18n="projects.title">Work that shipped.</h2>
@@ -401,7 +401,7 @@
           <p class="timeline-item__period mono" data-i18n="exp.wevy.period">Oct 2024 – Present</p>
           <h3 class="timeline-item__role">
             <span data-i18n="exp.wevy.role">CX & Data Operations Analyst</span>
-            <span class="mono muted" style="font-size:var(--text-xs); font-weight:400; margin-left:0.5rem; background:var(--clr-accent-dim); color:var(--clr-accent); padding:0.125rem 0.375rem; border-radius:4px;" data-i18n="experience.badge.current">current</span>
+            <span class="timeline-badge timeline-badge--current" data-i18n="experience.badge.current">current</span>
           </h3>
           <p class="timeline-item__org" data-i18n="exp.wevy.org">Wevy · Cloud IaaS/SaaS/PaaS</p>
           <p class="timeline-item__desc" data-i18n="exp.wevy.desc">Migrated manual Excel controls to ETL/ELT pipelines in Power Query. Monitored SLA KPIs (FCR, reopening rate, backlog) in Power BI and performed root-cause analysis on recurring incidents. Automated Zoho CRM ↔ SharePoint sync via Power Automate. Built self-service dashboards with advanced DAX — partners now query data in real time without manual exports. Delivered QBRs in English to international executive accounts.</p>
@@ -418,7 +418,7 @@
           <p class="timeline-item__period mono" data-i18n="exp.ads.period">2024 – 2026</p>
           <h3 class="timeline-item__role">
             <span data-i18n="exp.ads.role">B.S. Systems Analysis &amp; Development</span>
-            <span class="mono muted" style="font-size:var(--text-xs); font-weight:400; margin-left:0.5rem; background:var(--clr-warm-dim); color:var(--clr-warm); padding:0.125rem 0.375rem; border-radius:4px;" data-i18n="experience.badge.ongoing">ongoing</span>
+            <span class="timeline-badge timeline-badge--ongoing" data-i18n="experience.badge.ongoing">ongoing</span>
           </h3>
           <p class="timeline-item__org" data-i18n="exp.ads.org">Uninter University</p>
           <p class="timeline-item__desc" data-i18n="exp.ads.desc">Coursework covering algorithms, databases, software engineering, and web development. Complementing hands-on BI and automation experience with formal CS fundamentals.</p>
