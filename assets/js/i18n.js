@@ -11,13 +11,15 @@ const translations = {
     /* HERO */
     'hero.eyebrow':     'Data Analyst',
     'hero.h1':          'Turning support noise\ninto data clarity.',
-    'hero.sub':         '7 years in operations — 4 of them in the US. Now I build the dashboards that make decisions defensible.',
+    'hero.sub':         '7 years in operations — 4 of them in the US.',
     'hero.stat1.value': '2+',
     'hero.stat1.label': 'Years in BI & Data',
     'hero.stat2.value': '5',
     'hero.stat2.label': 'Projects Shipped',
     'hero.stat3.value': '40%',
     'hero.stat3.label': 'SLA breach reduction',
+    'hero.cta.projects': 'View Projects',
+    'hero.cta.contact':  'Get in touch',
 
     /* ABOUT */
     'about.label':      'About',
@@ -131,6 +133,8 @@ const translations = {
     'hero.stat2.label': 'Projetos Entregues',
     'hero.stat3.value': '40%',
     'hero.stat3.label': 'Redução em breach de SLA',
+    'hero.cta.projects': 'Ver Projetos',
+    'hero.cta.contact':  'Entrar em contato',
 
     /* ABOUT */
     'about.label':      'Sobre',
