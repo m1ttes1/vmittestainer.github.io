@@ -24,7 +24,7 @@
     skills: function () { return [
       { text: 'Advanced:     Power BI · DAX · Power Query · Excel', cls: 'accent' },
       { text: 'Intermediate: SQL · Python (pandas) · Power Automate · Git', cls: 'warm' },
-      { text: 'Learning:     Tableau · dbt · Azure', cls: 'muted' },
+      { text: 'Learning:     Tableau', cls: 'muted' },
     ]; },
 
     projects: function () { return [
