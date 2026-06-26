@@ -43,8 +43,8 @@ const translations = {
 
     'project.sla.title':    'SLA Compliance Dashboard',
     'project.sla.tech':     'Power BI · DAX',
-    'project.sla.problem':  'CX team tracked ticket recurrence manually via Excel exports — no per-client view, name inconsistencies broke analysis.',
-    'project.sla.result':   'Full self-service BI in daily use: recurrence auto-calculated via DAX with name normalization, 40% faster violation response.',
+    'project.sla.problem':  'Only one person could detect recurring alerts — manual Excel filtering across CPU/mem/disk tickets, no per-client SLA view.',
+    'project.sla.result':   '3-person CX team runs self-service: DAX auto-flags recurring incidents, SLA tracked across SaaS/IaaS/PaaS clients, feeds monthly books.',
 
     'project.cnpj.title':   'CNPJ Matching Pipeline',
     'project.cnpj.tech':    'Python · pandas',
@@ -165,8 +165,8 @@ const translations = {
 
     'project.sla.title':    'Dashboard de Conformidade de SLA',
     'project.sla.tech':     'Power BI · DAX',
-    'project.sla.problem':  'Time CX rastreava recorrência de tickets manualmente via Excel — sem visão por cliente, inconsistências de nome quebravam a análise.',
-    'project.sla.result':   'BI self-service em uso diário: recorrência calculada via DAX com normalização de nomes, 40% mais rápido na resposta a violações.',
+    'project.sla.problem':  'Só quem sabia filtrava Excel para ver recorrência de alertas (CPU/mem/disco) — sem visão por cliente nem SLA consolidado.',
+    'project.sla.result':   'Equipe de 3 usa self-service: recorrência calculada via DAX, SLA de clientes SaaS/IaaS/PaaS em tempo real, base dos books mensais.',
 
     'project.cnpj.title':   'Pipeline de Matching de CNPJ',
     'project.cnpj.tech':    'Python · pandas',
