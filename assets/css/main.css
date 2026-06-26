@@ -1274,3 +1274,36 @@ footer p + p {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ===== CAGED CHART ===== */
+.caged-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.caged-select {
+  background: var(--clr-surface-2);
+  border: 1px solid var(--clr-border);
+  color: var(--clr-text);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  cursor: pointer;
+}
+
+.caged-select:focus {
+  outline: none;
+  border-color: var(--clr-accent);
+}
+
+.caged-meta {
+  font-size: var(--text-xs);
+}
+
+#caged-chart-container {
+  margin-top: 1rem;
+}

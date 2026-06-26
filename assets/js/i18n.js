@@ -68,10 +68,10 @@ const translations = {
 
     'project.link.code':  'View Code',
 
-    'project.sql.title':   'Workforce Attrition Analysis',
-    'project.sql.tech':    'SQL · Python · pandas',
-    'project.sql.problem': "HR team couldn't explain a rising attrition spike — needed structured SQL analysis across 8 variables.",
-    'project.sql.result':  'Found 3 leading predictors (Sales ~24% churn, early tenure, low salary band) — risk scores ready for dashboard.',
+    'project.sql.title':   'CAGED Indústria SP',
+    'project.sql.tech':    'SQL · DuckDB · Python',
+    'project.sql.problem': 'Novo CAGED microdata covers millions of records — needed SQL analytics to find SP manufacturing employment trends post-2020.',
+    'project.sql.result':  'Window functions + CTEs in DuckDB reveal per-municipality recovery patterns, 2021–2024.',
 
     /* EXPERIENCE */
     'experience.label':          'Experience',
@@ -190,10 +190,10 @@ const translations = {
 
     'project.link.code':  'Ver Código',
 
-    'project.sql.title':   'Análise de Rotatividade de Colaboradores',
-    'project.sql.tech':    'SQL · Python · pandas',
-    'project.sql.problem': 'Time de RH não conseguia explicar um pico crescente de attrition — precisava de análise SQL estruturada em múltiplas variáveis.',
-    'project.sql.result':  '3 preditores identificados (Vendas ~24% de churn, turnover precoce, faixa salarial baixa) — scores de risco prontos para dashboard.',
+    'project.sql.title':   'CAGED Indústria SP',
+    'project.sql.tech':    'SQL · DuckDB · Python',
+    'project.sql.problem': 'Microdados do Novo CAGED cobrem milhões de registros — precisava de SQL analítico para encontrar tendências de emprego industrial em SP pós-2020.',
+    'project.sql.result':  'Window functions + CTEs no DuckDB revelam padrões de recuperação por município, 2021–2024.',
 
     /* EXPERIENCE */
     'experience.label':          'Experiência',
