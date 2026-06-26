@@ -1,0 +1,1146 @@
+{
+  "meta": {
+    "fonte": "Novo CAGED/MTE (dados sintéticos para demonstração)",
+    "periodo": "2021-2024",
+    "uf": "SP",
+    "secao": "C - Indústria de Transformação",
+    "gerado_em": "2026-06-25"
+  },
+  "municipios": [
+    {
+      "nome": "São Paulo",
+      "serie": [
+        {
+          "competencia": "2021-01",
+          "saldo": 215,
+          "admissoes": 625,
+          "desligamentos": 405
+        },
+        {
+          "competencia": "2021-02",
+          "saldo": 235,
+          "admissoes": 620,
+          "desligamentos": 385
+        },
+        {
+          "competencia": "2021-03",
+          "saldo": 215,
+          "admissoes": 640,
+          "desligamentos": 425
+        },
+        {
+          "competencia": "2021-04",
+          "saldo": 205,
+          "admissoes": 650,
+          "desligamentos": 445
+        },
+        {
+          "competencia": "2021-05",
+          "saldo": 235,
+          "admissoes": 595,
+          "desligamentos": 360
+        },
+        {
+          "competencia": "2021-06",
+          "saldo": 230,
+          "admissoes": 665,
+          "desligamentos": 435
+        },
+        {
+          "competencia": "2021-07",
+          "saldo": 210,
+          "admissoes": 585,
+          "desligamentos": 370
+        },
+        {
+          "competencia": "2021-08",
+          "saldo": 255,
+          "admissoes": 660,
+          "desligamentos": 405
+        },
+        {
+          "competencia": "2021-09",
+          "saldo": 270,
+          "admissoes": 610,
+          "desligamentos": 340
+        },
+        {
+          "competencia": "2021-10",
+          "saldo": 265,
+          "admissoes": 620,
+          "desligamentos": 355
+        },
+        {
+          "competencia": "2021-11",
+          "saldo": 250,
+          "admissoes": 610,
+          "desligamentos": 355
+        },
+        {
+          "competencia": "2021-12",
+          "saldo": 265,
+          "admissoes": 700,
+          "desligamentos": 430
+        },
+        {
+          "competencia": "2022-01",
+          "saldo": 260,
+          "admissoes": 640,
+          "desligamentos": 375
+        },
+        {
+          "competencia": "2022-02",
+          "saldo": 270,
+          "admissoes": 630,
+          "desligamentos": 360
+        },
+        {
+          "competencia": "2022-03",
+          "saldo": 260,
+          "admissoes": 655,
+          "desligamentos": 390
+        },
+        {
+          "competencia": "2022-04",
+          "saldo": 305,
+          "admissoes": 645,
+          "desligamentos": 340
+        },
+        {
+          "competencia": "2022-05",
+          "saldo": 260,
+          "admissoes": 695,
+          "desligamentos": 435
+        },
+        {
+          "competencia": "2022-06",
+          "saldo": 265,
+          "admissoes": 710,
+          "desligamentos": 445
+        },
+        {
+          "competencia": "2022-07",
+          "saldo": 265,
+          "admissoes": 710,
+          "desligamentos": 440
+        },
+        {
+          "competencia": "2022-08",
+          "saldo": 225,
+          "admissoes": 730,
+          "desligamentos": 500
+        },
+        {
+          "competencia": "2022-09",
+          "saldo": 325,
+          "admissoes": 740,
+          "desligamentos": 415
+        },
+        {
+          "competencia": "2022-10",
+          "saldo": 300,
+          "admissoes": 675,
+          "desligamentos": 375
+        },
+        {
+          "competencia": "2022-11",
+          "saldo": 285,
+          "admissoes": 660,
+          "desligamentos": 375
+        },
+        {
+          "competencia": "2022-12",
+          "saldo": 370,
+          "admissoes": 735,
+          "desligamentos": 365
+        },
+        {
+          "competencia": "2023-01",
+          "saldo": 325,
+          "admissoes": 655,
+          "desligamentos": 325
+        },
+        {
+          "competencia": "2023-02",
+          "saldo": 330,
+          "admissoes": 700,
+          "desligamentos": 370
+        },
+        {
+          "competencia": "2023-03",
+          "saldo": 330,
+          "admissoes": 695,
+          "desligamentos": 360
+        },
+        {
+          "competencia": "2023-04",
+          "saldo": 340,
+          "admissoes": 670,
+          "desligamentos": 330
+        },
+        {
+          "competencia": "2023-05",
+          "saldo": 340,
+          "admissoes": 755,
+          "desligamentos": 410
+        },
+        {
+          "competencia": "2023-06",
+          "saldo": 350,
+          "admissoes": 745,
+          "desligamentos": 395
+        },
+        {
+          "competencia": "2023-07",
+          "saldo": 340,
+          "admissoes": 695,
+          "desligamentos": 355
+        },
+        {
+          "competencia": "2023-08",
+          "saldo": 330,
+          "admissoes": 715,
+          "desligamentos": 385
+        },
+        {
+          "competencia": "2023-09",
+          "saldo": 275,
+          "admissoes": 740,
+          "desligamentos": 460
+        },
+        {
+          "competencia": "2023-10",
+          "saldo": 335,
+          "admissoes": 720,
+          "desligamentos": 385
+        },
+        {
+          "competencia": "2023-11",
+          "saldo": 360,
+          "admissoes": 800,
+          "desligamentos": 440
+        },
+        {
+          "competencia": "2023-12",
+          "saldo": 365,
+          "admissoes": 710,
+          "desligamentos": 345
+        },
+        {
+          "competencia": "2024-01",
+          "saldo": 320,
+          "admissoes": 745,
+          "desligamentos": 420
+        }
+      ]
+    },
+    {
+      "nome": "Guarulhos",
+      "serie": [
+        {
+          "competencia": "2021-01",
+          "saldo": 85,
+          "admissoes": 595,
+          "desligamentos": 510
+        },
+        {
+          "competencia": "2021-02",
+          "saldo": 45,
+          "admissoes": 655,
+          "desligamentos": 605
+        },
+        {
+          "competencia": "2021-03",
+          "saldo": 130,
+          "admissoes": 610,
+          "desligamentos": 480
+        },
+        {
+          "competencia": "2021-04",
+          "saldo": 130,
+          "admissoes": 585,
+          "desligamentos": 455
+        },
+        {
+          "competencia": "2021-05",
+          "saldo": 65,
+          "admissoes": 665,
+          "desligamentos": 600
+        },
+        {
+          "competencia": "2021-06",
+          "saldo": 65,
+          "admissoes": 630,
+          "desligamentos": 565
+        },
+        {
+          "competencia": "2021-07",
+          "saldo": 70,
+          "admissoes": 610,
+          "desligamentos": 535
+        },
+        {
+          "competencia": "2021-08",
+          "saldo": 125,
+          "admissoes": 670,
+          "desligamentos": 540
+        },
+        {
+          "competencia": "2021-09",
+          "saldo": 55,
+          "admissoes": 610,
+          "desligamentos": 550
+        },
+        {
+          "competencia": "2021-10",
+          "saldo": 115,
+          "admissoes": 680,
+          "desligamentos": 565
+        },
+        {
+          "competencia": "2021-11",
+          "saldo": 170,
+          "admissoes": 635,
+          "desligamentos": 460
+        },
+        {
+          "competencia": "2021-12",
+          "saldo": 150,
+          "admissoes": 700,
+          "desligamentos": 545
+        },
+        {
+          "competencia": "2022-01",
+          "saldo": 160,
+          "admissoes": 700,
+          "desligamentos": 540
+        },
+        {
+          "competencia": "2022-02",
+          "saldo": 140,
+          "admissoes": 705,
+          "desligamentos": 565
+        },
+        {
+          "competencia": "2022-03",
+          "saldo": 210,
+          "admissoes": 700,
+          "desligamentos": 490
+        },
+        {
+          "competencia": "2022-04",
+          "saldo": 210,
+          "admissoes": 670,
+          "desligamentos": 460
+        },
+        {
+          "competencia": "2022-05",
+          "saldo": 150,
+          "admissoes": 710,
+          "desligamentos": 555
+        },
+        {
+          "competencia": "2022-06",
+          "saldo": 205,
+          "admissoes": 665,
+          "desligamentos": 460
+        },
+        {
+          "competencia": "2022-07",
+          "saldo": 220,
+          "admissoes": 730,
+          "desligamentos": 505
+        },
+        {
+          "competencia": "2022-08",
+          "saldo": 170,
+          "admissoes": 715,
+          "desligamentos": 545
+        },
+        {
+          "competencia": "2022-09",
+          "saldo": 140,
+          "admissoes": 715,
+          "desligamentos": 570
+        },
+        {
+          "competencia": "2022-10",
+          "saldo": 180,
+          "admissoes": 715,
+          "desligamentos": 535
+        },
+        {
+          "competencia": "2022-11",
+          "saldo": 210,
+          "admissoes": 700,
+          "desligamentos": 490
+        },
+        {
+          "competencia": "2022-12",
+          "saldo": 225,
+          "admissoes": 720,
+          "desligamentos": 495
+        },
+        {
+          "competencia": "2023-01",
+          "saldo": 155,
+          "admissoes": 715,
+          "desligamentos": 555
+        },
+        {
+          "competencia": "2023-02",
+          "saldo": 190,
+          "admissoes": 710,
+          "desligamentos": 515
+        },
+        {
+          "competencia": "2023-03",
+          "saldo": 160,
+          "admissoes": 735,
+          "desligamentos": 575
+        },
+        {
+          "competencia": "2023-04",
+          "saldo": 235,
+          "admissoes": 690,
+          "desligamentos": 455
+        },
+        {
+          "competencia": "2023-05",
+          "saldo": 185,
+          "admissoes": 760,
+          "desligamentos": 570
+        },
+        {
+          "competencia": "2023-06",
+          "saldo": 165,
+          "admissoes": 775,
+          "desligamentos": 610
+        },
+        {
+          "competencia": "2023-07",
+          "saldo": 205,
+          "admissoes": 765,
+          "desligamentos": 560
+        },
+        {
+          "competencia": "2023-08",
+          "saldo": 180,
+          "admissoes": 735,
+          "desligamentos": 550
+        },
+        {
+          "competencia": "2023-09",
+          "saldo": 245,
+          "admissoes": 790,
+          "desligamentos": 540
+        },
+        {
+          "competencia": "2023-10",
+          "saldo": 245,
+          "admissoes": 700,
+          "desligamentos": 455
+        },
+        {
+          "competencia": "2023-11",
+          "saldo": 255,
+          "admissoes": 740,
+          "desligamentos": 485
+        },
+        {
+          "competencia": "2023-12",
+          "saldo": 225,
+          "admissoes": 790,
+          "desligamentos": 565
+        },
+        {
+          "competencia": "2024-01",
+          "saldo": 220,
+          "admissoes": 755,
+          "desligamentos": 535
+        }
+      ]
+    },
+    {
+      "nome": "Osasco",
+      "serie": [
+        {
+          "competencia": "2021-01",
+          "saldo": 45,
+          "admissoes": 605,
+          "desligamentos": 560
+        },
+        {
+          "competencia": "2021-02",
+          "saldo": 110,
+          "admissoes": 650,
+          "desligamentos": 540
+        },
+        {
+          "competencia": "2021-03",
+          "saldo": 95,
+          "admissoes": 580,
+          "desligamentos": 485
+        },
+        {
+          "competencia": "2021-04",
+          "saldo": 115,
+          "admissoes": 585,
+          "desligamentos": 465
+        },
+        {
+          "competencia": "2021-05",
+          "saldo": 75,
+          "admissoes": 605,
+          "desligamentos": 525
+        },
+        {
+          "competencia": "2021-06",
+          "saldo": 70,
+          "admissoes": 605,
+          "desligamentos": 530
+        },
+        {
+          "competencia": "2021-07",
+          "saldo": 145,
+          "admissoes": 605,
+          "desligamentos": 460
+        },
+        {
+          "competencia": "2021-08",
+          "saldo": 30,
+          "admissoes": 665,
+          "desligamentos": 635
+        },
+        {
+          "competencia": "2021-09",
+          "saldo": 115,
+          "admissoes": 645,
+          "desligamentos": 525
+        },
+        {
+          "competencia": "2021-10",
+          "saldo": 110,
+          "admissoes": 620,
+          "desligamentos": 510
+        },
+        {
+          "competencia": "2021-11",
+          "saldo": 90,
+          "admissoes": 660,
+          "desligamentos": 570
+        },
+        {
+          "competencia": "2021-12",
+          "saldo": 140,
+          "admissoes": 655,
+          "desligamentos": 510
+        },
+        {
+          "competencia": "2022-01",
+          "saldo": 105,
+          "admissoes": 640,
+          "desligamentos": 530
+        },
+        {
+          "competencia": "2022-02",
+          "saldo": 125,
+          "admissoes": 675,
+          "desligamentos": 545
+        },
+        {
+          "competencia": "2022-03",
+          "saldo": 115,
+          "admissoes": 630,
+          "desligamentos": 515
+        },
+        {
+          "competencia": "2022-04",
+          "saldo": 130,
+          "admissoes": 645,
+          "desligamentos": 515
+        },
+        {
+          "competencia": "2022-05",
+          "saldo": 115,
+          "admissoes": 665,
+          "desligamentos": 550
+        },
+        {
+          "competencia": "2022-06",
+          "saldo": 95,
+          "admissoes": 630,
+          "desligamentos": 530
+        },
+        {
+          "competencia": "2022-07",
+          "saldo": 150,
+          "admissoes": 730,
+          "desligamentos": 575
+        },
+        {
+          "competencia": "2022-08",
+          "saldo": 110,
+          "admissoes": 705,
+          "desligamentos": 590
+        },
+        {
+          "competencia": "2022-09",
+          "saldo": 165,
+          "admissoes": 685,
+          "desligamentos": 520
+        },
+        {
+          "competencia": "2022-10",
+          "saldo": 210,
+          "admissoes": 715,
+          "desligamentos": 500
+        },
+        {
+          "competencia": "2022-11",
+          "saldo": 205,
+          "admissoes": 675,
+          "desligamentos": 465
+        },
+        {
+          "competencia": "2022-12",
+          "saldo": 150,
+          "admissoes": 660,
+          "desligamentos": 510
+        },
+        {
+          "competencia": "2023-01",
+          "saldo": 185,
+          "admissoes": 670,
+          "desligamentos": 485
+        },
+        {
+          "competencia": "2023-02",
+          "saldo": 160,
+          "admissoes": 740,
+          "desligamentos": 580
+        },
+        {
+          "competencia": "2023-03",
+          "saldo": 195,
+          "admissoes": 675,
+          "desligamentos": 480
+        },
+        {
+          "competencia": "2023-04",
+          "saldo": 115,
+          "admissoes": 765,
+          "desligamentos": 650
+        },
+        {
+          "competencia": "2023-05",
+          "saldo": 195,
+          "admissoes": 710,
+          "desligamentos": 515
+        },
+        {
+          "competencia": "2023-06",
+          "saldo": 145,
+          "admissoes": 730,
+          "desligamentos": 585
+        },
+        {
+          "competencia": "2023-07",
+          "saldo": 235,
+          "admissoes": 750,
+          "desligamentos": 515
+        },
+        {
+          "competencia": "2023-08",
+          "saldo": 140,
+          "admissoes": 780,
+          "desligamentos": 640
+        },
+        {
+          "competencia": "2023-09",
+          "saldo": 185,
+          "admissoes": 700,
+          "desligamentos": 510
+        },
+        {
+          "competencia": "2023-10",
+          "saldo": 230,
+          "admissoes": 785,
+          "desligamentos": 550
+        },
+        {
+          "competencia": "2023-11",
+          "saldo": 185,
+          "admissoes": 775,
+          "desligamentos": 590
+        },
+        {
+          "competencia": "2023-12",
+          "saldo": 215,
+          "admissoes": 780,
+          "desligamentos": 565
+        },
+        {
+          "competencia": "2024-01",
+          "saldo": 190,
+          "admissoes": 795,
+          "desligamentos": 605
+        }
+      ]
+    },
+    {
+      "nome": "Santo André",
+      "serie": [
+        {
+          "competencia": "2021-01",
+          "saldo": 60,
+          "admissoes": 600,
+          "desligamentos": 540
+        },
+        {
+          "competencia": "2021-02",
+          "saldo": 70,
+          "admissoes": 590,
+          "desligamentos": 515
+        },
+        {
+          "competencia": "2021-03",
+          "saldo": 25,
+          "admissoes": 570,
+          "desligamentos": 545
+        },
+        {
+          "competencia": "2021-04",
+          "saldo": 40,
+          "admissoes": 665,
+          "desligamentos": 620
+        },
+        {
+          "competencia": "2021-05",
+          "saldo": 55,
+          "admissoes": 605,
+          "desligamentos": 550
+        },
+        {
+          "competencia": "2021-06",
+          "saldo": 5,
+          "admissoes": 615,
+          "desligamentos": 605
+        },
+        {
+          "competencia": "2021-07",
+          "saldo": 90,
+          "admissoes": 650,
+          "desligamentos": 560
+        },
+        {
+          "competencia": "2021-08",
+          "saldo": 50,
+          "admissoes": 610,
+          "desligamentos": 560
+        },
+        {
+          "competencia": "2021-09",
+          "saldo": 145,
+          "admissoes": 655,
+          "desligamentos": 505
+        },
+        {
+          "competencia": "2021-10",
+          "saldo": 115,
+          "admissoes": 625,
+          "desligamentos": 505
+        },
+        {
+          "competencia": "2021-11",
+          "saldo": 115,
+          "admissoes": 655,
+          "desligamentos": 535
+        },
+        {
+          "competencia": "2021-12",
+          "saldo": 150,
+          "admissoes": 610,
+          "desligamentos": 455
+        },
+        {
+          "competencia": "2022-01",
+          "saldo": 115,
+          "admissoes": 670,
+          "desligamentos": 550
+        },
+        {
+          "competencia": "2022-02",
+          "saldo": 100,
+          "admissoes": 690,
+          "desligamentos": 590
+        },
+        {
+          "competencia": "2022-03",
+          "saldo": 95,
+          "admissoes": 660,
+          "desligamentos": 565
+        },
+        {
+          "competencia": "2022-04",
+          "saldo": 95,
+          "admissoes": 640,
+          "desligamentos": 545
+        },
+        {
+          "competencia": "2022-05",
+          "saldo": 140,
+          "admissoes": 630,
+          "desligamentos": 485
+        },
+        {
+          "competencia": "2022-06",
+          "saldo": 160,
+          "admissoes": 630,
+          "desligamentos": 470
+        },
+        {
+          "competencia": "2022-07",
+          "saldo": 140,
+          "admissoes": 665,
+          "desligamentos": 525
+        },
+        {
+          "competencia": "2022-08",
+          "saldo": 145,
+          "admissoes": 725,
+          "desligamentos": 580
+        },
+        {
+          "competencia": "2022-09",
+          "saldo": 175,
+          "admissoes": 690,
+          "desligamentos": 515
+        },
+        {
+          "competencia": "2022-10",
+          "saldo": 130,
+          "admissoes": 745,
+          "desligamentos": 610
+        },
+        {
+          "competencia": "2022-11",
+          "saldo": 130,
+          "admissoes": 720,
+          "desligamentos": 585
+        },
+        {
+          "competencia": "2022-12",
+          "saldo": 125,
+          "admissoes": 685,
+          "desligamentos": 560
+        },
+        {
+          "competencia": "2023-01",
+          "saldo": 140,
+          "admissoes": 670,
+          "desligamentos": 525
+        },
+        {
+          "competencia": "2023-02",
+          "saldo": 160,
+          "admissoes": 715,
+          "desligamentos": 550
+        },
+        {
+          "competencia": "2023-03",
+          "saldo": 140,
+          "admissoes": 760,
+          "desligamentos": 620
+        },
+        {
+          "competencia": "2023-04",
+          "saldo": 205,
+          "admissoes": 690,
+          "desligamentos": 485
+        },
+        {
+          "competencia": "2023-05",
+          "saldo": 170,
+          "admissoes": 720,
+          "desligamentos": 550
+        },
+        {
+          "competencia": "2023-06",
+          "saldo": 220,
+          "admissoes": 750,
+          "desligamentos": 525
+        },
+        {
+          "competencia": "2023-07",
+          "saldo": 150,
+          "admissoes": 740,
+          "desligamentos": 585
+        },
+        {
+          "competencia": "2023-08",
+          "saldo": 175,
+          "admissoes": 705,
+          "desligamentos": 530
+        },
+        {
+          "competencia": "2023-09",
+          "saldo": 170,
+          "admissoes": 695,
+          "desligamentos": 525
+        },
+        {
+          "competencia": "2023-10",
+          "saldo": 225,
+          "admissoes": 750,
+          "desligamentos": 525
+        },
+        {
+          "competencia": "2023-11",
+          "saldo": 245,
+          "admissoes": 730,
+          "desligamentos": 485
+        },
+        {
+          "competencia": "2023-12",
+          "saldo": 190,
+          "admissoes": 800,
+          "desligamentos": 610
+        },
+        {
+          "competencia": "2024-01",
+          "saldo": 215,
+          "admissoes": 705,
+          "desligamentos": 490
+        }
+      ]
+    },
+    {
+      "nome": "Sorocaba",
+      "serie": [
+        {
+          "competencia": "2021-01",
+          "saldo": 65,
+          "admissoes": 585,
+          "desligamentos": 520
+        },
+        {
+          "competencia": "2021-02",
+          "saldo": 65,
+          "admissoes": 645,
+          "desligamentos": 580
+        },
+        {
+          "competencia": "2021-03",
+          "saldo": 95,
+          "admissoes": 625,
+          "desligamentos": 525
+        },
+        {
+          "competencia": "2021-04",
+          "saldo": 95,
+          "admissoes": 630,
+          "desligamentos": 535
+        },
+        {
+          "competencia": "2021-05",
+          "saldo": 85,
+          "admissoes": 635,
+          "desligamentos": 550
+        },
+        {
+          "competencia": "2021-06",
+          "saldo": 55,
+          "admissoes": 600,
+          "desligamentos": 545
+        },
+        {
+          "competencia": "2021-07",
+          "saldo": 90,
+          "admissoes": 615,
+          "desligamentos": 525
+        },
+        {
+          "competencia": "2021-08",
+          "saldo": 70,
+          "admissoes": 670,
+          "desligamentos": 595
+        },
+        {
+          "competencia": "2021-09",
+          "saldo": 80,
+          "admissoes": 605,
+          "desligamentos": 520
+        },
+        {
+          "competencia": "2021-10",
+          "saldo": 70,
+          "admissoes": 650,
+          "desligamentos": 580
+        },
+        {
+          "competencia": "2021-11",
+          "saldo": 55,
+          "admissoes": 675,
+          "desligamentos": 615
+        },
+        {
+          "competencia": "2021-12",
+          "saldo": 105,
+          "admissoes": 665,
+          "desligamentos": 555
+        },
+        {
+          "competencia": "2022-01",
+          "saldo": 115,
+          "admissoes": 650,
+          "desligamentos": 530
+        },
+        {
+          "competencia": "2022-02",
+          "saldo": 75,
+          "admissoes": 665,
+          "desligamentos": 590
+        },
+        {
+          "competencia": "2022-03",
+          "saldo": 155,
+          "admissoes": 625,
+          "desligamentos": 465
+        },
+        {
+          "competencia": "2022-04",
+          "saldo": 120,
+          "admissoes": 665,
+          "desligamentos": 545
+        },
+        {
+          "competencia": "2022-05",
+          "saldo": 110,
+          "admissoes": 655,
+          "desligamentos": 540
+        },
+        {
+          "competencia": "2022-06",
+          "saldo": 190,
+          "admissoes": 705,
+          "desligamentos": 515
+        },
+        {
+          "competencia": "2022-07",
+          "saldo": 145,
+          "admissoes": 635,
+          "desligamentos": 490
+        },
+        {
+          "competencia": "2022-08",
+          "saldo": 100,
+          "admissoes": 650,
+          "desligamentos": 545
+        },
+        {
+          "competencia": "2022-09",
+          "saldo": 110,
+          "admissoes": 720,
+          "desligamentos": 610
+        },
+        {
+          "competencia": "2022-10",
+          "saldo": 130,
+          "admissoes": 710,
+          "desligamentos": 575
+        },
+        {
+          "competencia": "2022-11",
+          "saldo": 170,
+          "admissoes": 710,
+          "desligamentos": 540
+        },
+        {
+          "competencia": "2022-12",
+          "saldo": 180,
+          "admissoes": 755,
+          "desligamentos": 570
+        },
+        {
+          "competencia": "2023-01",
+          "saldo": 180,
+          "admissoes": 735,
+          "desligamentos": 555
+        },
+        {
+          "competencia": "2023-02",
+          "saldo": 180,
+          "admissoes": 715,
+          "desligamentos": 535
+        },
+        {
+          "competencia": "2023-03",
+          "saldo": 190,
+          "admissoes": 675,
+          "desligamentos": 485
+        },
+        {
+          "competencia": "2023-04",
+          "saldo": 180,
+          "admissoes": 755,
+          "desligamentos": 570
+        },
+        {
+          "competencia": "2023-05",
+          "saldo": 150,
+          "admissoes": 725,
+          "desligamentos": 570
+        },
+        {
+          "competencia": "2023-06",
+          "saldo": 195,
+          "admissoes": 710,
+          "desligamentos": 510
+        },
+        {
+          "competencia": "2023-07",
+          "saldo": 140,
+          "admissoes": 760,
+          "desligamentos": 615
+        },
+        {
+          "competencia": "2023-08",
+          "saldo": 195,
+          "admissoes": 740,
+          "desligamentos": 545
+        },
+        {
+          "competencia": "2023-09",
+          "saldo": 155,
+          "admissoes": 780,
+          "desligamentos": 625
+        },
+        {
+          "competencia": "2023-10",
+          "saldo": 175,
+          "admissoes": 710,
+          "desligamentos": 530
+        },
+        {
+          "competencia": "2023-11",
+          "saldo": 200,
+          "admissoes": 755,
+          "desligamentos": 550
+        },
+        {
+          "competencia": "2023-12",
+          "saldo": 180,
+          "admissoes": 790,
+          "desligamentos": 605
+        },
+        {
+          "competencia": "2024-01",
+          "saldo": 225,
+          "admissoes": 730,
+          "desligamentos": 500
+        }
+      ]
+    }
+  ]
+}
