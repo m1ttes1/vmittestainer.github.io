@@ -1,11 +1,11 @@
 /* ===== DESIGN TOKENS ===== */
 :root {
-  --clr-bg: #0A0A0F;
-  --clr-surface: #13131A;
-  --clr-surface-2: #1C1C26;
-  --clr-border: #2A2A3A;
+  --clr-bg: #111213;
+  --clr-surface: #1C1C1E;
+  --clr-surface-2: #2C2C2E;
+  --clr-border: #3A3A3C;
   --clr-text: #E8E8F0;
-  --clr-text-muted: #8888A8;
+  --clr-text-muted: #98989E;
   --clr-accent: #00D4AA;
   --clr-accent-dim: rgba(0, 212, 170, 0.12);
   --clr-warm: #F59E0B;
@@ -22,11 +22,11 @@
   --text-lg:   1.25rem;   /* 20px */
   --text-xl:   1.875rem;  /* 30px */
   --text-2xl:  2.5rem;    /* 40px */
-  --text-3xl:  3.5rem;    /* 56px */
+  --text-3xl:  4rem;      /* 64px */
 
   --radius-sm: 6px;
-  --radius-md: 12px;
-  --radius-lg: 20px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
 
   --shadow-accent: 0 0 32px rgba(0, 212, 170, 0.15);
   --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4);
