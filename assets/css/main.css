@@ -275,29 +275,6 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: 0.05em;
 }
 
-.hero__avatar {
-  width: 260px; height: 260px;
-  border-radius: 50%;
-  border: 2px solid var(--clr-accent);
-  object-fit: cover;
-  box-shadow: var(--shadow-accent);
-}
-
-.hero__avatar-placeholder {
-  width: 260px; height: 260px;
-  border-radius: 50%;
-  border: 2px solid var(--clr-accent);
-  background: var(--clr-accent-dim);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-mono);
-  font-size: var(--text-xl);
-  color: var(--clr-accent);
-  font-weight: 700;
-  box-shadow: var(--shadow-accent);
-}
-
 /* Hero globe */
 .hero__globe {
   width: 420px;
@@ -400,38 +377,6 @@ section { padding-block: 7rem; }
   font-family: var(--font-mono);
   font-size: var(--text-xl);
   color: var(--clr-text-muted);
-}
-
-.about__card {
-  background: var(--clr-surface-2);
-  border: 1px solid var(--clr-border);
-  border-radius: var(--radius-md);
-  padding: 1.75rem;
-}
-
-.about__card-title {
-  font-family: var(--font-mono);
-  font-size: var(--text-xs);
-  color: var(--clr-accent);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
-
-.about__tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.tag {
-  font-family: var(--font-mono);
-  font-size: var(--text-xs);
-  color: var(--clr-text-muted);
-  background: var(--clr-bg);
-  border: 1px solid var(--clr-border);
-  border-radius: var(--radius-sm);
-  padding: 0.25rem 0.625rem;
 }
 
 /* ===== STACK ===== */
@@ -763,33 +708,6 @@ section { padding-block: 7rem; }
   color: var(--clr-text-muted);
   margin-bottom: 1.5rem;
   letter-spacing: 0.04em;
-}
-
-.demo__controls {
-  margin-bottom: 2rem;
-}
-
-.demo__filter {
-  background: var(--clr-surface-2);
-  border: 1px solid var(--clr-border);
-  color: var(--clr-text);
-  font-family: var(--font-mono);
-  font-size: var(--text-sm);
-  padding: 0.5rem 1rem;
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-  appearance: none;
-  -webkit-appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%239B9BAF' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 0.75rem center;
-  padding-right: 2.25rem;
-  transition: border-color var(--transition);
-}
-
-.demo__filter:focus {
-  outline: none;
-  border-color: var(--clr-accent);
 }
 
 .demo__kpis {
