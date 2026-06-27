@@ -534,15 +534,6 @@ section { padding-block: 7rem; }
   justify-content: center;
 }
 
-.project-card__globe-preview {
-  width: 100%;
-  aspect-ratio: 16/9;
-  background: var(--clr-bg);
-  border-bottom: 1px solid var(--clr-border);
-  overflow: hidden;
-  position: relative;
-}
-
 .project-card__img-placeholder .placeholder-icon {
   font-size: 2rem;
   opacity: 0.3;
