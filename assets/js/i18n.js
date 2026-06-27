@@ -10,7 +10,7 @@ const translations = {
 
     /* HERO */
     'hero.eyebrow':     'Data Analyst',
-    'hero.h1':          'Data moves the world. I make it readable.',
+    'hero.h1':          'Data moves the world.',
     'hero.sub':         '7 years in operations — 4 of them in the US.',
     'hero.stat1.value': '2+',
     'hero.stat1.label': 'Years in BI & Data',
@@ -130,7 +130,7 @@ const translations = {
 
     /* HERO */
     'hero.eyebrow':     'Data Analyst',
-    'hero.h1':          'Os dados movem o mundo. Eu os torno legíveis.',
+    'hero.h1':          'Os dados movem o mundo.',
     'hero.sub':         '7 anos em operações — 4 deles nos EUA. Hoje construo os dashboards que tornam as decisões defensáveis.',
     'hero.stat1.value': '2+',
     'hero.stat1.label': 'Anos em BI & Dados',
