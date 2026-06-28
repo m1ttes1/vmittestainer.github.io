@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Victor Mittestainer — Analista de Dados CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --accent: #00C49A;
+      --text:   #111213;
+      --muted:  #555;
+      --rule:   #ddd;
+      --mono:   'JetBrains Mono', monospace;
+      --sans:   'Inter', sans-serif;
+    }
+
+    body {
+      font-family: var(--sans);
+      font-size: 13.5px;
+      line-height: 1.55;
+      color: var(--text);
+      background: #fff;
+      padding: 2.5rem 2rem;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .print-btn {
+      position: fixed;
+      top: 1.25rem;
+      right: 1.25rem;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-family: var(--mono);
+      font-size: 12px;
+      cursor: pointer;
+      letter-spacing: 0.02em;
+    }
+    .print-btn:hover { background: #00b38a; }
+
+    .cv-header { margin-bottom: 1.25rem; }
+
+    .cv-name {
+      font-family: var(--mono);
+      font-size: 22px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+    }
+
+    .cv-title {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 2px;
+      margin-bottom: 0.5rem;
+    }
+
+    .cv-contact {
+      font-family: var(--mono);
+      font-size: 11.5px;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0 1.25rem;
+    }
+
+    .cv-contact a { color: var(--muted); text-decoration: none; }
+    .cv-contact a:hover { color: var(--accent); }
+
+    section { margin-bottom: 1.25rem; }
+
+    .section-label {
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 3px;
+      margin-bottom: 0.65rem;
+    }
+
+    .summary p { color: #333; }
+
+    .exp-item { margin-bottom: 1rem; }
+    .exp-item:last-child { margin-bottom: 0; }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 2px;
+    }
+
+    .exp-role { font-weight: 600; font-size: 13.5px; }
+    .exp-period { font-family: var(--mono); font-size: 11px; color: var(--muted); white-space: nowrap; }
+    .exp-org { font-size: 12.5px; color: var(--muted); margin-bottom: 3px; }
+
+    .exp-promo {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--accent);
+      margin-bottom: 5px;
+    }
+
+    .exp-list { list-style: none; padding: 0; }
+
+    .exp-list li {
+      padding-left: 1rem;
+      position: relative;
+      margin-bottom: 2px;
+      color: #333;
+    }
+
+    .exp-list li::before {
+      content: '·';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .exp-list strong { color: var(--text); }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 90px 1fr;
+      gap: 3px 0.75rem;
+    }
+
+    .skill-cat { font-family: var(--mono); font-size: 11px; color: var(--accent); padding-top: 1px; }
+    .skill-val { color: #333; font-size: 13px; }
+
+    .project-item { margin-bottom: 0.75rem; }
+    .project-item:last-child { margin-bottom: 0; }
+
+    .project-header {
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .project-name { font-weight: 600; font-size: 13.5px; }
+    .project-tech { font-family: var(--mono); font-size: 11px; color: var(--muted); }
+
+    .project-link {
+      font-family: var(--mono);
+      font-size: 10.5px;
+      color: var(--accent);
+      text-decoration: none;
+      margin-left: auto;
+    }
+
+    .project-desc { color: #333; margin-top: 1px; }
+
+    .edu-header { display: flex; justify-content: space-between; align-items: baseline; }
+    .edu-degree { font-weight: 600; }
+    .edu-period { font-family: var(--mono); font-size: 11px; color: var(--muted); }
+    .edu-org { color: var(--muted); font-size: 12.5px; }
+
+    @page {
+      size: A4;
+      margin: 18mm 16mm;
+    }
+
+    @media print {
+      .print-btn { display: none; }
+      body { padding: 0; font-size: 12.5px; }
+      a { color: inherit !important; }
+      section { page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+<button class="print-btn" onclick="window.print()">Imprimir / Salvar PDF</button>
+
+<!-- HEADER -->
+<header class="cv-header">
+  <p class="cv-name">Victor Mittestainer</p>
+  <p class="cv-title">Analista de Dados &nbsp;·&nbsp; Power BI · SQL · Python</p>
+  <div class="cv-contact">
+    <span>Campinas, SP</span>
+    <span>+55 (19) 98906-4683</span>
+    <a href="mailto:vmittestainer.dev@gmail.com">vmittestainer.dev@gmail.com</a>
+    <a href="https://linkedin.com/in/vmittestainer" target="_blank">linkedin.com/in/vmittestainer</a>
+    <a href="https://github.com/m1ttes1" target="_blank">github.com/m1ttes1</a>
+    <span>Inglês C2</span>
+  </div>
+</header>
+
+<!-- RESUMO -->
+<section class="summary">
+  <p class="section-label">Resumo Profissional</p>
+  <p>Analista de Dados com experiência prática em Power BI (DAX avançado, Power Query / ETL-ELT), SQL analítico, automação com Python e monitoramento de KPIs operacionais. Promovido de estagiário CX a Analista na Wevy em menos de um ano — transformei controles manuais do Excel em pipelines de BI self-service usados diariamente por clientes industriais. 5 projetos técnicos entregues, 3 com repositório público. Bilíngue inglês C2 / português nativo. Cursando ADS na Uninter (previsão 2026).</p>
+</section>
+
+<!-- EXPERIÊNCIA -->
+<section>
+  <p class="section-label">Experiência Profissional</p>
+
+  <div class="exp-item">
+    <div class="exp-header">
+      <span class="exp-role">Analista de CX &amp; Dados — Wevy</span>
+      <span class="exp-period">out 2024 – presente · Campinas, SP</span>
+    </div>
+    <p class="exp-org">Provedor Cloud IaaS/SaaS/PaaS</p>
+    <p class="exp-promo">↑ Promovido de Estagiário CX a Analista em jul 2025</p>
+    <ul class="exp-list">
+      <li><strong>Pipelines ETL/ELT:</strong> Migrei controles manuais do Excel para pipelines no Power Query com rastreabilidade completa dos dados da área.</li>
+      <li><strong>Monitoramento de SLA:</strong> KPIs (FCR, taxa de reabertura, backlog) no Power BI; análise de causa raiz em incidentes recorrentes. <strong>Redução de 40% no tempo de resposta a violações de SLA.</strong></li>
+      <li><strong>Automação de fluxos:</strong> Sincronização Zoho CRM ↔ SharePoint via Power Automate — equipe parou de sincronizar dados manualmente.</li>
+      <li><strong>Dashboards self-service:</strong> Painéis com DAX avançado; múltiplos parceiros consultam dados em tempo real sem extrações manuais.</li>
+      <li><strong>Projeto Database Lantern:</strong> Dashboards para gestão de infraestrutura; clientes resolvem dúvidas operacionais sem abrir chamados de suporte.</li>
+      <li><strong>Comunicação executiva:</strong> QBRs em inglês para lideranças de contas internacionais.</li>
+    </ul>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-header">
+      <span class="exp-role">Operações</span>
+      <span class="exp-period">2019 – 2023</span>
+    </div>
+    <p class="exp-org">Boston, MA / San Diego, CA — EUA</p>
+    <ul class="exp-list">
+      <li>Atendimento e logística em ambiente 100% em inglês com equipes multiculturais — base da fluência bilíngue C2.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- HABILIDADES -->
+<section>
+  <p class="section-label">Habilidades Técnicas</p>
+  <div class="skills-grid">
+    <span class="skill-cat">BI &amp; Dados</span>
+    <span class="skill-val">Power BI · DAX Avançado · Power Query / ETL-ELT · Modelagem Semântica · Star Schema · Excel</span>
+    <span class="skill-cat">Código</span>
+    <span class="skill-val">Python (pandas) · SQL · DuckDB (window functions, CTEs)</span>
+    <span class="skill-cat">Automação</span>
+    <span class="skill-val">Power Automate · Integração via REST API · Scripts Python</span>
+    <span class="skill-cat">Monitoramento</span>
+    <span class="skill-val">Zabbix · KPI/SLA · Análise de causa raiz</span>
+    <span class="skill-cat">Ferramentas</span>
+    <span class="skill-val">Zoho CRM · SharePoint · Git · Cloud IaaS/SaaS/PaaS</span>
+    <span class="skill-cat">Idiomas</span>
+    <span class="skill-val">Inglês C2 – Bilíngue / Proficiência Nativa &nbsp;|&nbsp; Português – Nativo</span>
+  </div>
+</section>
+
+<!-- PROJETOS -->
+<section>
+  <p class="section-label">Projetos &nbsp;·&nbsp; vmittestainer.github.io</p>
+
+  <div class="project-item">
+    <div class="project-header">
+      <span class="project-name">SLA Compliance Dashboard</span>
+      <span class="project-tech">Power BI · DAX · Zabbix</span>
+    </div>
+    <p class="project-desc">Equipe de 3 usa self-service: DAX auto-sinaliza incidentes recorrentes de CPU/mem/disco por cliente, SLA rastreado em ambientes SaaS/IaaS/PaaS. <strong>Redução de 40% no tempo de resposta a violações.</strong></p>
+  </div>
+
+  <div class="project-item">
+    <div class="project-header">
+      <span class="project-name">Pipeline de Matching de CNPJ</span>
+      <span class="project-tech">Python · pandas</span>
+      <a class="project-link" href="https://github.com/m1ttes1/cnpj-matching" target="_blank">github.com/m1ttes1/cnpj-matching</a>
+    </div>
+    <p class="project-desc">Reconciliação automatizada de CNPJs entre múltiplos arquivos Excel. <strong>Processo de 3 horas reduzido para 8 minutos.</strong></p>
+  </div>
+
+  <div class="project-item">
+    <div class="project-header">
+      <span class="project-name">IronForge</span>
+      <span class="project-tech">Python · SQLite · REST API</span>
+      <a class="project-link" href="https://github.com/m1ttes1/ironforge" target="_blank">github.com/m1ttes1/ironforge</a>
+    </div>
+    <p class="project-desc">API REST + 4 dashboards analíticos em banco SQLite operacional ao vivo. Zero perda de dados. Queries SQL em dados reais.</p>
+  </div>
+
+  <div class="project-item">
+    <div class="project-header">
+      <span class="project-name">Backup Monitoring Report</span>
+      <span class="project-tech">Power BI · Zabbix</span>
+    </div>
+    <p class="project-desc">Alertas proativos de falhas de backup. <strong>0 incidentes não detectados em 6 meses.</strong></p>
+  </div>
+
+  <div class="project-item">
+    <div class="project-header">
+      <span class="project-name">CAGED Indústria SP</span>
+      <span class="project-tech">SQL · DuckDB · Python</span>
+      <a class="project-link" href="https://github.com/m1ttes1/caged-industria-sp" target="_blank">github.com/m1ttes1/caged-industria-sp</a>
+    </div>
+    <p class="project-desc">Window functions + CTEs nos microdados do Novo CAGED (milhões de registros) revelando padrões de recuperação do emprego industrial em SP, 2021–2024.</p>
+  </div>
+</section>
+
+<!-- FORMAÇÃO -->
+<section>
+  <p class="section-label">Formação Acadêmica</p>
+  <div class="edu-header">
+    <span class="edu-degree">B.S. Análise e Desenvolvimento de Sistemas</span>
+    <span class="edu-period">2024 – 2026 (previsão)</span>
+  </div>
+  <p class="edu-org">Uninter University</p>
+</section>
+
+</body>
+</html>
