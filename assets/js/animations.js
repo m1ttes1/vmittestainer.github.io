@@ -4,13 +4,7 @@
   function initHeroAnimation() {
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.from('.hero__eyebrow',  { opacity: 0, y: 16, duration: 0.5, ease: 'power2.out' });
-    gsap.from('.hero__title',    { opacity: 0, y: 24, duration: 0.7, delay: 0.1,  ease: 'power2.out' });
-    gsap.from('.hero__subtitle', { opacity: 0, y: 20, duration: 0.6, delay: 0.25, ease: 'power2.out' });
-    gsap.from('.hero__cta',      { opacity: 0, y: 16, duration: 0.5, delay: 0.4,  ease: 'power2.out' });
-    gsap.from('.hero__stats',    { opacity: 0, y: 12, duration: 0.5, delay: 0.55, ease: 'power2.out' });
-
-    gsap.utils.toArray('[data-reveal]').forEach(el => {
+gsap.utils.toArray('[data-reveal]').forEach(el => {
       gsap.from(el, {
         opacity: 0,
         y: 30,
