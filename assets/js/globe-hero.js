@@ -86,6 +86,13 @@
     const h = container.offsetHeight || SIZE;
 
     const maxCo2 = Math.max(...CO2_2022.map(d => d.co2));
+    const totalCO2 = CO2_2022.reduce((s, d) => s + d.co2, 0);
+    const sortedDesc = [...CO2_2022].sort((a, b) => b.co2 - a.co2);
+    const rankMap = new Map(sortedDesc.map((d, i) => [
+      d.country,
+      { rank: i + 1, pct: ((d.co2 / totalCO2) * 100).toFixed(1) }
+    ]));
+    const TOP5 = sortedDesc.slice(0, 5);
 
     function emissionsColor(co2) {
       const t = Math.pow(co2 / maxCo2, 0.35);
@@ -104,35 +111,56 @@
         .backgroundColor('rgba(0,0,0,0)')
         .showAtmosphere(true)
         .atmosphereColor('#00D4AA')
-        .atmosphereAltitude(0.12)
+        .atmosphereAltitude(0.2)
         .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-dark.jpg')
         .pointsData(CO2_2022)
         .pointLat('lat')
         .pointLng('lng')
         .pointAltitude(d => (d.co2 / maxCo2) * 0.45)
-        .pointRadius(d => 0.22 + (d.co2 / maxCo2) * 0.55)
+        .pointRadius(d => 0.35 + (d.co2 / maxCo2) * 0.55)
         .pointColor(d => emissionsColor(d.co2))
-        .pointLabel(d =>
-          `<div style="font-family:'JetBrains Mono',monospace;font-size:11px;padding:6px 10px;` +
-          `background:#13131A;border:1px solid #00D4AA;border-radius:6px;color:#E8E8F0;white-space:nowrap">` +
-          `<span style="color:#00D4AA;font-weight:700">${d.country}</span><br>` +
-          `${d.co2.toLocaleString()} Mt CO₂ · 2022` +
-          `</div>`
-        )
+        .pointLabel(d => {
+          const r = rankMap.get(d.country);
+          return `<div style="font-family:'JetBrains Mono',monospace;font-size:11px;padding:6px 10px;` +
+            `background:#13131A;border:1px solid #00D4AA;border-radius:6px;color:#E8E8F0;white-space:nowrap">` +
+            `<span style="color:#00D4AA;font-weight:700">${d.country}</span>` +
+            `<span style="color:#555;font-size:10px;margin-left:6px">#${r.rank}</span><br>` +
+            `${d.co2.toLocaleString()} Mt CO₂ · ${r.pct}% of tracked</div>`;
+        })
         .width(w)
-        .height(h);
+        .height(h)
+        .ringsData(TOP5)
+        .ringLat('lat')
+        .ringLng('lng')
+        .ringColor(() => 'rgba(0,212,170,0.2)')
+        .ringMaxRadius(4)
+        .ringPropagationSpeed(1.5)
+        .ringRepeatPeriod(2000);
 
       const ctrl = globe.controls();
       ctrl.autoRotate      = true;
       ctrl.autoRotateSpeed = 0.5;
       ctrl.enableZoom      = false;
-      ctrl.addEventListener('start', () => { ctrl.autoRotate = false; });
 
-      new ResizeObserver(() => {
+      let resumeTimer = null;
+      ctrl.addEventListener('start', () => {
+        ctrl.autoRotate = false;
+        clearTimeout(resumeTimer);
+      });
+      ctrl.addEventListener('end', () => {
+        resumeTimer = setTimeout(() => { ctrl.autoRotate = true; }, 4000);
+      });
+
+      const ro = new ResizeObserver(() => {
         const nw = container.offsetWidth  || SIZE;
         const nh = container.offsetHeight || SIZE;
         globe.width(nw).height(nh);
-      }).observe(container);
+      });
+      ro.observe(container);
+
+      document.addEventListener('visibilitychange', () => {
+        if (document.hidden) ro.disconnect();
+      });
 
     } catch (e) {
       console.warn('Hero globe init failed:', e);
