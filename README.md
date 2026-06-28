@@ -2,7 +2,7 @@
 
 **Live →** [m1ttes1.github.io/vmittestainer.github.io](https://m1ttes1.github.io/vmittestainer.github.io/)
 
-Seven years in operations — CX, IT support, team lead. The last four in the US. Now working in BI and data analysis. This portfolio shows the output, not a description of it.
+5 years intership in the US and 2 years CX Ops Analyst
 
 No framework. No build step. HTML, CSS, vanilla JS — opens in any browser.
 
