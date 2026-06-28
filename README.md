@@ -2,7 +2,7 @@
 
 **Live →** [m1ttes1.github.io/vmittestainer.github.io](https://m1ttes1.github.io/vmittestainer.github.io/)
 
-5 years intership in the US and 2 years CX Ops Analyst
+Internship in Boston and San Diego. CX Analyst at Wevy. Discovered data along the way — this portfolio is the move.
 
 No framework. No build step. HTML, CSS, vanilla JS — opens in any browser.
 
