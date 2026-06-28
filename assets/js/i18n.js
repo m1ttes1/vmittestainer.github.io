@@ -9,6 +9,7 @@ const translations = {
     'nav.lang':       'PT',
 
     /* HERO */
+    'hero.name':        'Victor Mittestainer',
     'hero.eyebrow':     'Data Analyst',
     'hero.h1':          'Data moves the world.',
     'hero.sub':         '7 years in operations — 4 of them in the US.',
@@ -16,6 +17,8 @@ const translations = {
     'hero.stat1.label': 'Years in BI & Data',
     'hero.stat2.value': '6',
     'hero.stat2.label': 'Projects Shipped',
+    'hero.stat3.value': 'C2',
+    'hero.stat3.label': 'English',
     'hero.cta.projects': 'View Projects',
     'hero.cta.contact':  'Get in touch',
     'hero.globe.label': 'CO₂ emissions · 2022 · hover a country',
@@ -128,6 +131,7 @@ const translations = {
     'nav.lang':       'EN',
 
     /* HERO */
+    'hero.name':        'Victor Mittestainer',
     'hero.eyebrow':     'Data Analyst',
     'hero.h1':          'Os dados movem o mundo.',
     'hero.sub':         '7 anos em operações — 4 deles nos EUA. Hoje construo os dashboards que tornam as decisões defensáveis.',
@@ -135,6 +139,8 @@ const translations = {
     'hero.stat1.label': 'Anos em BI & Dados',
     'hero.stat2.value': '6',
     'hero.stat2.label': 'Projetos entregues',
+    'hero.stat3.value': 'C2',
+    'hero.stat3.label': 'Inglês',
     'hero.cta.projects': 'Ver projetos',
     'hero.cta.contact':  'Entrar em contato',
     'hero.globe.label': 'Emissões de CO₂ · 2022 · passe o mouse em um país',
