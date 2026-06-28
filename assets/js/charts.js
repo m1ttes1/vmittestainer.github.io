@@ -231,15 +231,17 @@
   function updateBreadcrumb() {
     const el = document.getElementById('drill-breadcrumb');
     if (!el) return;
-    if (!state.drillCategory) {
-      el.innerHTML = '';
-      return;
-    }
-    el.innerHTML = `
-      <button onclick="window.__demoReset()">All Categories</button>
-      <span class="bc-sep">›</span>
-      <span>${state.drillCategory}</span>
-    `;
+    el.textContent = '';
+    if (!state.drillCategory) return;
+    const btn = document.createElement('button');
+    btn.addEventListener('click', () => window.__demoReset());
+    btn.textContent = 'All Categories';
+    const sep = document.createElement('span');
+    sep.className = 'bc-sep';
+    sep.textContent = '›';
+    const cat = document.createElement('span');
+    cat.textContent = state.drillCategory;
+    el.append(btn, sep, cat);
   }
 
   window.__demoReset = function () {
