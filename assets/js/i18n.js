@@ -18,6 +18,7 @@ const translations = {
     'hero.stat2.label': 'Projects Shipped',
     'hero.cta.projects': 'View Projects',
     'hero.cta.contact':  'Get in touch',
+    'hero.globe.label': 'CO₂ emissions · 2022 · hover a country',
 
     /* ABOUT */
     'about.label':      'About',
@@ -136,6 +137,7 @@ const translations = {
     'hero.stat2.label': 'Projetos entregues',
     'hero.cta.projects': 'Ver projetos',
     'hero.cta.contact':  'Entrar em contato',
+    'hero.globe.label': 'Emissões de CO₂ · 2022 · passe o mouse em um país',
 
     /* ABOUT */
     'about.label':      'Sobre',

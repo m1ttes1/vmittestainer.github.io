@@ -15,12 +15,14 @@ window.addEventListener('scroll', () => {
 hamburger.addEventListener('click', () => {
   const isOpen = mobileMenu.classList.toggle('open');
   hamburger.classList.toggle('open', isOpen);
+  hamburger.setAttribute('aria-expanded', String(isOpen));
   document.body.style.overflow = isOpen ? 'hidden' : '';
 });
 
 function closeMobileMenu() {
   mobileMenu.classList.remove('open');
   hamburger.classList.remove('open');
+  hamburger.setAttribute('aria-expanded', 'false');
   document.body.style.overflow = '';
 }
 
