@@ -800,8 +800,7 @@ section { padding-block: 7rem; }
   margin-bottom: 1.5rem;
 }
 
-.demo__chart-wrap,
-.demo__chart-full {
+.demo__chart-wrap {
   background: var(--clr-surface-2);
   border: 1px solid var(--clr-border);
   border-radius: var(--radius-md);
@@ -1020,70 +1019,6 @@ footer p + p {
 
 .demo__chart-wrap--drillable { cursor: pointer; }
 
-/* Decomposition tree section */
-.demo__tree-section {
-  margin-top: 2.5rem;
-}
-
-.demo__tree-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-bottom: 1rem;
-}
-
-.demo__tree {
-  width: 100%;
-  overflow-x: auto;
-  min-height: 220px;
-}
-
-.demo__tree svg {
-  display: block;
-  font-family: var(--font-mono);
-}
-
-/* D3 tree nodes */
-.tree-node rect {
-  fill: #1A1A2E;
-  stroke: var(--clr-accent);
-  stroke-width: 1;
-  rx: 6;
-}
-
-.tree-node text {
-  fill: #E8E8F0;
-  font-size: 11px;
-}
-
-.tree-node .node-value {
-  fill: var(--clr-accent);
-  font-size: 13px;
-  font-weight: 700;
-}
-
-.tree-node .node-pct {
-  fill: var(--clr-text-muted);
-  font-size: 10px;
-}
-
-.tree-link {
-  fill: none;
-  stroke: rgba(0, 212, 170, 0.25);
-  stroke-width: 1.5;
-}
-
-.tree-node.root rect {
-  stroke: var(--clr-warm);
-  stroke-width: 2;
-}
-
-.tree-node.root .node-value {
-  fill: var(--clr-warm);
-}
-
 /* ===== TERMINAL EASTER EGG ===== */
 .nav__logo { cursor: pointer; }
 
@@ -1219,6 +1154,10 @@ footer p + p {
 
 @media (max-width: 600px) {
   .terminal-hint { display: none; }
+  .project-card__tag {
+    font-size: 9px;
+    padding: 2px 6px;
+  }
 }
 
 /* ===== REDUCED MOTION ===== */
