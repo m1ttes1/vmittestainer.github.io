@@ -234,11 +234,11 @@
       <!-- Charts row -->
       <div class="demo__charts-grid">
         <div class="demo__chart-wrap">
-          <canvas id="chart-sla" height="220"></canvas>
+          <canvas id="chart-sla" height="260"></canvas>
         </div>
         <div class="demo__chart-wrap demo__chart-wrap--drillable">
           <div class="demo__drill-breadcrumb" id="drill-breadcrumb" aria-live="polite"></div>
-          <canvas id="chart-donut" height="220"></canvas>
+          <canvas id="chart-donut" height="260"></canvas>
         </div>
       </div>
 
@@ -259,6 +259,7 @@
             src="assets/images/projects/project-sla.png"
             alt="SLA Compliance Dashboard"
             class="project-card__img"
+            loading="lazy" decoding="async"
             width="400" height="225"
             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
           />
@@ -288,6 +289,7 @@
             src="assets/images/projects/project-cnpj.svg"
             alt="CNPJ Matching Pipeline"
             class="project-card__img"
+            loading="lazy" decoding="async"
             width="400" height="225"
             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
           />
@@ -321,6 +323,7 @@
             src="assets/images/projects/project-ironforge.png"
             alt="IronForge — Live DB Operations"
             class="project-card__img"
+            loading="lazy" decoding="async"
             width="400" height="225"
             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
           />
@@ -354,6 +357,7 @@
             src="assets/images/projects/project-backup.svg"
             alt="Backup Monitoring Report"
             class="project-card__img"
+            loading="lazy" decoding="async"
             width="400" height="225"
             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
           />
@@ -489,7 +493,7 @@
   <script src="https://unpkg.com/globe.gl@2.46.1/dist/globe.gl.min.js" integrity="sha384-fS13P48RBFel+cPUp5960AhzvtEr64LerQ00neZuM+Hi/VDxxemdQnN7IcWPYvPb" crossorigin="anonymous" defer></script>
   <script src="assets/js/globe-hero.js" defer></script>
   <script src="assets/js/charts.js"></script>
-  <script src="assets/js/demo-tree.js"></script>
+
   <script src="assets/js/animations.js"></script>
   <script src="assets/js/terminal.js"></script>
   <script src="assets/js/counter.js"></script>
