@@ -10,6 +10,7 @@
   --clr-accent-dim: rgba(0, 212, 170, 0.12);
   --clr-warm: #F59E0B;
   --clr-warm-dim: rgba(245, 158, 11, 0.12);
+  --clr-muted-dim: rgba(152, 152, 158, 0.10);
   --clr-error: #FF4D6D;
 
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
@@ -584,15 +585,15 @@ section { padding-block: 7rem; }
 }
 
 .project-card__tag--professional {
-  background: rgba(0, 212, 170, 0.10);
+  background: var(--clr-accent-dim);
   color: var(--clr-accent);
   border: 1px solid rgba(0, 212, 170, 0.22);
 }
 
 .project-card__tag--personal {
-  background: rgba(155, 155, 175, 0.08);
+  background: var(--clr-muted-dim);
   color: var(--clr-text-muted);
-  border: 1px solid rgba(155, 155, 175, 0.18);
+  border: 1px solid rgba(152, 152, 158, 0.18);
 }
 
 /* ===== EXPERIENCE ===== */
