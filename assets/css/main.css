@@ -570,6 +570,31 @@ section { padding-block: 7rem; }
   background: var(--clr-accent-dim);
 }
 
+/* Project card context tags */
+.project-card__tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-bottom: 0.625rem;
+}
+
+.project-card__tag--professional {
+  background: rgba(0, 212, 170, 0.10);
+  color: var(--clr-accent);
+  border: 1px solid rgba(0, 212, 170, 0.22);
+}
+
+.project-card__tag--personal {
+  background: rgba(155, 155, 175, 0.08);
+  color: var(--clr-text-muted);
+  border: 1px solid rgba(155, 155, 175, 0.18);
+}
+
 /* ===== EXPERIENCE ===== */
 .experience__timeline {
   position: relative;
