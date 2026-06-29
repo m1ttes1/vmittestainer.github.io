@@ -12,7 +12,7 @@ const translations = {
     'hero.name':        'Victor Mittestainer',
     'hero.eyebrow':     'Bilingual Data Analyst',
     'hero.h1':          'Data moves the world.',
-    'hero.sub':         'CX Analyst at Wevy — figured out what data can do, and that\'s where I\'m headed.',
+    'hero.sub':         'BI & data at Wevy since 2024 — turning manual CX workflows into self-service dashboards.',
     'hero.stat1.value': '3',
     'hero.stat1.label': 'Analysts on self-service',
     'hero.stat2.value': '6',
@@ -24,8 +24,8 @@ const translations = {
     /* ABOUT */
     'about.label':      'About',
     'about.title':      'Operations background. Data mindset.',
-    'about.p1':         'Seven years in operations — four running service and logistics in Boston and San Diego, then back to Brazil joining Wevy as a CX & Data Analyst. At Wevy, I migrated manual Excel controls to ETL/ELT pipelines in Power Query, built self-service Power BI dashboards for industrial and enterprise clients, and automated workflows between Zoho CRM and SharePoint via Power Automate.',
-    'about.p2':         'I understand the business before I open Power BI. English C2 — four years in Boston and San Diego. Currently completing a B.S. in Systems Analysis & Development at Uninter (2024–2026).',
+    'about.p1':         'Seven years in operations — four running service and logistics in Boston and San Diego, then back to Brazil joining Wevy as a CX & Data Analyst. At Wevy, I migrated manual Excel controls to ETL/ELT pipelines in Power Query, built self-service Power BI dashboards for industrial and enterprise clients, automated workflows between Zoho CRM and SharePoint via Power Automate, and deliver monthly analytical reports to international accounts in English and Spanish.',
+    'about.p2':         'I understand the business before I open Power BI. C2 English and operational Spanish — both active in client deliveries. Currently completing a B.S. in Systems Analysis & Development at Uninter (2024–2026).',
     /* STACK */
     'stack.label':              'Tech Stack',
     'stack.title':              'Tools I work with.',
@@ -82,7 +82,7 @@ const translations = {
     'exp.wevy.period': 'Oct 2024 – Present',
     'exp.wevy.role':   'CX & Data Analyst',
     'exp.wevy.org':    'Wevy · Cloud IaaS/SaaS/PaaS',
-    'exp.wevy.desc':   'Started as CX intern (Oct 2024), promoted to Analyst (Jul 2025). Migrated manual Excel controls to ETL/ELT pipelines in Power Query. Monitored SLA KPIs (FCR, reopening rate, backlog) in Power BI and performed root-cause analysis on recurring incidents. Automated Zoho CRM ↔ SharePoint sync via Power Automate. Built self-service dashboards with advanced DAX. Delivered QBRs in English to international executive accounts.',
+    'exp.wevy.desc':   'Started as CX intern (Oct 2024), promoted to Analyst (Jul 2025). Took ownership of monthly client reporting within 60 days. Migrated Excel controls to ETL/ELT pipelines in Power Query. Built self-service Power BI dashboards with advanced DAX — team of 3 now runs SLA, FCR, and recurring-incident analysis without manual exports. Automated Zoho CRM ↔ SharePoint sync via Power Automate. Delivers analytical books and QBRs to international accounts in English and Spanish.',
 
     'exp.us.period': '2019 – 2023',
     'exp.us.role':   'Operations Specialist',
@@ -141,7 +141,7 @@ const translations = {
     'hero.name':        'Victor Mittestainer',
     'hero.eyebrow':     'Analista de Dados Bilíngue',
     'hero.h1':          'Os dados movem o mundo.',
-    'hero.sub':         'Analista de CX na Wevy — descobri o que dados fazem e decidi ir fundo nisso.',
+    'hero.sub':         'BI & dados na Wevy desde 2024 — transformando processos manuais de CX em dashboards self-service.',
     'hero.stat1.value': '3',
     'hero.stat1.label': 'Analistas com self-service',
     'hero.stat2.value': '6',
@@ -153,8 +153,8 @@ const translations = {
     /* ABOUT */
     'about.label':      'Sobre',
     'about.title':      'Base em operações. Mentalidade de dados.',
-    'about.p1':         'Sete anos em operações — quatro deles em Boston e San Diego nos EUA, depois de volta ao Brasil na Wevy como Analista de CX & Dados. Na Wevy, migrei controles manuais do Excel para pipelines ETL/ELT no Power Query, construí dashboards self-service no Power BI para clientes industriais e corporativos, e automatizei a sincronização entre Zoho CRM e SharePoint via Power Automate.',
-    'about.p2':         'Entendo o negócio antes de abrir o Power BI. Inglês C2 — quatro anos em Boston e San Diego. Cursando ADS na Uninter (2024–2026).',
+    'about.p1':         'Sete anos em operações — quatro deles em Boston e San Diego nos EUA, depois de volta ao Brasil na Wevy como Analista de CX & Dados. Na Wevy, migrei controles manuais do Excel para pipelines ETL/ELT no Power Query, construí dashboards self-service no Power BI para clientes industriais e corporativos, automatizei a sincronização entre Zoho CRM e SharePoint via Power Automate e entrego reports analíticos mensais para clientes internacionais em inglês e espanhol.',
+    'about.p2':         'Entendo o negócio antes de abrir o Power BI. Inglês C2 e espanhol operacional — ambos usados em entregas ativas para clientes. Cursando ADS na Uninter (2024–2026).',
     /* STACK */
     'stack.label':              'Stack Técnica',
     'stack.title':              'Ferramentas que uso.',
@@ -211,7 +211,7 @@ const translations = {
     'exp.wevy.period': 'out 2024 – presente',
     'exp.wevy.role':   'Analista de CX & Dados',
     'exp.wevy.org':    'Wevy · Cloud IaaS/SaaS/PaaS',
-    'exp.wevy.desc':   'Comecei como Estagiário CX (out 2024), promovido a Analista (jul 2025). Migrei controles manuais do Excel para pipelines ETL/ELT no Power Query. Monitorei KPIs de SLA (FCR, taxa de reabertura, backlog) no Power BI e investiguei causas raiz de incidentes recorrentes. Automatizei a sincronização Zoho CRM ↔ SharePoint via Power Automate. Dashboards self-service com DAX avançado. QBRs em inglês para clientes internacionais.',
+    'exp.wevy.desc':   'Comecei como Estagiário CX (out 2024), promovido a Analista (jul 2025). Assumi a entrega mensal de relatórios para clientes em 60 dias. Migrei controles do Excel para pipelines ETL/ELT no Power Query. Dashboards Power BI com DAX avançado — equipe de 3 consulta SLA, FCR e recorrência de incidentes sem exportações manuais. Automatizei sincronização Zoho CRM ↔ SharePoint via Power Automate. Entrego books analíticos e QBRs para clientes internacionais em inglês e espanhol.',
 
     'exp.us.period': '2019 – 2023',
     'exp.us.role':   'Operações',
