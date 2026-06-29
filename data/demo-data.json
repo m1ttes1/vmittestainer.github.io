@@ -3,11 +3,11 @@
     "generated": "synthetic",
     "period": "2023-01 / 2024-12",
     "clients": [
-      "SKF",
-      "Bosch",
-      "Emerson",
-      "Honeywell",
-      "Siemens"
+      "Automotive",
+      "Industrial",
+      "Energy",
+      "HVAC",
+      "Automation"
     ],
     "categories": {
       "Network": [
@@ -39,7 +39,7 @@
   "rows": [
     {
       "month": "2023-01",
-      "client": "Bosch",
+      "client": "Industrial",
       "category": "Network",
       "sub": "Firewall",
       "tickets": 11,
@@ -50,7 +50,7 @@
     },
     {
       "month": "2023-01",
-      "client": "Bosch",
+      "client": "Industrial",
       "category": "Server",
       "sub": "OS",
       "tickets": 8,
@@ -61,7 +61,7 @@
     },
     {
       "month": "2023-01",
-      "client": "Bosch",
+      "client": "Industrial",
       "category": "Database",
       "sub": "Backup",
       "tickets": 5,
@@ -72,7 +72,7 @@
     },
     {
       "month": "2023-01",
-      "client": "Bosch",
+      "client": "Industrial",
       "category": "Application",
       "sub": "Config",
       "tickets": 3,
@@ -83,7 +83,7 @@
     },
     {
       "month": "2023-01",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Network",
       "sub": "VPN",
       "tickets": 8,
@@ -94,7 +94,7 @@
     },
     {
       "month": "2023-01",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Server",
       "sub": "Performance",
       "tickets": 7,
@@ -105,7 +105,7 @@
     },
     {
       "month": "2023-01",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Application",
       "sub": "Integration",
       "tickets": 5,
@@ -116,7 +116,7 @@
     },
     {
       "month": "2023-01",
-      "client": "Honeywell",
+      "client": "HVAC",
       "category": "Network",
       "sub": "Connectivity",
       "tickets": 6,
@@ -127,7 +127,7 @@
     },
     {
       "month": "2023-01",
-      "client": "Honeywell",
+      "client": "HVAC",
       "category": "Database",
       "sub": "Replication",
       "tickets": 4,
@@ -138,7 +138,7 @@
     },
     {
       "month": "2023-01",
-      "client": "Siemens",
+      "client": "Automation",
       "category": "Server",
       "sub": "Hardware",
       "tickets": 10,
@@ -149,7 +149,7 @@
     },
     {
       "month": "2023-01",
-      "client": "Siemens",
+      "client": "Automation",
       "category": "Application",
       "sub": "Bug",
       "tickets": 7,
@@ -160,7 +160,7 @@
     },
     {
       "month": "2023-01",
-      "client": "Siemens",
+      "client": "Automation",
       "category": "Other",
       "sub": "Security",
       "tickets": 3,
@@ -171,7 +171,7 @@
     },
     {
       "month": "2023-01",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Network",
       "sub": "Connectivity",
       "tickets": 14,
@@ -182,7 +182,7 @@
     },
     {
       "month": "2023-01",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Server",
       "sub": "Hardware",
       "tickets": 9,
@@ -193,7 +193,7 @@
     },
     {
       "month": "2023-01",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Database",
       "sub": "Query",
       "tickets": 6,
@@ -204,7 +204,7 @@
     },
     {
       "month": "2023-01",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Application",
       "sub": "Bug",
       "tickets": 4,
@@ -215,7 +215,7 @@
     },
     {
       "month": "2023-01",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Other",
       "sub": "General",
       "tickets": 2,
@@ -226,7 +226,7 @@
     },
     {
       "month": "2023-02",
-      "client": "Bosch",
+      "client": "Industrial",
       "category": "Network",
       "sub": "Firewall",
       "tickets": 12,
@@ -237,7 +237,7 @@
     },
     {
       "month": "2023-02",
-      "client": "Bosch",
+      "client": "Industrial",
       "category": "Server",
       "sub": "Hardware",
       "tickets": 9,
@@ -248,7 +248,7 @@
     },
     {
       "month": "2023-02",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Application",
       "sub": "Integration",
       "tickets": 6,
@@ -259,7 +259,7 @@
     },
     {
       "month": "2023-02",
-      "client": "Honeywell",
+      "client": "HVAC",
       "category": "Network",
       "sub": "VPN",
       "tickets": 5,
@@ -270,7 +270,7 @@
     },
     {
       "month": "2023-02",
-      "client": "Siemens",
+      "client": "Automation",
       "category": "Server",
       "sub": "Performance",
       "tickets": 11,
@@ -281,7 +281,7 @@
     },
     {
       "month": "2023-02",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Network",
       "sub": "Connectivity",
       "tickets": 13,
@@ -292,7 +292,7 @@
     },
     {
       "month": "2023-02",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Server",
       "sub": "OS",
       "tickets": 8,
@@ -303,7 +303,7 @@
     },
     {
       "month": "2023-02",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Database",
       "sub": "Query",
       "tickets": 5,
@@ -314,7 +314,7 @@
     },
     {
       "month": "2023-03",
-      "client": "Bosch",
+      "client": "Industrial",
       "category": "Database",
       "sub": "Backup",
       "tickets": 7,
@@ -325,7 +325,7 @@
     },
     {
       "month": "2023-03",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Network",
       "sub": "Firewall",
       "tickets": 9,
@@ -336,7 +336,7 @@
     },
     {
       "month": "2023-03",
-      "client": "Honeywell",
+      "client": "HVAC",
       "category": "Application",
       "sub": "Config",
       "tickets": 4,
@@ -347,7 +347,7 @@
     },
     {
       "month": "2023-03",
-      "client": "Siemens",
+      "client": "Automation",
       "category": "Server",
       "sub": "OS",
       "tickets": 12,
@@ -358,7 +358,7 @@
     },
     {
       "month": "2023-03",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Network",
       "sub": "Connectivity",
       "tickets": 15,
@@ -369,7 +369,7 @@
     },
     {
       "month": "2023-03",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Server",
       "sub": "Hardware",
       "tickets": 10,
@@ -380,7 +380,7 @@
     },
     {
       "month": "2023-04",
-      "client": "Bosch",
+      "client": "Industrial",
       "category": "Network",
       "sub": "Connectivity",
       "tickets": 10,
@@ -391,7 +391,7 @@
     },
     {
       "month": "2023-04",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Server",
       "sub": "Hardware",
       "tickets": 8,
@@ -402,7 +402,7 @@
     },
     {
       "month": "2023-04",
-      "client": "Honeywell",
+      "client": "HVAC",
       "category": "Network",
       "sub": "Connectivity",
       "tickets": 7,
@@ -413,7 +413,7 @@
     },
     {
       "month": "2023-04",
-      "client": "Siemens",
+      "client": "Automation",
       "category": "Application",
       "sub": "Integration",
       "tickets": 9,
@@ -424,7 +424,7 @@
     },
     {
       "month": "2023-04",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Network",
       "sub": "VPN",
       "tickets": 12,
@@ -435,7 +435,7 @@
     },
     {
       "month": "2023-04",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Database",
       "sub": "Replication",
       "tickets": 7,
@@ -446,7 +446,7 @@
     },
     {
       "month": "2023-05",
-      "client": "Bosch",
+      "client": "Industrial",
       "category": "Network",
       "sub": "Firewall",
       "tickets": 9,
@@ -457,7 +457,7 @@
     },
     {
       "month": "2023-05",
-      "client": "Bosch",
+      "client": "Industrial",
       "category": "Application",
       "sub": "Integration",
       "tickets": 7,
@@ -468,7 +468,7 @@
     },
     {
       "month": "2023-05",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Database",
       "sub": "Query",
       "tickets": 6,
@@ -479,7 +479,7 @@
     },
     {
       "month": "2023-05",
-      "client": "Honeywell",
+      "client": "HVAC",
       "category": "Application",
       "sub": "Bug",
       "tickets": 5,
@@ -490,7 +490,7 @@
     },
     {
       "month": "2023-05",
-      "client": "Siemens",
+      "client": "Automation",
       "category": "Server",
       "sub": "OS",
       "tickets": 13,
@@ -501,7 +501,7 @@
     },
     {
       "month": "2023-05",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Server",
       "sub": "Performance",
       "tickets": 11,
@@ -512,7 +512,7 @@
     },
     {
       "month": "2023-06",
-      "client": "Bosch",
+      "client": "Industrial",
       "category": "Server",
       "sub": "Hardware",
       "tickets": 10,
@@ -523,7 +523,7 @@
     },
     {
       "month": "2023-06",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Application",
       "sub": "Config",
       "tickets": 7,
@@ -534,7 +534,7 @@
     },
     {
       "month": "2023-06",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Server",
       "sub": "Performance",
       "tickets": 9,
@@ -545,7 +545,7 @@
     },
     {
       "month": "2023-06",
-      "client": "Honeywell",
+      "client": "HVAC",
       "category": "Database",
       "sub": "Backup",
       "tickets": 4,
@@ -556,7 +556,7 @@
     },
     {
       "month": "2023-06",
-      "client": "Siemens",
+      "client": "Automation",
       "category": "Network",
       "sub": "VPN",
       "tickets": 11,
@@ -567,7 +567,7 @@
     },
     {
       "month": "2023-06",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Network",
       "sub": "Connectivity",
       "tickets": 14,
@@ -578,7 +578,7 @@
     },
     {
       "month": "2023-07",
-      "client": "Bosch",
+      "client": "Industrial",
       "category": "Database",
       "sub": "Replication",
       "tickets": 8,
@@ -589,7 +589,7 @@
     },
     {
       "month": "2023-07",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Network",
       "sub": "Firewall",
       "tickets": 9,
@@ -600,7 +600,7 @@
     },
     {
       "month": "2023-07",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Database",
       "sub": "Backup",
       "tickets": 8,
@@ -611,7 +611,7 @@
     },
     {
       "month": "2023-07",
-      "client": "Honeywell",
+      "client": "HVAC",
       "category": "Application",
       "sub": "Integration",
       "tickets": 6,
@@ -622,7 +622,7 @@
     },
     {
       "month": "2023-07",
-      "client": "Siemens",
+      "client": "Automation",
       "category": "Server",
       "sub": "Performance",
       "tickets": 14,
@@ -633,7 +633,7 @@
     },
     {
       "month": "2023-07",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Server",
       "sub": "OS",
       "tickets": 12,
@@ -644,7 +644,7 @@
     },
     {
       "month": "2023-08",
-      "client": "Bosch",
+      "client": "Industrial",
       "category": "Application",
       "sub": "Bug",
       "tickets": 9,
@@ -655,7 +655,7 @@
     },
     {
       "month": "2023-08",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Database",
       "sub": "Query",
       "tickets": 7,
@@ -666,7 +666,7 @@
     },
     {
       "month": "2023-08",
-      "client": "Honeywell",
+      "client": "HVAC",
       "category": "Network",
       "sub": "Connectivity",
       "tickets": 5,
@@ -677,7 +677,7 @@
     },
     {
       "month": "2023-08",
-      "client": "Honeywell",
+      "client": "HVAC",
       "category": "Database",
       "sub": "Backup",
       "tickets": 6,
@@ -688,7 +688,7 @@
     },
     {
       "month": "2023-08",
-      "client": "Siemens",
+      "client": "Automation",
       "category": "Network",
       "sub": "Firewall",
       "tickets": 12,
@@ -699,7 +699,7 @@
     },
     {
       "month": "2023-08",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Network",
       "sub": "VPN",
       "tickets": 11,
@@ -710,7 +710,7 @@
     },
     {
       "month": "2023-09",
-      "client": "Bosch",
+      "client": "Industrial",
       "category": "Server",
       "sub": "OS",
       "tickets": 11,
@@ -721,7 +721,7 @@
     },
     {
       "month": "2023-09",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Application",
       "sub": "Config",
       "tickets": 8,
@@ -732,7 +732,7 @@
     },
     {
       "month": "2023-09",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Network",
       "sub": "VPN",
       "tickets": 7,
@@ -743,7 +743,7 @@
     },
     {
       "month": "2023-09",
-      "client": "Honeywell",
+      "client": "HVAC",
       "category": "Server",
       "sub": "Hardware",
       "tickets": 7,
@@ -754,7 +754,7 @@
     },
     {
       "month": "2023-09",
-      "client": "Siemens",
+      "client": "Automation",
       "category": "Database",
       "sub": "Replication",
       "tickets": 10,
@@ -765,7 +765,7 @@
     },
     {
       "month": "2023-09",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Database",
       "sub": "Backup",
       "tickets": 8,
@@ -776,7 +776,7 @@
     },
     {
       "month": "2023-10",
-      "client": "Bosch",
+      "client": "Industrial",
       "category": "Network",
       "sub": "VPN",
       "tickets": 10,
@@ -787,7 +787,7 @@
     },
     {
       "month": "2023-10",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Server",
       "sub": "Performance",
       "tickets": 9,
@@ -798,7 +798,7 @@
     },
     {
       "month": "2023-10",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Database",
       "sub": "Query",
       "tickets": 8,
@@ -809,7 +809,7 @@
     },
     {
       "month": "2023-10",
-      "client": "Honeywell",
+      "client": "HVAC",
       "category": "Application",
       "sub": "Bug",
       "tickets": 5,
@@ -820,7 +820,7 @@
     },
     {
       "month": "2023-10",
-      "client": "Siemens",
+      "client": "Automation",
       "category": "Server",
       "sub": "Hardware",
       "tickets": 13,
@@ -831,7 +831,7 @@
     },
     {
       "month": "2023-10",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Network",
       "sub": "Connectivity",
       "tickets": 16,
@@ -842,7 +842,7 @@
     },
     {
       "month": "2023-11",
-      "client": "Bosch",
+      "client": "Industrial",
       "category": "Database",
       "sub": "Query",
       "tickets": 9,
@@ -853,7 +853,7 @@
     },
     {
       "month": "2023-11",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Network",
       "sub": "Firewall",
       "tickets": 8,
@@ -864,7 +864,7 @@
     },
     {
       "month": "2023-11",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Server",
       "sub": "Hardware",
       "tickets": 9,
@@ -875,7 +875,7 @@
     },
     {
       "month": "2023-11",
-      "client": "Honeywell",
+      "client": "HVAC",
       "category": "Server",
       "sub": "OS",
       "tickets": 6,
@@ -886,7 +886,7 @@
     },
     {
       "month": "2023-11",
-      "client": "Siemens",
+      "client": "Automation",
       "category": "Application",
       "sub": "Config",
       "tickets": 11,
@@ -897,7 +897,7 @@
     },
     {
       "month": "2023-11",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Application",
       "sub": "Integration",
       "tickets": 7,
@@ -908,7 +908,7 @@
     },
     {
       "month": "2023-12",
-      "client": "Bosch",
+      "client": "Industrial",
       "category": "Server",
       "sub": "Hardware",
       "tickets": 8,
@@ -919,7 +919,7 @@
     },
     {
       "month": "2023-12",
-      "client": "Bosch",
+      "client": "Industrial",
       "category": "Application",
       "sub": "Bug",
       "tickets": 8,
@@ -930,7 +930,7 @@
     },
     {
       "month": "2023-12",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Database",
       "sub": "Backup",
       "tickets": 6,
@@ -941,7 +941,7 @@
     },
     {
       "month": "2023-12",
-      "client": "Honeywell",
+      "client": "HVAC",
       "category": "Network",
       "sub": "VPN",
       "tickets": 4,
@@ -952,7 +952,7 @@
     },
     {
       "month": "2023-12",
-      "client": "Siemens",
+      "client": "Automation",
       "category": "Application",
       "sub": "Bug",
       "tickets": 9,
@@ -963,7 +963,7 @@
     },
     {
       "month": "2023-12",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Network",
       "sub": "Connectivity",
       "tickets": 10,
@@ -974,7 +974,7 @@
     },
     {
       "month": "2024-01",
-      "client": "Bosch",
+      "client": "Industrial",
       "category": "Network",
       "sub": "Firewall",
       "tickets": 12,
@@ -985,7 +985,7 @@
     },
     {
       "month": "2024-01",
-      "client": "Bosch",
+      "client": "Industrial",
       "category": "Application",
       "sub": "Integration",
       "tickets": 7,
@@ -996,7 +996,7 @@
     },
     {
       "month": "2024-01",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Server",
       "sub": "Performance",
       "tickets": 10,
@@ -1007,7 +1007,7 @@
     },
     {
       "month": "2024-01",
-      "client": "Honeywell",
+      "client": "HVAC",
       "category": "Database",
       "sub": "Query",
       "tickets": 5,
@@ -1018,7 +1018,7 @@
     },
     {
       "month": "2024-01",
-      "client": "Siemens",
+      "client": "Automation",
       "category": "Server",
       "sub": "Hardware",
       "tickets": 14,
@@ -1029,7 +1029,7 @@
     },
     {
       "month": "2024-01",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Network",
       "sub": "Connectivity",
       "tickets": 15,
@@ -1040,7 +1040,7 @@
     },
     {
       "month": "2024-01",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Server",
       "sub": "OS",
       "tickets": 10,
@@ -1051,7 +1051,7 @@
     },
     {
       "month": "2024-02",
-      "client": "Bosch",
+      "client": "Industrial",
       "category": "Server",
       "sub": "OS",
       "tickets": 11,
@@ -1062,7 +1062,7 @@
     },
     {
       "month": "2024-02",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Network",
       "sub": "VPN",
       "tickets": 9,
@@ -1073,7 +1073,7 @@
     },
     {
       "month": "2024-02",
-      "client": "Honeywell",
+      "client": "HVAC",
       "category": "Application",
       "sub": "Bug",
       "tickets": 6,
@@ -1084,7 +1084,7 @@
     },
     {
       "month": "2024-02",
-      "client": "Honeywell",
+      "client": "HVAC",
       "category": "Network",
       "sub": "Firewall",
       "tickets": 7,
@@ -1095,7 +1095,7 @@
     },
     {
       "month": "2024-02",
-      "client": "Siemens",
+      "client": "Automation",
       "category": "Database",
       "sub": "Backup",
       "tickets": 10,
@@ -1106,7 +1106,7 @@
     },
     {
       "month": "2024-02",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Database",
       "sub": "Replication",
       "tickets": 8,
@@ -1117,7 +1117,7 @@
     },
     {
       "month": "2024-03",
-      "client": "Bosch",
+      "client": "Industrial",
       "category": "Network",
       "sub": "Connectivity",
       "tickets": 11,
@@ -1128,7 +1128,7 @@
     },
     {
       "month": "2024-03",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Application",
       "sub": "Config",
       "tickets": 8,
@@ -1139,7 +1139,7 @@
     },
     {
       "month": "2024-03",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Database",
       "sub": "Replication",
       "tickets": 8,
@@ -1150,7 +1150,7 @@
     },
     {
       "month": "2024-03",
-      "client": "Honeywell",
+      "client": "HVAC",
       "category": "Server",
       "sub": "Hardware",
       "tickets": 7,
@@ -1161,7 +1161,7 @@
     },
     {
       "month": "2024-03",
-      "client": "Siemens",
+      "client": "Automation",
       "category": "Network",
       "sub": "VPN",
       "tickets": 12,
@@ -1172,7 +1172,7 @@
     },
     {
       "month": "2024-03",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Network",
       "sub": "Firewall",
       "tickets": 13,
@@ -1183,7 +1183,7 @@
     },
     {
       "month": "2024-04",
-      "client": "Bosch",
+      "client": "Industrial",
       "category": "Database",
       "sub": "Query",
       "tickets": 8,
@@ -1194,7 +1194,7 @@
     },
     {
       "month": "2024-04",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Server",
       "sub": "OS",
       "tickets": 11,
@@ -1205,7 +1205,7 @@
     },
     {
       "month": "2024-04",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Network",
       "sub": "Connectivity",
       "tickets": 9,
@@ -1216,7 +1216,7 @@
     },
     {
       "month": "2024-04",
-      "client": "Honeywell",
+      "client": "HVAC",
       "category": "Network",
       "sub": "Firewall",
       "tickets": 6,
@@ -1227,7 +1227,7 @@
     },
     {
       "month": "2024-04",
-      "client": "Siemens",
+      "client": "Automation",
       "category": "Application",
       "sub": "Integration",
       "tickets": 13,
@@ -1238,7 +1238,7 @@
     },
     {
       "month": "2024-04",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Application",
       "sub": "Bug",
       "tickets": 9,
@@ -1249,7 +1249,7 @@
     },
     {
       "month": "2024-05",
-      "client": "Bosch",
+      "client": "Industrial",
       "category": "Network",
       "sub": "VPN",
       "tickets": 9,
@@ -1260,7 +1260,7 @@
     },
     {
       "month": "2024-05",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Database",
       "sub": "Replication",
       "tickets": 7,
@@ -1271,7 +1271,7 @@
     },
     {
       "month": "2024-05",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Network",
       "sub": "Connectivity",
       "tickets": 8,
@@ -1282,7 +1282,7 @@
     },
     {
       "month": "2024-05",
-      "client": "Honeywell",
+      "client": "HVAC",
       "category": "Application",
       "sub": "Config",
       "tickets": 5,
@@ -1293,7 +1293,7 @@
     },
     {
       "month": "2024-05",
-      "client": "Siemens",
+      "client": "Automation",
       "category": "Server",
       "sub": "Hardware",
       "tickets": 14,
@@ -1304,7 +1304,7 @@
     },
     {
       "month": "2024-05",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Server",
       "sub": "Performance",
       "tickets": 12,
@@ -1315,7 +1315,7 @@
     },
     {
       "month": "2024-06",
-      "client": "Bosch",
+      "client": "Industrial",
       "category": "Server",
       "sub": "OS",
       "tickets": 11,
@@ -1326,7 +1326,7 @@
     },
     {
       "month": "2024-06",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Application",
       "sub": "Bug",
       "tickets": 9,
@@ -1337,7 +1337,7 @@
     },
     {
       "month": "2024-06",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Network",
       "sub": "Firewall",
       "tickets": 7,
@@ -1348,7 +1348,7 @@
     },
     {
       "month": "2024-06",
-      "client": "Honeywell",
+      "client": "HVAC",
       "category": "Database",
       "sub": "Backup",
       "tickets": 5,
@@ -1359,7 +1359,7 @@
     },
     {
       "month": "2024-06",
-      "client": "Siemens",
+      "client": "Automation",
       "category": "Network",
       "sub": "Firewall",
       "tickets": 12,
@@ -1370,7 +1370,7 @@
     },
     {
       "month": "2024-06",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Network",
       "sub": "Connectivity",
       "tickets": 14,
@@ -1381,7 +1381,7 @@
     },
     {
       "month": "2024-07",
-      "client": "Bosch",
+      "client": "Industrial",
       "category": "Application",
       "sub": "Integration",
       "tickets": 10,
@@ -1392,7 +1392,7 @@
     },
     {
       "month": "2024-07",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Network",
       "sub": "VPN",
       "tickets": 8,
@@ -1403,7 +1403,7 @@
     },
     {
       "month": "2024-07",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Database",
       "sub": "Backup",
       "tickets": 9,
@@ -1414,7 +1414,7 @@
     },
     {
       "month": "2024-07",
-      "client": "Honeywell",
+      "client": "HVAC",
       "category": "Server",
       "sub": "Performance",
       "tickets": 6,
@@ -1425,7 +1425,7 @@
     },
     {
       "month": "2024-07",
-      "client": "Siemens",
+      "client": "Automation",
       "category": "Database",
       "sub": "Replication",
       "tickets": 11,
@@ -1436,7 +1436,7 @@
     },
     {
       "month": "2024-07",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Database",
       "sub": "Query",
       "tickets": 9,
@@ -1447,7 +1447,7 @@
     },
     {
       "month": "2024-08",
-      "client": "Bosch",
+      "client": "Industrial",
       "category": "Network",
       "sub": "Connectivity",
       "tickets": 10,
@@ -1458,7 +1458,7 @@
     },
     {
       "month": "2024-08",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Server",
       "sub": "Hardware",
       "tickets": 9,
@@ -1469,7 +1469,7 @@
     },
     {
       "month": "2024-08",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Database",
       "sub": "Query",
       "tickets": 8,
@@ -1480,7 +1480,7 @@
     },
     {
       "month": "2024-08",
-      "client": "Honeywell",
+      "client": "HVAC",
       "category": "Application",
       "sub": "Bug",
       "tickets": 5,
@@ -1491,7 +1491,7 @@
     },
     {
       "month": "2024-08",
-      "client": "Siemens",
+      "client": "Automation",
       "category": "Server",
       "sub": "OS",
       "tickets": 13,
@@ -1502,7 +1502,7 @@
     },
     {
       "month": "2024-08",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Network",
       "sub": "Firewall",
       "tickets": 13,
@@ -1513,7 +1513,7 @@
     },
     {
       "month": "2024-09",
-      "client": "Bosch",
+      "client": "Industrial",
       "category": "Database",
       "sub": "Backup",
       "tickets": 9,
@@ -1524,7 +1524,7 @@
     },
     {
       "month": "2024-09",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Application",
       "sub": "Integration",
       "tickets": 10,
@@ -1535,7 +1535,7 @@
     },
     {
       "month": "2024-09",
-      "client": "Honeywell",
+      "client": "HVAC",
       "category": "Network",
       "sub": "Connectivity",
       "tickets": 6,
@@ -1546,7 +1546,7 @@
     },
     {
       "month": "2024-09",
-      "client": "Honeywell",
+      "client": "HVAC",
       "category": "Database",
       "sub": "Replication",
       "tickets": 7,
@@ -1557,7 +1557,7 @@
     },
     {
       "month": "2024-09",
-      "client": "Siemens",
+      "client": "Automation",
       "category": "Application",
       "sub": "Bug",
       "tickets": 12,
@@ -1568,7 +1568,7 @@
     },
     {
       "month": "2024-09",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Application",
       "sub": "Config",
       "tickets": 8,
@@ -1579,7 +1579,7 @@
     },
     {
       "month": "2024-10",
-      "client": "Bosch",
+      "client": "Industrial",
       "category": "Server",
       "sub": "Performance",
       "tickets": 11,
@@ -1590,7 +1590,7 @@
     },
     {
       "month": "2024-10",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Database",
       "sub": "Query",
       "tickets": 8,
@@ -1601,7 +1601,7 @@
     },
     {
       "month": "2024-10",
-      "client": "Honeywell",
+      "client": "HVAC",
       "category": "Application",
       "sub": "Config",
       "tickets": 6,
@@ -1612,7 +1612,7 @@
     },
     {
       "month": "2024-10",
-      "client": "Siemens",
+      "client": "Automation",
       "category": "Network",
       "sub": "Firewall",
       "tickets": 13,
@@ -1623,7 +1623,7 @@
     },
     {
       "month": "2024-10",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Network",
       "sub": "VPN",
       "tickets": 15,
@@ -1634,7 +1634,7 @@
     },
     {
       "month": "2024-11",
-      "client": "Bosch",
+      "client": "Industrial",
       "category": "Application",
       "sub": "Bug",
       "tickets": 10,
@@ -1645,7 +1645,7 @@
     },
     {
       "month": "2024-11",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Network",
       "sub": "Connectivity",
       "tickets": 9,
@@ -1656,7 +1656,7 @@
     },
     {
       "month": "2024-11",
-      "client": "Honeywell",
+      "client": "HVAC",
       "category": "Database",
       "sub": "Replication",
       "tickets": 5,
@@ -1667,7 +1667,7 @@
     },
     {
       "month": "2024-11",
-      "client": "Siemens",
+      "client": "Automation",
       "category": "Server",
       "sub": "OS",
       "tickets": 14,
@@ -1678,7 +1678,7 @@
     },
     {
       "month": "2024-11",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Server",
       "sub": "Hardware",
       "tickets": 11,
@@ -1689,7 +1689,7 @@
     },
     {
       "month": "2024-12",
-      "client": "Bosch",
+      "client": "Industrial",
       "category": "Network",
       "sub": "VPN",
       "tickets": 8,
@@ -1700,7 +1700,7 @@
     },
     {
       "month": "2024-12",
-      "client": "Emerson",
+      "client": "Energy",
       "category": "Server",
       "sub": "Performance",
       "tickets": 7,
@@ -1711,7 +1711,7 @@
     },
     {
       "month": "2024-12",
-      "client": "Honeywell",
+      "client": "HVAC",
       "category": "Application",
       "sub": "Integration",
       "tickets": 5,
@@ -1722,7 +1722,7 @@
     },
     {
       "month": "2024-12",
-      "client": "Siemens",
+      "client": "Automation",
       "category": "Application",
       "sub": "Config",
       "tickets": 11,
@@ -1733,7 +1733,7 @@
     },
     {
       "month": "2024-12",
-      "client": "SKF",
+      "client": "Automotive",
       "category": "Database",
       "sub": "Backup",
       "tickets": 9,
